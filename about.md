@@ -12,4 +12,4 @@ I studied computer science and graduated from VIT vellore in 2019. I currently w
 
 I tend to forget stuff to I though it would be fun to write it down for me in the future 
 
-Wow, you read the whole thing huh .... Thanks ... I guess 
+Wow, you read the whole thing huh ... Thanks ... I guess 

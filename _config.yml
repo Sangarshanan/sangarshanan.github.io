@@ -1,7 +1,7 @@
 # Site settings
-title_left    : "Stuffonmy"
-title_right   : "Mind" # default: ""
-description   : "bruh"
+title_left    : "Stuffonmymind"
+# title_right   : "Mind" # default: ""
+description   : "Kombucha"
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, stuffonmymind"
 url           : https://sangarshanan.github.io/stuffonmymind/ # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank

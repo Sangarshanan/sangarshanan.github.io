@@ -1,6 +1,6 @@
 # Site settings
-title_left    : "stuff"
-title_right   : "onmyMind" # default: ""
+title_left    : "Stuffonmy"
+title_right   : "Mind" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, stuffonmymind"
 url           : https://sangarshanan.github.io/stuffonmymind/ # site url

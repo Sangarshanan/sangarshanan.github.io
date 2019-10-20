@@ -1,7 +1,7 @@
 # Stuffonmymind
 
-Stuff on the mind of a human person called sangarshanan
+I have a mind and I sometimes do and think about stuff
 
 
 
-Uses Thinkspace Jekyll minimalistic theme https://heiswayi.github.io/thinkspace/
+Uses Thinkspace Jekyll minimalistic theme 

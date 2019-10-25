@@ -17,9 +17,7 @@ I freaking love this year
 - I got to travel to the US and talk at a Pygotham, my first ever python conference and met some of the best people there 🙌 🙌
 - Fortnite died momentarily ... but came back :( 
 
-Elon musk came out as the first weaboo with a billion dollars
-
-Oh and also I got to test out a Tesla in NYC 
+Elon musk came out as the first weaboo with a billion dollars and I got to test out the Tesla Game 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ZDPHWWZ4tsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

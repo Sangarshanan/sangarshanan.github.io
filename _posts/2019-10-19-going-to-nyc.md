@@ -15,9 +15,6 @@ Video: <https://www.youtube.com/watch?v=7wCZH_zgyYc>
 
 Getting involved with the python community was something that I always wanted to do and I had just figured out that I could submit talk proposals to conferences and with the timing maybe I could travel to attend these conferences, meet a bunch of really cool people and just hang around and explore the city for a few days. Truth be told I never really expected anything to come out of the talk proposals I kept submitting to all the conferences that could be found online since I had just graduated, not given previous talks at conferences and was clearly not an expert in anything. As the lore goes my financial aid got accepted by pygotham, a NYC based python conference and I was one of their backup speakers but then I guess I just got really lucky as one of the speakers dropped out of a Pygotham and I was offered a spot on the schedule to talk and also I was getting financial aid... I had not applied for VISA and applied hastily but with some help from my dad's acquaintance I ended up with a VISA just a few weeks before the conference. It still feels surreal how all this happened so fast. So yeah ... that is how I travelled to NYC to speak at Pygotham my first ever conference talk and it ended up being one of the best experiences of my life.
 
-Instagram: <https://www.instagram.com/p/B3fAHVQhNxh/>
-
-
 ### Day 1 (Made some friends and raided the place for stickers)
 
 It was October 4th 7:45 AM I was in my room at Hotel Penn getting ready to head to Pygotham. I was so nervous and yet so freaking happy. A very weird feeling but I remember thinking how I could make a good first impression on everyone from the python community. I head to grab breakfast and find a corner to sit and wallow ... It was really stupid of me cause I feel like I should have joined a table and introduced myself ... but at the time I was really intimidated by everyone there.But now thinking back I feel so bad cause everyone in Pygotham were so awesome and I could have totally gone over to any table and introduced myself. But luckily as I was getting ready to eat breakfast alone ,[Marcus](https://twitter.com/Crazcalm) came over to my table and introduced himself ... he is the first friend I made at Pygotham and seriously helped me out throughout the conference. Just after a few minutes [Adrián](https://www.linkedin.com/in/adrian-soto) and 2 other really cool people joined us and made the breakfast soo much fun (Python smalltalk !!). After breakfast I headed to the Keynote of the day by Kojo Idrissa where he talked about how the open source community needed more new contributors and how noobs should feel welcome...It hit me extra hard that day cause being a noob myself I felt really welcome 
@@ -68,7 +65,7 @@ END:
 
 - Special thanks to whoever pulled out their pygotham talk and the Pygotham organizing team for choosing me to fill the gap and give my first conference talk cause it was an experience of a lifetime :) 
 - Thank you Marcus for helping me out throughout the conference and for being super awesome and supportive 
-- To all the amazing conversations we had and all the advice before my talk, thanks for my big brother throughout the journey Anuj menta :) 
+- To all the amazing conversations we had and all the advice before my talk, thanks for being a big brother throughout the journey Anuj menta :) 
 - A big thank you and a virtual hug to Stanley Zheng for showing me around the city, introducing me to the Recurse group and for being an amazing human being. 
 
 NYC Highlights : 

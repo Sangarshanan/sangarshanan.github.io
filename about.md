@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+Welcome fellow human or bot !!
+
 Hi, My name is Sangarshanan  (I can't prononce it either)
 
 I like staring into the void, doing cool shit on my computer, talking about space and making dank memes 

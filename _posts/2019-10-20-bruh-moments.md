@@ -16,6 +16,8 @@ I freaking love this year
 - Minecraft finally got the clout it deserved ⛏️
 - I got to travel to the US and talk at a Pygotham, my first ever python conference and met some of the best people there 🙌 🙌
 - Fortnite died momentarily ... but came back :( 
+- I got my first Hacktoberfest T-shirt 👕
+
 
 Elon musk came out as the first weaboo with a billion dollars and I got to test out the Tesla Game 
 

@@ -34,8 +34,6 @@ By running your application and sending HTTP requests, you realise 3 things happ
 GET / HTTP/1.1
 Host: developer.mozilla.org
 Accept-Language: fr
-
-
 ```
 
 3. You get a response from the server which you process with your application

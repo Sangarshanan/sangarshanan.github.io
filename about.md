@@ -8,10 +8,8 @@ Welcome fellow human or bot !!
 
 Hi, My name is Sangarshanan  (I can't prononce it either)
 
-I like staring into the void, doing cool shit on my computer, talking about space and making dank memes 
+I like staring into the void, making stuff happen with my computer, talking about space, making dank memes and pretending to like thimgs to please other people
 
-I studied computer science and graduated from VIT vellore in 2019. I currently work at grofers. 
+I studied computer science and graduated from VIT vellore in 2019. I currently work at grofers.  
 
-I tend to forget chunks of my life so I though it would be fun to write it down for me in the future 
-
-Wow, you read the whole thing huh ... Thanks ... I guess 
+Thanks for taking an interest in my online junk :P

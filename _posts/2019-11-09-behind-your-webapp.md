@@ -34,8 +34,6 @@ By running your application and sending HTTP requests, you realise 3 things happ
 GET / HTTP/1.1
 Host: developer.mozilla.org
 Accept-Language: fr
-
-
 ```
 
 3. You get a response from the server which you process with your application
@@ -279,9 +277,17 @@ def hello_world():
 app = flask_app.wsgi_app
 ```
 
+<<<<<<< HEAD
  
 Contains stolen content from  
  <https://github.com/rspivak/lsbaws>
  <https://www.youtube.com/watch?v=WqrCnVAkLIo>
 
 You scrolled to the end :)
+=======
+More web server code <https://github.com/rspivak/lsbaws>
+
+Cool WSGI talk   <https://www.youtube.com/watch?v=WqrCnVAkLIo>
+
+Sayōnara
+>>>>>>> 07c4840d95626fb04b0c5669a30ad79961a2c76c

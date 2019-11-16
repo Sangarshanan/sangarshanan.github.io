@@ -279,7 +279,9 @@ def hello_world():
 app = flask_app.wsgi_app
 ```
 
-More web server code <https://github.com/rspivak/lsbaws>
-Cool WSGI talk   <https://www.youtube.com/watch?v=WqrCnVAkLIo>
+ 
+Contains stolen content from  
+ <https://github.com/rspivak/lsbaws>
+ <https://www.youtube.com/watch?v=WqrCnVAkLIo>
 
-Sayōnara
+You scrolled to the end :)

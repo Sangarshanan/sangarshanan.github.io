@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
 	spec.email         = ["sangarshanan@gmail.com"]
 
 	spec.summary       = "A shameless fork of thinkspace"
-	spec.homepage      = "https://github.com/Sangarshanan/stuffonmymind"
+	spec.homepage      = "https://github.com/Sangarshanan"
 	spec.license       = "MIT"
 
 	spec.metadata["plugin_type"] = "theme"

@@ -10,13 +10,13 @@ keywords: "Learn"
 
 Bit late to this topic so I'm glad there are tons of resources around :)
 
-There are always ways to speed up your code, you can scale horizontally or vertically but maybe you can be effective without scaling. Maybe you run multiple operations in parallel, maybe
+There are always ways to speed up your code, you can scale horizontally or vertically but maybe you can be effective without scaling. Maybe you run multiple operations in parallel or concurrent or maybe you write your code to run asynchronously. But what do all these smancy words actually mean 
 
-Parallel vs Concurrent vs Async  
+Parallel vs Concurrent vs Async FIGHT !!!!
 
  - Parallel : Watch TV while eating Popcorn (You can do both of em at the simultaneously)
  
- - Concurrency: Watch Tv while checking your phone (You can deal with them simultaneously but not do em at the same time.. stop kidding yourself )
+ - Concurrency: Watch Tv while texting on the phone (You can deal with them simultaneously but not do em at the same time.. stop kidding yourself )
 
  - Async: Look at your phone when you get a notification cause your meme is poppin and then quickly back to the TV cause it's game weekkk !!!! (It is more a style of writing code)
 

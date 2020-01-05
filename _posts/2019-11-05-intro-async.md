@@ -57,9 +57,39 @@ A function enters waiting period when suspended and only resumes when the wait i
 Several ways to implement suspend/resume in python (some below)
 
 - Callback functions
+
+Callbacks are often used in situations where an action is asynchronous. If you need to call a function, and immediately continue working, you can't sit there wait for its return value to let you know what happened, so you provide a callback. When the function is done completely its asynchronous work it will then invoke your callback with some predetermined arguments (usually some you supply, and some about the status and result of the asynchronous action you requested).
+
+```python
+def arithmetic(num, callback):
+    val = []
+    for i in num:
+        val.append(callback(i))
+    return val
+
+def square(num):
+    return num**2
+
+def cube(num):
+    return num**3
+
+print(arithmetic([2,3,5], square))
+print(arithmetic([2,3,5], cube))
+```
 - Generator Functions
+
+Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly:
+
+```python
+
+```
+
 - Async/ Await 
 - Greenlets 
+
+
+
+
 
 How do we decide which function gets the CPU next ? We need some kind of scheduler that takes care of this. We call it an event loop. Loop keeps track of all running tasks
 
@@ -131,5 +161,7 @@ Eveentlet, gevent try to hide async under the rug (abstracts it away) while asyn
 ### Totally ripped off these
 
 <https://www.youtube.com/watch?v=iG6fr81xHKA>
+
+<https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/>
 
 <https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl>

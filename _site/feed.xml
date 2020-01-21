@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Yeet</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 22 Jan 2020 02:21:15 +0530</pubDate>
+    <lastBuildDate>Wed, 22 Jan 2020 02:21:15 +0530</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Pretending to be my best version</title>
+        <description>&lt;p&gt;Read this when your imposter syndrome/ Anxiety is getting too real&lt;/p&gt;
+
+&lt;p&gt;Try to have fun, do your best and it’s absolutely fine if you get it wrong&lt;/p&gt;
+
+&lt;p&gt;lol.. maybe come up with something better&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Jan 2020 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2020/pretending-to-be-your-best-version/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/pretending-to-be-your-best-version/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Towards the Open Source gods</title>
+        <description>&lt;p&gt;When I was in college I wanted to work on everything I considered to be cool, I didn’t spend time learning and just started jumping into projects half assed and just worked on it enough to make it work. I wrote shit code that just worked, Totally unreadable, Silly shortcuts, embarrassing mistakes and man should I even start about reproducibility. One of my projects used to only work on a full moon from 12 - 2AM when the demons could hear compilation&lt;/p&gt;
+
+&lt;p&gt;I’m not in college anymore and more recently I’ve started writing code that is going into production and is critical so I can’t afford to write code that “just works”. It’s also high time I learn to write code I can shed happy tears about. I figured the best way to do that is to start my pilgrimage towards to open source gods. Looking at some of the code written on amazing open source projects opened a million doors&lt;/p&gt;
+
+&lt;p&gt;So I am going to track my Open source Journey here,&lt;/p&gt;
+
+&lt;h3 id=&quot;yellowbrick&quot;&gt;YellowBrick&lt;/h3&gt;
+
+&lt;p&gt;My very first Open source contribution was made by following the big Gsoc hype. I thought that contributing can lead way to Gsoc which never happened and I kinda lost track being lazy :( I had never used yellowbrick before but it turned to be quite useful so I decided to contribute a simple example (That was my NLP Phase)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/DistrictDataLabs/yellowbrick#yellowbrick-datasets&quot;&gt;https://github.com/DistrictDataLabs/yellowbrick#yellowbrick-datasets&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Was kinda scared at first but the maintainers were really appreciative and amazing that I ended up writing a blog about it too &lt;a href=&quot;https://www.districtdatalabs.com/rapid-text-visualization-with-yellowbrick&quot;&gt;https://www.districtdatalabs.com/rapid-text-visualization-with-yellowbrick&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pypa-packaging&quot;&gt;PyPa Packaging&lt;/h3&gt;
+
+&lt;p&gt;Ok so this was pretty big for me since I felt confident enough to move from contributing documentation to actual code, well github action but still counts&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/pypa/packaging/pull/243&quot;&gt;https://github.com/pypa/packaging/pull/243&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It felt amazing to contribute to pypa cause I fanboy over Brett Cannon (https://snarky.ca/ ) and Dustin Ingram (The million amazing Pycon talks)&lt;/p&gt;
+
+&lt;h3 id=&quot;geopandas&quot;&gt;Geopandas&lt;/h3&gt;
+
+&lt;p&gt;I am actually still looking to contribute more to geopandas cause it’s an amazing package and I use it almost regularly at work.&lt;/p&gt;
+
+&lt;p&gt;Documentation &lt;a href=&quot;https://github.com/geopandas/geopandas/pull/1228&quot;&gt;https://github.com/geopandas/geopandas/pull/1228&lt;/a&gt;
+Issue &lt;a href=&quot;https://github.com/geopandas/geopandas/issues/595#issuecomment-569616474&quot;&gt;https://github.com/geopandas/geopandas/issues/595#issuecomment-569616474&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also to_postgis has potential too, things that couldn’t be done in pandas &lt;a href=&quot;https://github.com/geopandas/geopandas/issues/1174&quot;&gt;https://github.com/geopandas/geopandas/issues/1174&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;pandas&quot;&gt;Pandas&lt;/h3&gt;
+
+&lt;p&gt;Moved to fstrings, This was a pretty low hanging fruit
+&lt;a href=&quot;https://github.com/pandas-dev/pandas/pull/30700&quot;&gt;https://github.com/pandas-dev/pandas/pull/30700&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Jan 2020 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2020/towards-the-opensource-gods/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/towards-the-opensource-gods/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Behind your Web Application (WSGI + Web server)</title>
+        <description>&lt;p&gt;When I started writing simple flask web applications back in college I did not actually undertand what was happening in the back when I run the flask application&lt;/p&gt;
+
+&lt;p&gt;So when I run &lt;code class=&quot;highlighter-rouge&quot;&gt;python app.py&lt;/code&gt; , this pops up&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * Serving Flask app &quot;somename&quot;
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now I am able to interact with the applications by sending requests and getting a responses but how am I able to that… I did not do anything to make that happen.. I just wrote the logic and Flask did it for me and I was able to get stuff done really fast&lt;/p&gt;
+
+&lt;p&gt;It’s almost similar even when you look at other frameworks like Django&lt;/p&gt;
+
+&lt;p&gt;Django provides tons of stuff out of the box for you like routing, views, templates, authentication, middleware and a whole lot more with a very rich documentation so that you are always in your comfort zone. And with a huge community any issue I faced with Django was one stackoverflow answer away&lt;/p&gt;
+
+&lt;p&gt;These frameworks wrap everthing up so you just write in your logic and you are able to send requests and handle responses&lt;/p&gt;
+
+&lt;p&gt;By running your application and sending HTTP requests, you realise 3 things happening in the HTTP flow&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;You open a TCP connection: (In my case it’s the localhost) The TCP connection is used to send a request, or several, and receive an answer. The client may open a new connection, reuse an existing connection, or open several TCP connections to the servers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Send an HTTP request message with your application&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET / HTTP/1.1
+Host: developer.mozilla.org
+Accept-Language: fr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;You get a response from the server which you process with your application&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP/1.1 200 OK
+Date: Sat, 09 Oct 2010 14:28:02 GMT
+Server: Apache
+Last-Modified: Tue, 01 Dec 2009 20:18:22 GMT
+ETag: &quot;51142bc1-7449-479b075b2891b&quot;
+Accept-Ranges: bytes
+Content-Length: 29769
+Content-Type: text/html
+
+&amp;lt;!DOCTYPE html... (here comes the 29769 bytes of the requested web page)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Now you close or reuse the connection&lt;/p&gt;
+
+&lt;p&gt;But then how the hell do these python framework handle HTTP requests ? Cause it seems like magic… and I would love to learn a trick or two so let’s break it down :D&lt;/p&gt;
+
+&lt;p&gt;Well maybe your site is static and you have all your files saved&lt;/p&gt;
+
+&lt;p&gt;Then for every request you already have corresponding static file as a reponse… awesome this is really fast, you could do tons of caching techniques and it’s all really easy and straightforward but I mean it’s static which means that you have to manually go and edit the html files every time&lt;/p&gt;
+
+&lt;p&gt;To solve this issue arose the Common gateway interface which invokes a script that dynamically generates the web page&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Common Gateway Interface (CGI) offers a standard protocol for web servers to execute programs that execute like console applications (also called command-line interface programs) running on a server that generates web pages dynamically&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The HTTP request that comes in breaks down into ENV variables which act as input and invokes a script which acts as a function and you get your output as an STDOUT… So if you just print hello world, it would be yout http response&lt;/p&gt;
+
+&lt;p&gt;As cool and simple as all this sounds, you can’t afford to run the script every time you get a request&lt;/p&gt;
+
+&lt;p&gt;So we need a seperate out the web server and the python application&lt;/p&gt;
+
+&lt;p&gt;Enter WSGI&lt;/p&gt;
+
+&lt;p&gt;Or as the cool people call it Web server gateway interface&lt;/p&gt;
+
+&lt;p&gt;WSGI can be implemented with a simple function and every time there is a request we just call the function instaead of running an entire script&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;It is a specification that describes how a web server communicates with web applications, and how web applications can be chained together to process one request&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;WSGI is not a server, a python module, a framework, an API or any kind of software. It is just an interface specification by which server and application communicate&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Well this means freedom cause we don’t really need to worry about web servers like nginx or apache given that they understood this common interface and we could easily switch anytime we wanted to&lt;/p&gt;
+
+&lt;p&gt;Also there is a really cool article comparing these two web servers &lt;a href=&quot;https://serverguy.com/comparison/apache-vs-nginx/&quot;&gt;https://serverguy.com/comparison/apache-vs-nginx/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And if you wanted to build your own framework then you don’t have to know a whole lot of HTTP and instead build something that implements this simple function (The one below is Gunicorn)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def app(environ, start_response):
+    data = b&quot;Hello, World!\n&quot;
+    start_response(&quot;200 OK&quot;, [
+        (&quot;Content-Type&quot;, &quot;text/plain&quot;),
+        (&quot;Content-Length&quot;, str(len(data)))
+    ])
+    return iter([data])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This function take two arguments&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;start_response: This is invoked with a status code, headers and an iterable data that you wanna send back (here it’s the generic hello world)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;environ: Well this is dictionary with some information like REQUEST_METHOD, PATH_INFO, SERVER_PROTOCOL etc&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;WSGI servers like Gunicorn are designed to handle many requests concurrently. Frameworks are not made to process thousands of requests and determine how to best route them from the server. They can also communicate with multiple web servers and keep multiple processes of the web application running. They can also async (Bjoern which is actually faster but not compatible with HTTP/1.1)&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Gunicorn describes itself as a Pre-fork web server which means that a master creates forks which handle each request. A fork is a completely separate process and the “pre” part actually means that worker processes are created in advance, so that time is not wasted forking only when a worker is needed&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A very commonly used combo includes Nginx + Gunicorn + Django where Gunicorn acts as a middleware between nginx and the Django&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://rukbottoland.com/media/images/arquitectura-django-gunicorn-nginx-supervisor.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;But now with Gunicorn why the hell do we need Nginx… seems unnecessary to me&lt;/p&gt;
+
+&lt;p&gt;Well with Gunicorn Ngnix acts as a reverse proxy server which can be used to provide load balancing, provide web acceleration through caching or compressing inbound and outbound data, and provide an extra layer of security by intercepting requests headed for back-end servers and also gunicorn is designed to be an application server that sits behind a reverse proxy server that handles load balancing, caching, and preventing direct access to internal resources.&lt;/p&gt;
+
+&lt;p&gt;Actually python comes with it’s own built-in web server that provides standard GET and HEAD request handlers. You can use this to turn any directory in your system into your web server directory. I have actually used this to share code and stuff with my peers and it’s pretty handy &amp;lt;3&lt;/p&gt;
+
+&lt;p&gt;Now to reaffirm the fact that i have learnt somethings let’s write sum fresh code with Sockets… ughh…Now I’m glad I don’t have to do this everytime I write a webapp&lt;/p&gt;
+
+&lt;p&gt;Now let’s run this code to start a simple web server on port 8000&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import socket
+HOST = '' ## Symbolic name meaning all available interfaces
+PORT = 8000 ## Port 8000
+
+'''
+AF_INET is an address family that is used to designate the 
+type of addresses that your socket can communicate with (in this case, Internet Protocol v4 addresses). 
+
+SOCK_STREAM is a constant indicating the type of socket (TCP),
+'''
+listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+'''
+Set the value of the given socket option
+When retrieving a socket option, or setting it, 
+you specify the option name as well as the level. When level = SOL_SOCKET, 
+the item will be searched for in the socket itself.
+
+For example, suppose we want to set the socket option 
+to reuse the address to 1 (on/true),
+we pass in the &quot;level&quot; SOL_SOCKET and the value we want it set to.
+
+This will set the SO_REUSEADDR in my socket to 1.
+'''
+
+listen_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+## Bind to the host and port
+listen_socket.bind((HOST, PORT))
+
+## Listen to the host/port
+listen_socket.listen(1)
+print(f'Serving your very own HTTP on port {PORT} ...')
+
+while True:
+    client_connection, client_address = listen_socket.accept()
+    &quot;&quot;&quot;
+    The recv() function receives data on a socket 
+    with descriptor socket and stores it in a buffer. 
+    &quot;&quot;&quot;
+    request_data = client_connection.recv(1024)
+    print(request_data.decode('utf-8')) ## Decode the data assuming UTF=8 Endoding
+
+    http_response = b&quot;&quot;&quot;\
+HTTP/1.1 200 OK
+
+Sample Response to be parsed!
+&quot;&quot;&quot;
+    ## Send a response and close the connection
+    client_connection.sendall(http_response)
+    client_connection.close()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Run the file.. I’ve saved it as webserver.py&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ python webserver.py                                                                                                                 
+Serving your very own HTTP on port 8888 ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now let’s &lt;code class=&quot;highlighter-rouge&quot;&gt;curl -v http://localhost:8000/&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+&amp;gt; GET / HTTP/1.1
+&amp;gt; Host: localhost:8000
+&amp;gt; User-Agent: curl/7.58.0
+&amp;gt; Accept: */*
+&amp;gt; 
+&amp;lt; HTTP/1.1 200 OK
+* no chunk, no close, no size. Assume close to signal end
+&amp;lt; 
+Sample Response to be parsed!
+* Closing connection 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Maybe also try &lt;code class=&quot;highlighter-rouge&quot;&gt;telnet localhost 8000&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+
+HTTP/1.1 200 OK
+
+Sample Response to be parsed!
+Connection closed by foreign host.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There you go a simple web server to send requests and get responses&lt;/p&gt;
+
+&lt;p&gt;Now you can write your own web framework to interact with this web server and you would have essentially written your own application from scratch&lt;/p&gt;
+
+&lt;p&gt;Essentially you get parsed responses for processing / storing or whatever it is you are into&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import requests
+r = requests.get('http://127.0.0.1:8000/') 
+print(r.content) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Different web frameworks communicate with web servers in different ways&lt;/p&gt;
+
+&lt;p&gt;In pyramid you have an application object that comes back from make&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from pyramid.config import Configurator
+from pyramid.response import Response
+
+
+def hello_world(request):
+    return Response(
+        'Hello world from Pyramid!\n',
+        content_type='text/plain',
+    )
+
+config = Configurator()
+config.add_route('hello', '/hello')
+config.add_view(hello_world, route_name='hello')
+app = config.make_wsgi_app()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Flask is actually build around Werkzeug which is a WSGI web application library and Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications. In flask we actually define this as the app that we use as a decorator for our views and it’s got routing and other functionalities built into it&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from flask import Flask
+from flask import Response
+flask_app = Flask('flaskapp')
+
+
+@flask_app.route('/hello')
+def hello_world():
+    return Response(
+        'Hello world from Flask!\n',
+        mimetype='text/plain'
+    )
+
+app = flask_app.wsgi_app
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;«««&amp;lt; HEAD&lt;/p&gt;
+
+&lt;p&gt;Contains stolen content from&lt;br /&gt;
+ &lt;a href=&quot;https://github.com/rspivak/lsbaws&quot;&gt;https://github.com/rspivak/lsbaws&lt;/a&gt;
+ &lt;a href=&quot;https://www.youtube.com/watch?v=WqrCnVAkLIo&quot;&gt;https://www.youtube.com/watch?v=WqrCnVAkLIo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;you-scrolled-to-the-end-&quot;&gt;You scrolled to the end :)&lt;/h1&gt;
+&lt;p&gt;More web server code &lt;a href=&quot;https://github.com/rspivak/lsbaws&quot;&gt;https://github.com/rspivak/lsbaws&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cool WSGI talk   &lt;a href=&quot;https://www.youtube.com/watch?v=WqrCnVAkLIo&quot;&gt;https://www.youtube.com/watch?v=WqrCnVAkLIo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Sayōnara&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;blockquote&gt;
+        &lt;blockquote&gt;
+          &lt;blockquote&gt;
+            &lt;blockquote&gt;
+              &lt;p&gt;07c4840d95626fb04b0c5669a30ad79961a2c76c&lt;/p&gt;
+            &lt;/blockquote&gt;
+          &lt;/blockquote&gt;
+        &lt;/blockquote&gt;
+      &lt;/blockquote&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Sat, 09 Nov 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/behind-your-webapp/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/behind-your-webapp/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Writing Async with Python</title>
+        <description>&lt;p&gt;&amp;lt; Writing In Progress &amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Bit late to this topic so I’m glad there are tons of resources around :)&lt;/p&gt;
+
+&lt;p&gt;There are always ways to speed up your code, you can scale horizontally or vertically but maybe you can be effective without scaling. Maybe you run multiple operations in parallel or concurrent or maybe you write your code to run asynchronously. But what do all these smancy words actually mean&lt;/p&gt;
+
+&lt;p&gt;Parallel vs Concurrent vs Async FIGHT !!!!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Parallel : Watch TV while eating Popcorn (You can do both of em at the simultaneously)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Concurrency: Watch Tv while texting on the phone (You can deal with them simultaneously but not do em at the same time.. stop kidding yourself )&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Async: Look at your phone when you get a notification cause your meme is poppin and then quickly back to the TV cause it’s game weekkk !!!! (It is more a style of writing code)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cN_DpYBzKso&quot;&gt;Amazing explanation by Rob Pike&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-async--and-asyncio-&quot;&gt;What is Async ? and Asyncio ?&lt;/h3&gt;
+
+&lt;p&gt;Asynchronous Programming is a style of concurrent programming where you do multiple things at once&lt;/p&gt;
+
+&lt;p&gt;There are several ways to achieve this… Asyncio is one of those ways and is quite popular&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-i-do-multiple-things-at-once-&quot;&gt;How can I do multiple things at once ?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use multiple processes. Let OS handle sharing of CPU resources&lt;/li&gt;
+  &lt;li&gt;Use multiple threads. Threads share access to common resources as you can have multiple threads in the context of one process and they need to share a common resource but in Cpython the GIL (Global interpreter lock) prevents multi core concurrency :(&lt;/li&gt;
+  &lt;li&gt;or run multiple processes on the same thread asynchronously&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When depending on the OS one needs to take care of race-conditions, dead-locks, live-locks, and resource-starvation since we have to take care of several spawned threads trying to do stuff and that is in itself is a whole other topic of discussion. AsyncIO avoids some of the potential speedbumps that you might otherwise encounter with a threaded design.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-async-doing--the-chess-analogy&quot;&gt;What is Async doing ? (The chess analogy)&lt;/h3&gt;
+
+&lt;p&gt;Async just optimizes the way things are done… it does not speed anything up.&lt;/p&gt;
+
+&lt;p&gt;Suppose a chess grandmaster has to play with 10 opponents, he can play the game two ways&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complete the game with one and move to the next one (Sync)&lt;/li&gt;
+  &lt;li&gt;Complete a move with one and move on the next player allowing the former player to think about what to do next thus saving the time you waste on waiting for the player to make a move (Async)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Async tasks that are running release the CPU during waiting times so that other tasks can use it.. Simple&lt;/p&gt;
+
+&lt;h3 id=&quot;achieving-async-without-the-help-of-your-os&quot;&gt;Achieving Async without the help of your OS&lt;/h3&gt;
+
+&lt;p&gt;So to achieve async our tasks need to release the CPU and wait and then resume after sometime, We just need python functions that can be used to Suspend / Resume and also somewhere to keep track of all the tasks that are suspended so we can resume them later&lt;/p&gt;
+
+&lt;p&gt;A function enters waiting period when suspended and only resumes when the wait is over&lt;/p&gt;
+
+&lt;p&gt;Several ways to implement suspend/resume in python (some below)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Callback functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Callbacks are often used in situations where an action is asynchronous. If you need to call a function, and immediately continue working, cause you can’t sit there wait for it to run and return a value ,so you provide a callback. When the function is done with it’s asynchronous work, it will then invoke your callback with some predetermined arguments (usually some you supply, and some about the status and result of the asynchronous action you requested).&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;125&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Generator Functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly by calling yield&lt;/p&gt;
+
+&lt;p&gt;We should use yield when we want to iterate over a sequence but don’t want to store the entire sequence in memory.&lt;/p&gt;
+
+&lt;p&gt;The yield statement suspends the function’s execution and sends a value back to the caller, but retains enough state to enable the function to resume where it is left off. When resumed, the function continues the execution immediately after the last yield run. This allows its code to produce a series of values over time rather them computing them all at once and sending them back like a list&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;other thing&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__next__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__next__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;something&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thing&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;something&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thing&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hmmm, suspend execution ? sounds like something we have been looking for (async). So maybe with generators we can perform asynchronous iterations. Well yes !!!&lt;/p&gt;
+
+&lt;p&gt;PEP 525 introduced Asynchronous Generators &lt;a href=&quot;https://www.python.org/dev/peps/pep-0525/&quot;&gt;https://www.python.org/dev/peps/pep-0525/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Async generators require two special methods to be implemented:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An &lt;strong&gt;aiter&lt;/strong&gt; method returning an asynchronous iterator.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An &lt;strong&gt;anext&lt;/strong&gt; method returning an awaitable object, which uses StopIteration exception to “yield” values, and StopAsyncIteration exception to signal the end of the iteration.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Async/ Await&lt;/li&gt;
+  &lt;li&gt;Greenlets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How do we decide which function gets the CPU next ? We need some kind of scheduler that takes care of this. We call it an event loop. Loop keeps track of all running tasks&lt;/p&gt;
+
+&lt;p&gt;When a function is suspended it returns control to the loop which then finds another function to start or resume&lt;/p&gt;
+
+&lt;p&gt;This is cooperative multitasking&lt;/p&gt;
+
+&lt;p&gt;Asyncio implements asynchronous code with the help of&lt;/p&gt;
+
+&lt;p&gt;Couroutines: Basically these are functions whose executions can be paused, They are used for cooperative multitasking where a process voluntarily yields control and enables multiple processes to run. When we declare a function using the async keyword the function is not run, instead, a coroutine object is returned&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This returns a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;class 'coroutine'&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two ways to read the output of an async function from a coroutine.&lt;/p&gt;
+
+&lt;p&gt;The first way is to use the await keyword, this is possible only inside async functions and will wait for the coroutine to terminate and return the result&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;asyncio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;OUTPUT: 12&lt;/p&gt;
+
+&lt;p&gt;The second way is to add it to an event loop&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asyncio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_event_loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;coroutine&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create_task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coroutine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run_until_complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;OUTPUT = 12&lt;/p&gt;
+
+&lt;h3 id=&quot;when-not-use-async&quot;&gt;When not use Async&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Long CPU intensive task must call sleep so that other functions get a chance too.. Release CPU to avoid starvation
+This can be done by sleeping periodically, once per iteration (Just sleep(0) once per loop)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Blocking library functions are incompatible with async frameworks (socket select subprocess threading time.sleep) 
+async provides non blocking replacements for these&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Evenlet and gevent can monkeypatch standard libraries to make it async compatible&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Eveentlet, gevent try to hide async under the rug (abstracts it away) while asyncio wants you to think asycnhronously&lt;/p&gt;
+
+&lt;h3 id=&quot;totally-ripped-off-these&quot;&gt;Totally ripped off these&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=iG6fr81xHKA&quot;&gt;https://www.youtube.com/watch?v=iG6fr81xHKA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/&quot;&gt;https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl&quot;&gt;https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Nov 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/intro-async/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/intro-async/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Say hello to dadjokes-cli</title>
+        <description>&lt;p&gt;I got a Thinkpad at Grofers a while back and honestly it’s my first time using Linux. I’ve been using either windows or mac and they normally aren’t terminal dependent. Ubuntu is actually pretty cool and I am beginning to like it. I just discovered that my lockscreen has a css file and i can make it look anway I want. I guess we don’t have that kinda freedom to snoop around in other OS. But actually that kinda helps when you are a noob since during my first week with ubuntu I broke my system like twice doind stupid shit while i was root :(&lt;/p&gt;
+
+&lt;p&gt;But now I seem to have a slight hang of it and I definitely wanna become more comfortable with my terminal. So over the last weekend my coworker/cloutgod vinayak open sourced a bunch of cli tools and I just realised I’ve never really used CLI tools and am more inclined towards GUI. So I figured I could maybe write a small cli tool myself to get the hang of it. So I wrote dadjokes-cli&lt;/p&gt;
+
+&lt;p&gt;I just collated a bunch of Dad jokes from reddit and github to a make random dadjoke generating tool for your terminal. I also added cowsay so that you can cringe at an ASCII animal :P&lt;/p&gt;
+
+&lt;p&gt;It’s &lt;a href=&quot;https://github.com/Sangarshanan/dadjokes-cli&quot;&gt;https://github.com/Sangarshanan/dadjokes-cli&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install dadjokes-cli&lt;/code&gt; and let the cringe fest begin&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/oBONe8y.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now maybe I will use my terminal more often. Just to get my daily dose of cringe content&lt;/p&gt;
+
+&lt;p&gt;Ciao&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Nov 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/hello-dadjokes-cli/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/hello-dadjokes-cli/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Bruh moments so far</title>
+        <description>&lt;p&gt;I freaking love this year&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Loss memes finally died 👌&lt;/li&gt;
+  &lt;li&gt;I graduated … Great Success 🎓&lt;/li&gt;
+  &lt;li&gt;Belle Delphine was banned from instagram 💯&lt;/li&gt;
+  &lt;li&gt;I got my first job at Grofers and I work with really amazing people 💼&lt;/li&gt;
+  &lt;li&gt;Minecraft finally got the clout it deserved ⛏️&lt;/li&gt;
+  &lt;li&gt;I got to travel to the US and talk at a Pygotham, my first ever python conference and met some of the best people there 🙌 🙌&lt;/li&gt;
+  &lt;li&gt;Fortnite died momentarily … but came back :(&lt;/li&gt;
+  &lt;li&gt;I got my first Hacktoberfest T-shirt 👕&lt;/li&gt;
+  &lt;li&gt;Contibuted to PyPa Packaging 🎉&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Elon musk came out as the first weaboo with a billion dollars and I got to test out the Tesla Game&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/ZDPHWWZ4tsM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sun, 20 Oct 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/bruh-moments/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/bruh-moments/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Going to NYC for Pygotham 2019</title>
+        <description>&lt;p&gt;Yooooooo something super crazy happened this spooktober. I just gave my first ever conference talk at &lt;a href=&quot;https://2019.pygotham.org/&quot;&gt;Pygotham&lt;/a&gt; in New York City&lt;/p&gt;
+
+&lt;p&gt;My proposal : &lt;a href=&quot;https://2019.pygotham.org/talks/spatial-thinking-with-python/&quot;&gt;https://2019.pygotham.org/talks/spatial-thinking-with-python/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Video: &lt;a href=&quot;https://www.youtube.com/watch?v=7wCZH_zgyYc&quot;&gt;https://www.youtube.com/watch?v=7wCZH_zgyYc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Getting involved with the python community was something that I always wanted to do and I had just figured out that I could submit talk proposals to conferences and with the timing maybe I could travel to attend these conferences, meet a bunch of really cool people and just hang around and explore the city for a few days. Truth be told I never really expected anything to come out of the talk proposals I kept submitting to all the conferences that could be found online since I had just graduated, not given previous talks at conferences and was clearly not an expert in anything. As the lore goes my financial aid got accepted by pygotham, a NYC based python conference and I was one of their backup speakers but then I guess I just got really lucky as one of the speakers dropped out of a Pygotham and I was offered a spot on the schedule to talk and also I was getting financial aid… I had not applied for VISA and applied hastily but with some help from my dad’s acquaintance I ended up with a VISA just a few weeks before the conference. It still feels surreal how all this happened so fast. So yeah … that is how I travelled to NYC to speak at Pygotham my first ever conference talk and it ended up being one of the best experiences of my life.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-1-made-some-friends-and-raided-the-place-for-stickers&quot;&gt;Day 1 (Made some friends and raided the place for stickers)&lt;/h3&gt;
+
+&lt;p&gt;It was October 4th 7:45 AM I was in my room at Hotel Penn getting ready to head to Pygotham. I was so nervous and yet so freaking happy. A very weird feeling but I remember thinking how I could make a good first impression on everyone from the python community. I head to grab breakfast and find a corner to sit and wallow … It was really stupid of me cause I feel like I should have joined a table and introduced myself … but at the time I was really intimidated by everyone there.But now thinking back I feel so bad cause everyone in Pygotham were so awesome and I could have totally gone over to any table and introduced myself. But luckily as I was getting ready to eat breakfast alone ,&lt;a href=&quot;https://twitter.com/Crazcalm&quot;&gt;Marcus&lt;/a&gt; came over to my table and introduced himself … he is the first friend I made at Pygotham and seriously helped me out throughout the conference. Just after a few minutes &lt;a href=&quot;https://www.linkedin.com/in/adrian-soto&quot;&gt;Adrián&lt;/a&gt; and 2 other really cool people joined us and made the breakfast soo much fun (Python smalltalk !!). After breakfast I headed to the Keynote of the day by Kojo Idrissa where he talked about how the open source community needed more new contributors and how noobs should feel welcome…It hit me extra hard that day cause being a noob myself I felt really welcome&lt;/p&gt;
+
+&lt;p&gt;I also met some really cool people from shutterstock and dropbox after the keynote and then headed over to attend  the talks for the rest of day. I had actually learnt a lot of new things from the talks. I also got a bunch of ideas to improve my talk. Right before lunch I hung around the lobby waiting for the right moment to raid the whole place for stickers and goodies. Got tons of really cool stickers (RIP python2 sticker is &amp;lt;3)&lt;/p&gt;
+
+&lt;p&gt;During lunch I met &lt;a href=&quot;https://twitter.com/anujmenta&quot;&gt;Anuj&lt;/a&gt; he was pursuing cs with entrepreneurship in NYU and had previously given talks at pycon France and India, I had some really interesting conversations with him and actually decided to stick with him for the day. he gave me a lot of really useful advice cause my talk was scheduled tomorrow and I was pretty nervous&lt;/p&gt;
+
+&lt;p&gt;After the day’s talks were done we had a brief lightning talk session where Dustin Ingram gave a really funny and amazing talk on how he dockerized vintage python for us to play around with and also Anuj gave his lightning talk on his recent project that scraped content from videos based on keywords and grouped them together.&lt;/p&gt;
+
+&lt;p&gt;Then came the ministry of silly talks where I met the MC of Pygotham and the man with the funniest turtle jokes 
+&lt;a href=&quot;https://www.linkedin.com/in/paullogston&quot;&gt;Paul&lt;/a&gt;. He was the funniest and the most humble person ever and initially though I was one of his students. lol
+I was really fascinated by the way carried himself so easily on stage to which he replied that he was constantly swearing on the inside the entire time he was on stage. It made me feel a lot better … but seriously tho paul was one of the so awesome  and can make 9AM introduction sessions on a saturday interesting (btw he does comedy too !!)&lt;/p&gt;
+
+&lt;p&gt;After the first day of Pygotham I went to my room and immediately took out my laptop to make a few customary last minute changes to my presentation based on the talks i had seen in the morning.&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned=&quot;&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/B3fAHVQhNxh/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; data-instgrm-version=&quot;12&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:16px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/B3fAHVQhNxh/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;&quot; target=&quot;_blank&quot;&gt; &lt;div style=&quot; display: flex; flex-direction: row; align-items: center;&quot;&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: column; flex-grow: 1; justify-content: center;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 19% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display:block; height:50px; margin:0 auto 12px; width:50px;&quot;&gt;&lt;svg width=&quot;50px&quot; height=&quot;50px&quot; viewBox=&quot;0 0 60 60&quot; version=&quot;1.1&quot; xmlns=&quot;https://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;https://www.w3.org/1999/xlink&quot;&gt;&lt;g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;g transform=&quot;translate(-511.000000, -20.000000)&quot; fill=&quot;#000000&quot;&gt;&lt;g&gt;&lt;path d=&quot;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&quot;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div style=&quot;padding-top: 8px;&quot;&gt; &lt;div style=&quot; color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;&quot;&gt; View this post on Instagram&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;padding: 12.5% 0;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;&quot;&gt;&lt;div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot;background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: 8px;&quot;&gt; &lt;div style=&quot; background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;margin-left: auto;&quot;&gt; &lt;div style=&quot; width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);&quot;&gt;&lt;/div&gt; &lt;div style=&quot; width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/a&gt; &lt;p style=&quot; margin:8px 0 0 0; padding:0 4px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/B3fAHVQhNxh/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&quot; target=&quot;_blank&quot;&gt;I still can&amp;#39;t believe that my first trip to the US would be to speak at a conference as amazing as pygotham and that I would be sponsored for my trip....NYC was as amazing as they say it is and I had hella fun before during and after the conference...This is to all the people who made my trip unforgettable&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;A post shared by &lt;a href=&quot;https://www.instagram.com/sangarshanan__/?utm_source=ig_embed&amp;amp;utm_campaign=loading&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;&quot; target=&quot;_blank&quot;&gt; Sangarshanan&lt;/a&gt; (@sangarshanan__) on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2019-10-11T16:20:23+00:00&quot;&gt;Oct 11, 2019 at 9:20am PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;day-2-imagining-10000-scenarios-of-how-my-first-talk-would-turn-out-to-be-a-disaster&quot;&gt;Day 2 (Imagining 10000 scenarios of how my first talk would turn out to be a disaster)&lt;/h3&gt;
+
+&lt;p&gt;It is 6AM in the morning October 5th 2019. The day everything was gonna unfold. Okay so I feel like I am unncessarily making a big deal out of this. I remember nervously walking upto to grab breakfast and then hastily opening my laptop to brush through my presentation one last time. After a few minutes I was joined by a bunch of engineers from bloomberg. I talk to them about Bloomberg’s project terminal and some other interesting stuff they were working on. I also got a bunch of touristy advice from a them cause most of em were from New York or Jersey.&lt;/p&gt;
+
+&lt;p&gt;After breakfast I left to attend the Keynote of the day by &lt;a href=&quot;https://twitter.com/pathunstrom&quot;&gt;Pyper Thunstrom&lt;/a&gt;. It was very moving and a story that everyone should hear. A lot such stories go untold cause of Social stigma but her keynote stressed on how the python community listens and even helps people who just need someone at the time. She got a well deserved standing ovation in the end and btw she writes video games. My first exprience with computers was playing video games and I always wanted to make one even though I played around with Unity and unreal I have never gotten around to actually making one&lt;/p&gt;
+
+&lt;p&gt;So my talk was at 11:15 after James Powell who talked about metaprogramming (Really cool) and William Woodruff who talked about Pypi and it’s 2FA (Very helpful cause it was new stuff for me)&lt;/p&gt;
+
+&lt;p&gt;After these talks it was me. I was nervous in the beginning but as I went on it got a whole lot easier. I started to notice a bunch of familiar faces in the crowd which made it a whole comfortable for me. I felt like the talk went pretty cool and I did not bomb. I had actually finished my slides ahead of time and in the end I was asked some questions on the presentation. After the talk I caught up with a bunch of really cool people who were also working on geospatial data and exchanged a bunch of ideas with them. I met this guy who was working with spatiotemporal drone data and two people from a startup working with cellular network and real estate data using tools like Kepler.gl. I also met a woman working as a part of NGO in developing countries and uses spatial data for really good causes.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-people-laughed-at-my-geometry-joke&quot;&gt;3 people laughed at my Geometry joke&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://photos.google.com/share/AF1QipNszj_v1pmhGO8nwUYpDKxEQnVVAzvItdCzBlHtJAU-ItvkJftBoNemGvUrm-y-Zw?key=dFVQZVlyZno3Y3FLUUh2UElEck9UX01DaXNHU3ZB&amp;amp;source=ctrlq.org&quot;&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/N9fKE6lZ8mb4hyIXzIJeV5JT5D0FZMF1fRQfPsjPdwjMWCDpCISB0_aZejxww06VFMTmme2U2bm_16BxZffKiy8Xwf4SL2DFIECGtJEchEkDgxoKm4w6ixYhjGYqNWfKptMYREM0_Q=w2400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I then went to this really amazing talk on Poetry Samuel Roeca. It was honestly one of the best talks of Pygotham and personally the best talk of pygotham. He explained how poetry handles dependency management and packaging in a way that kept us hooked from the first slide to the last.&lt;/p&gt;
+
+&lt;p&gt;In the end we had the closing Keynote from Meg ray who talked about educating children about Python.&lt;/p&gt;
+
+&lt;p&gt;After this I caught up with &lt;a href=&quot;https://www.linkedin.com/in/stanley-zheng&quot;&gt;Stanley Zheng&lt;/a&gt; and he actually offered to show me around town so after the conference , so we hung out and walked out to New york comicon, then visited the Vessel and the High line. We then went to Chelsea market, checked out the local tesla store and the samsung experience store. Stanley then told me that we could catch up for breakfast the next day&lt;/p&gt;
+
+&lt;p&gt;The next day I checked out of the hotel and went to meet stanley at a cafe in brooklyn. There I met a bunch of really interesting programmers from the Recurse center &lt;a href=&quot;https://www.recurse.com/&quot;&gt;RC&lt;/a&gt;. Maybe I’ll apply too :P&lt;/p&gt;
+
+&lt;p&gt;I then said my goodbyes to the recursers and left to my friends place in Bayridge Brooklyn. I stayed with him for 5 more days to explore the city.&lt;/p&gt;
+
+&lt;p&gt;I think I visited almost every famous place in NYC but I missed the oppurtunity to make the holy pilgrimage to the &lt;a href=&quot;https://edition.cnn.com/2019/10/19/us/joker-stairs-bronx-trnd/index.html&quot;&gt;joker stairs&lt;/a&gt; and I will regret it forever :(&lt;/p&gt;
+
+&lt;p&gt;END:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Special thanks to whoever pulled out their pygotham talk and the Pygotham organizing team for choosing me to fill the gap and give my first conference talk cause it was an experience of a lifetime :)&lt;/li&gt;
+  &lt;li&gt;Thank you Marcus for helping me out throughout the conference and for being super awesome and supportive&lt;/li&gt;
+  &lt;li&gt;To all the amazing conversations we had and all the advice before my talk, thanks for being a big brother throughout the journey Anuj menta :)&lt;/li&gt;
+  &lt;li&gt;A big thank you and a virtual hug to Stanley Zheng for showing me around the city, introducing me to the Recurse group and for being an amazing human being.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;NYC Highlights :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.instagram.com/stories/highlights/17850841963631984/&quot;&gt;https://www.instagram.com/stories/highlights/17850841963631984/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.instagram.com/stories/highlights/18072917389181305/&quot;&gt;https://www.instagram.com/stories/highlights/18072917389181305/&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Oct 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/going-to-nyc/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/going-to-nyc/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>So I am going to write</title>
+        <description>&lt;p&gt;When staring into the void in my towel after a long bath, I recall really important life events and wonder what it felt like at that moment. That time I almost farted during an interview, That time I was on TV game show, that time I travelled alone to china, that time I got my first job offer. Some of these moments are really shaped me into the mess/non-mess that I am now.&lt;/p&gt;
+
+&lt;p&gt;So I though I would write stuff down and maybe look back at them in the future. I am hoping this would prove helpful if my consciousness is cryogenically frozen and I need a refresher&lt;/p&gt;
+
+&lt;p&gt;I can sometimes Geek out, Rank relentlessly, Try to be funny, Szzsnswwk, Make no sense&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Oct 2019 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2019/so-i-am-going-to-write/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/so-i-am-going-to-write/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

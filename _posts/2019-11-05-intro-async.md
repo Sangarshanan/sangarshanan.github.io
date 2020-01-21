@@ -58,7 +58,7 @@ Several ways to implement suspend/resume in python (some below)
 
 - Callback functions
 
-Callbacks are often used in situations where an action is asynchronous. If you need to call a function, and immediately continue working, you can't sit there wait for its return value to let you know what happened, so you provide a callback. When the function is done completely its asynchronous work it will then invoke your callback with some predetermined arguments (usually some you supply, and some about the status and result of the asynchronous action you requested).
+Callbacks are often used in situations where an action is asynchronous. If you need to call a function, and immediately continue working, cause you can't sit there wait for it to run and return a value ,so you provide a callback. When the function is done with it's asynchronous work, it will then invoke your callback with some predetermined arguments (usually some you supply, and some about the status and result of the asynchronous action you requested).
 
 ```python
 def arithmetic(num, callback):
@@ -75,14 +75,48 @@ def cube(num):
 
 print(arithmetic([2,3,5], square))
 print(arithmetic([2,3,5], cube))
+
+[OUTPUT]
+[4, 9, 25]
+[8, 27, 125]
 ```
 - Generator Functions
 
-Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly:
+Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly by calling yield
+
+We should use yield when we want to iterate over a sequence but don’t want to store the entire sequence in memory.
+
+The yield statement suspends the function’s execution and sends a value back to the caller, but retains enough state to enable the function to resume where it is left off. When resumed, the function continues the execution immediately after the last yield run. This allows its code to produce a series of values over time rather them computing them all at once and sending them back like a list
 
 ```python
+def generator_function():
+    yield "something"
+    yield "other thing"
+
+for val in generator_function():
+    print(val)
+
+x = generator_function()
+print(x.__next__())
+print(x.__next__())
+
+[OUTPUT]
+something
+other thing
+something
+other thing
 
 ```
+
+Hmmm, suspend execution ? sounds like something we have been looking for (async). So maybe with generators we can perform asynchronous iterations. Well yes !!!
+
+PEP 525 introduced Asynchronous Generators <https://www.python.org/dev/peps/pep-0525/>
+
+Async generators require two special methods to be implemented:
+
+- An __aiter__ method returning an asynchronous iterator.
+- An __anext__ method returning an awaitable object, which uses StopIteration exception to "yield" values, and StopAsyncIteration exception to signal the end of the iteration.
+
 
 - Async/ Await 
 - Greenlets 

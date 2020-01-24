@@ -1,0 +1,35 @@
+---
+layout: post
+title: "The Three Memeketeers"
+comments: false
+description: Meme Making 
+keywords: "meme"
+---
+
+1) Dad jokes
+
+These jokes are a result of carefully crafted observational skills of boomers and are considered cringe by zoomers unless they are ironic in which case you would enter the comedy hall of fame 
+
+Dad jokes are mostly ripped off and unoriginal but some of em are genuinely good and enjoyable. 
+
+The images used in dad jokes sometimes makes it cringe. minions, epic guy face, troll face and all memes from the ancient times are revived to deliver the dadjoke
+
+Find them on <https://www.reddit.com/r/memes/>
+
+How many apples grow on a tree? All of them!
+
+2) Dank memes 
+
+There comes a point in life where you feel like you've seen all the dad memes in the world. It just doesn't do it for you anymore. so you take a dad joke and make it dark, sarcastic or even borderline creepy. This is when you reach the dank zone. The moment you reach the dank zone everyone in the dadjoke zone are suddently beneath you even though you literally laughed at one an hour ago. You start to call everything cringe and pretend to hate mainstream things. You begin to think you have reached peak comedy and transform into an edgelord 
+
+Find them on <https://www.reddit.com/r/dankmemes/>
+
+Yoda has admitted to insurance fraud because of his crippling methamphatamine addiction
+
+3) Semes 
+
+Living in the dank zone for too long makes to numb to shame and ridicule. You lose touch with the outside world and forget what comedy joke. Normal jokes don't make you laugh, you have seen memes so offensive you think noone else other than you can handle it. That's when you start semes, these are memes that do not make any sense. A normal human tries to understand a seme and all his attempts are futile. When you reach seme there is no going back. You have the come to terms with the fact that you have crosses the boundaries of comedy fathomable by feeble human brains. You are god and noone undestands you or the stuff that makes you laugh
+
+Find them on <https://www.reddit.com/r/okbuddyretard/>
+
+I hope this was a colossal waste of everyones time... That was the goal

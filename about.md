@@ -12,4 +12,4 @@ I like staring into the void, making stuff happen with my computer, talking abou
 
 I studied computer science and graduated from VIT vellore in 2019. I currently work at grofers.  
 
-Thanks for taking an interest in my online junk :P
+That's it... off you go now 

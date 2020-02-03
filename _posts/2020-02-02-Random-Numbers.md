@@ -7,7 +7,7 @@ keywords: "Learn"
 ---
 
 
-So recently I came across this video <https://www.facebook.com/watch/?v=1016305638735073> so if you are too lazy to open the link it basically is a video from the old timey times about a machine called ERNIE or Electronic Random Number Indicator Equipment which is basically a computer that can generate random numbers. But why ? the usecase for ERNIE was to generate lottery ticket numbers but it was marketed as an investment premium bond. The principle behind Premium Bonds is that rather than the stake being gambled, as in a usual lottery, it is the interest on the bonds that is distributed by a lottery. The bonds are entered in a monthly prize draw and the government promises to buy them back, on request, for their original price. 
+So recently I came across this video <https://www.facebook.com/watch/?v=1016305638735073> so if you are too lazy to open the link it basically is a video from the old timey times about a machine called ERNIE or Electronic Random Number Indicator Equipment which is basically a computer that can generate random numbers. But why ? the usecase for ERNIE was to generate lottery ticket numbers but it was marketed as an investment premium bond. The principle behind Premium Bonds is that rather than the stake being gambled, as in a usual lottery, it is the interest on the bonds that is distributed by a lottery. The bonds are entered in a monthly prize draw and the government promises to buy them back on request for their original price. 
 
 The government pays interest into the bond fund from which a monthly lottery distributes tax-free prizes to bondholders whose ERNIE generated unique numbers are selected randomly
 

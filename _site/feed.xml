@@ -5,21 +5,319 @@
     <description>Yeet</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Jan 2020 02:21:15 +0530</pubDate>
-    <lastBuildDate>Wed, 22 Jan 2020 02:21:15 +0530</lastBuildDate>
+    <pubDate>Tue, 11 Feb 2020 01:13:13 +0530</pubDate>
+    <lastBuildDate>Tue, 11 Feb 2020 01:13:13 +0530</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
-        <title>Pretending to be my best version</title>
-        <description>&lt;p&gt;Read this when your imposter syndrome/ Anxiety is getting too real&lt;/p&gt;
+        <title>Machine Generated Random Numbers</title>
+        <description>&lt;p&gt;So recently I came across this video &lt;a href=&quot;https://www.facebook.com/watch/?v=1016305638735073&quot;&gt;https://www.facebook.com/watch/?v=1016305638735073&lt;/a&gt; so if you are too lazy to open the link it basically is a video from the old timey times about a machine called ERNIE or Electronic Random Number Indicator Equipment which is basically a computer that can generate random numbers. But why ? the usecase for ERNIE was to generate lottery ticket numbers but it was marketed as an investment premium bond.&lt;/p&gt;
 
-&lt;p&gt;Try to have fun, do your best and it’s absolutely fine if you get it wrong&lt;/p&gt;
+&lt;p&gt;The principle behind Premium Bonds is that rather than the stake being gambled, as in a usual lottery, it is the interest on the bonds that is distributed by a lottery. The bonds are entered in a monthly prize draw and the government promises to buy them back, on request, for their original price.&lt;/p&gt;
 
-&lt;p&gt;lol.. maybe come up with something better&lt;/p&gt;
+&lt;p&gt;The government pays interest into the bond fund from which a monthly lottery distributes tax-free prizes to bondholders whose ERNIE generated unique numbers are selected randomly&lt;/p&gt;
+
+&lt;p&gt;Generating random results from a machine sounda really cool to me cause generally we despise it, we mostly know exactly what we want from a machine. Noone goes to a ticket dispenser and say OOh boy I wonder what I’m gonna get today. But when your usecase is for your machine to be random then you need to introduce randomness&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ernie introduces randomness into the machine using Neon tubes with High Potential difference on either sides which caused the current to flow, So now these electrons passing through the tube collided with neon atoms and the path was very chaotic, so now that the current is random it wad amplified and converted into pulses and then they calculated the number of pulses per second, maybe around x but this x revolved around a mean so it introduces more randomness they introduced ring counters (A cascaded connection of flip flops, in which the output of last flip flop is connected to input of first flip flop) that counted mod 6, mod 10 or mod 24.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the final design nine neon tubes were used to drive nine counters - the ninth counter was arranged to display a value from 0 to 22 to generate a letter (I, O and U were not used)  as part of the overall 8 digit one letter serial numbers. To make sure that a fault in a tube couldn’t cause non-random digits to creep in the tubes were doubled up and added together. The outputs were used to drive a teleprinter and the machine produces something like one random number every two or three seconds.&lt;/p&gt;
+
+&lt;p&gt;ERNIE is said to have cost £25,000 and it was completed in 1957. It took typically 52 days to complete a draw and was tested by the UK Government Actuary’s Department each time to prove its randomness.&lt;/p&gt;
+
+&lt;p&gt;But over time it has evolved and become better, All previous Ernies have used thermal noise to produce random numbers – but Ernie 5 (2019) is powered by quantum technology, with the ability to produce random numbers through light.
+This new technology, developed by ID Quantique (IDQ), has allowed Ernie to produce enough random numbers for March’s prize draw in just 12 minutes – more than 40 times faster than the nine hours that Ernie 4 took towards the end of its random number generating career.&lt;/p&gt;
+
+&lt;p&gt;So ERNIE is pretty cool but we also have a random number generator in python, how does that work ?&lt;/p&gt;
+
+&lt;p&gt;Ok so I went to Python’s codebase and looked at random.py &lt;a href=&quot;https://github.com/python/cpython/blob/master/Lib/random.py&quot;&gt;https://github.com/python/cpython/blob/master/Lib/random.py&lt;/a&gt; it seems to be using something called the Mersenne Twister core generator, which sounds like a name for an amusement park ride, also I am not entirely able to understand the code, so I though of going through the history and see how random was written in the very beggining and maybe I might undertstand the code now better, So through github and it’s magic I time travelled to random.py written in 1994 &lt;a href=&quot;https://github.com/python/cpython/blob/ff03b1ae5bba4d6712563efb7c77ace57dbe6788/Lib/random.py&quot;&gt;https://github.com/python/cpython/blob/ff03b1ae5bba4d6712563efb7c77ace57dbe6788/Lib/random.py&lt;/a&gt; the good times, when I did not exist. Ooh and this code is really easy to understand.&lt;/p&gt;
+
+&lt;p&gt;So random.py imports whrandom so let’s look at &lt;a href=&quot;https://github.com/python/cpython/blob/ff03b1ae5b/Lib/whrandom.py&quot;&gt;https://github.com/python/cpython/blob/ff03b1ae5b/Lib/whrandom.py&lt;/a&gt;. Ok so this has a random class that implements something called the wichmann hill random number generator&lt;/p&gt;
+
+&lt;p&gt;A quick googling tells me that the wichmann hill random number generator consists of three linear congruential generators with different prime moduli, each of which is used to produce a uniformly distributed number between 0 and 1. These are summed, modulo 1, to produce the result. Ok I barely understand, maybe I should look at what the code is doing&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;lcg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;modulus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Linear congruential generator.&quot;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;modulus&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So we have three numbers a, c, seed and modulus using which we calculate and the replace seed in the next iteration of the function thus giving us an iterable &lt;em&gt;generator&lt;/em&gt; of random integers&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_number&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lcg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;49&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;first random number : (20 * 49 + 35) % 41 = 31&lt;/p&gt;
+
+&lt;p&gt;second random number: (20 * 31 + 35) % 41 = 40&lt;/p&gt;
+
+&lt;p&gt;and so on till you run out of electricity&lt;/p&gt;
+
+&lt;p&gt;By adding a simple &lt;strong&gt;yield seed / modulus&lt;/strong&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;lcg&lt;/code&gt; we can generate decimals (In the above case it would be 31/41 &amp;amp; 40/41)&lt;/p&gt;
+
+&lt;p&gt;Well if you have used python’s random then you know that seed is actually used to initialize the random number generator and can be used to customize the start number&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.i-programmer.info/history/machines/6317-ernie-a-random-number-generator.html&quot;&gt;https://www.i-programmer.info/history/machines/6317-ernie-a-random-number-generator.html&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 12 Jan 2020 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2020/pretending-to-be-your-best-version/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/pretending-to-be-your-best-version/</guid>
+        <pubDate>Sun, 02 Feb 2020 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2020/Random-Numbers/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/Random-Numbers/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Writing Async with Python</title>
+        <description>&lt;p&gt;&amp;lt; Writing In Progress &amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Bit late to this topic so I’m glad there are tons of resources around :)&lt;/p&gt;
+
+&lt;p&gt;There are always ways to speed up your code, you can scale horizontally or vertically but maybe you can be effective without scaling. Maybe you run multiple operations in parallel or concurrent or maybe you write your code to run asynchronously. But what do all these smancy words actually mean&lt;/p&gt;
+
+&lt;p&gt;Parallel vs Concurrent vs Async FIGHT !!!!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Parallel : Watch TV while eating Popcorn (You can do both of em at the simultaneously)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Concurrency: Watch Tv while texting on the phone (You can deal with them simultaneously but not do em at the same time.. stop kidding yourself )&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Async: Look at your phone when you get a notification cause your meme is poppin and then quickly back to the TV cause it’s game weekkk !!!! (It is more a style of writing code)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cN_DpYBzKso&quot;&gt;Amazing explanation by Rob Pike&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-async--and-asyncio-&quot;&gt;What is Async ? and Asyncio ?&lt;/h3&gt;
+
+&lt;p&gt;Asynchronous Programming is a style of concurrent programming where you do multiple things at once&lt;/p&gt;
+
+&lt;p&gt;There are several ways to achieve this… Asyncio is one of those ways and is quite popular&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-i-do-multiple-things-at-once-&quot;&gt;How can I do multiple things at once ?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use multiple processes. Let OS handle sharing of CPU resources&lt;/li&gt;
+  &lt;li&gt;Use multiple threads. Threads share access to common resources as you can have multiple threads in the context of one process and they need to share a common resource but in Cpython the GIL (Global interpreter lock) prevents multi core concurrency :(&lt;/li&gt;
+  &lt;li&gt;or run multiple processes on the same thread asynchronously&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When depending on the OS one needs to take care of race-conditions, dead-locks, live-locks, and resource-starvation since we have to take care of several spawned threads trying to do stuff and that is in itself is a whole other topic of discussion. AsyncIO avoids some of the potential speedbumps that you might otherwise encounter with a threaded design.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-async-doing--the-chess-analogy&quot;&gt;What is Async doing ? (The chess analogy)&lt;/h3&gt;
+
+&lt;p&gt;Async just optimizes the way things are done… it does not speed anything up.&lt;/p&gt;
+
+&lt;p&gt;Suppose a chess grandmaster has to play with 10 opponents, he can play the game two ways&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Complete the game with one and move to the next one (Sync)&lt;/li&gt;
+  &lt;li&gt;Complete a move with one and move on the next player allowing the former player to think about what to do next thus saving the time you waste on waiting for the player to make a move (Async)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Async tasks that are running release the CPU during waiting times so that other tasks can use it.. Simple&lt;/p&gt;
+
+&lt;h3 id=&quot;achieving-async-without-the-help-of-your-os&quot;&gt;Achieving Async without the help of your OS&lt;/h3&gt;
+
+&lt;p&gt;So to achieve async our tasks need to release the CPU and wait and then resume after sometime, We just need python functions that can be used to Suspend / Resume and also somewhere to keep track of all the tasks that are suspended so we can resume them later&lt;/p&gt;
+
+&lt;p&gt;A function enters waiting period when suspended and only resumes when the wait is over&lt;/p&gt;
+
+&lt;p&gt;Several ways to implement suspend/resume in python (some below)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Callback functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Callbacks are often used in situations where an action is asynchronous. If you need to call a function, and immediately continue working, cause you can’t sit there wait for it to run and return a value ,so you provide a callback. When the function is done with it’s asynchronous work, it will then invoke your callback with some predetermined arguments (usually some you supply, and some about the status and result of the asynchronous action you requested).&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;125&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Generator Functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly by calling yield&lt;/p&gt;
+
+&lt;p&gt;We should use yield when we want to iterate over a sequence but don’t want to store the entire sequence in memory.&lt;/p&gt;
+
+&lt;p&gt;The yield statement suspends the function’s execution and sends a value back to the caller, but retains enough state to enable the function to resume where it is left off. When resumed, the function continues the execution immediately after the last yield run. This allows its code to produce a series of values over time rather them computing them all at once and sending them back like a list&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;other thing&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__next__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__next__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;something&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thing&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;something&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thing&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Hmmm, suspend execution ? sounds like something we have been looking for (async). So maybe with generators we can perform asynchronous iterations. Well yes !!!&lt;/p&gt;
+
+&lt;p&gt;PEP 525 introduced Asynchronous Generators &lt;a href=&quot;https://www.python.org/dev/peps/pep-0525/&quot;&gt;https://www.python.org/dev/peps/pep-0525/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Async generators require two special methods to be implemented:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An &lt;strong&gt;aiter&lt;/strong&gt; method returning an asynchronous iterator.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An &lt;strong&gt;anext&lt;/strong&gt; method returning an awaitable object, which uses StopIteration exception to “yield” values, and StopAsyncIteration exception to signal the end of the iteration.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Async/ Await&lt;/li&gt;
+  &lt;li&gt;Greenlets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How do we decide which function gets the CPU next ? We need some kind of scheduler that takes care of this. We call it an event loop. Loop keeps track of all running tasks&lt;/p&gt;
+
+&lt;p&gt;When a function is suspended it returns control to the loop which then finds another function to start or resume&lt;/p&gt;
+
+&lt;p&gt;This is cooperative multitasking&lt;/p&gt;
+
+&lt;p&gt;Asyncio implements asynchronous code with the help of&lt;/p&gt;
+
+&lt;p&gt;Couroutines: Basically these are functions whose executions can be paused, They are used for cooperative multitasking where a process voluntarily yields control and enables multiple processes to run. When we declare a function using the async keyword the function is not run, instead, a coroutine object is returned&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This returns a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;class 'coroutine'&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two ways to read the output of an async function from a coroutine.&lt;/p&gt;
+
+&lt;p&gt;The first way is to use the await keyword, this is possible only inside async functions and will wait for the coroutine to terminate and return the result&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;asyncio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;OUTPUT: 12&lt;/p&gt;
+
+&lt;p&gt;The second way is to add it to an event loop&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asyncio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_event_loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;coroutine&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create_task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coroutine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run_until_complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;OUTPUT = 12&lt;/p&gt;
+
+&lt;h3 id=&quot;when-not-use-async&quot;&gt;When not use Async&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Long CPU intensive task must call sleep so that other functions get a chance too.. Release CPU to avoid starvation
+This can be done by sleeping periodically, once per iteration (Just sleep(0) once per loop)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Blocking library functions are incompatible with async frameworks (socket select subprocess threading time.sleep) 
+async provides non blocking replacements for these&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Evenlet and gevent can monkeypatch standard libraries to make it async compatible&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Eveentlet, gevent try to hide async under the rug (abstracts it away) while asyncio wants you to think asycnhronously&lt;/p&gt;
+
+&lt;h3 id=&quot;totally-ripped-off-these&quot;&gt;Totally ripped off these&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=iG6fr81xHKA&quot;&gt;https://www.youtube.com/watch?v=iG6fr81xHKA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/&quot;&gt;https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl&quot;&gt;https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jan 2020 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2020/intro-async/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/intro-async/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Three Memeketeers</title>
+        <description>&lt;p&gt;1) Dad jokes&lt;/p&gt;
+
+&lt;p&gt;These jokes are a result of carefully crafted observational skills of boomers and are considered cringe by zoomers unless they are ironic in which case you would enter the comedy hall of fame&lt;/p&gt;
+
+&lt;p&gt;Dad jokes are mostly ripped off and unoriginal but some of em are genuinely good and enjoyable.&lt;/p&gt;
+
+&lt;p&gt;The images used in dad jokes sometimes makes it cringe. minions, epic guy face, troll face and all memes from the ancient times are revived to deliver the dadjoke&lt;/p&gt;
+
+&lt;p&gt;Find them on &lt;a href=&quot;https://www.reddit.com/r/memes/&quot;&gt;https://www.reddit.com/r/memes/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;How many apples grow on a tree? All of them!&lt;/p&gt;
+
+&lt;p&gt;2) Dank memes&lt;/p&gt;
+
+&lt;p&gt;There comes a point in life where you feel like you’ve seen all the dad memes in the world. It just doesn’t do it for you anymore. so you take a dad joke and make it dark, sarcastic or even borderline creepy. This is when you reach the dank zone. The moment you reach the dank zone everyone in the dadjoke zone are suddently beneath you even though you literally laughed at one an hour ago. You start to call everything cringe and pretend to hate mainstream things. You begin to think you have reached peak comedy and transform into an edgelord&lt;/p&gt;
+
+&lt;p&gt;Find them on &lt;a href=&quot;https://www.reddit.com/r/dankmemes/&quot;&gt;https://www.reddit.com/r/dankmemes/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Yoda has admitted to insurance fraud because of his crippling methamphatamine addiction&lt;/p&gt;
+
+&lt;p&gt;3) Semes&lt;/p&gt;
+
+&lt;p&gt;Living in the dank zone for too long makes to numb to shame and ridicule. You lose touch with the outside world and forget what comedy joke. Normal jokes don’t make you laugh, you have seen memes so offensive you think noone else other than you can handle it. That’s when you start semes, these are memes that do not make any sense. A normal human tries to understand a seme and all his attempts are futile. When you reach seme there is no going back. You have the come to terms with the fact that you have crosses the boundaries of comedy fathomable by feeble human brains. You are god and noone undestands you or the stuff that makes you laugh&lt;/p&gt;
+
+&lt;p&gt;Find them on &lt;a href=&quot;https://www.reddit.com/r/okbuddyretard/&quot;&gt;https://www.reddit.com/r/okbuddyretard/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope this was a colossal waste of everyones time… That was the goal&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Jan 2020 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2020/meme-making/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/meme-making/</guid>
         
         
       </item>
@@ -371,217 +669,6 @@ app = flask_app.wsgi_app
         <pubDate>Sat, 09 Nov 2019 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2019/behind-your-webapp/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/behind-your-webapp/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Writing Async with Python</title>
-        <description>&lt;p&gt;&amp;lt; Writing In Progress &amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Bit late to this topic so I’m glad there are tons of resources around :)&lt;/p&gt;
-
-&lt;p&gt;There are always ways to speed up your code, you can scale horizontally or vertically but maybe you can be effective without scaling. Maybe you run multiple operations in parallel or concurrent or maybe you write your code to run asynchronously. But what do all these smancy words actually mean&lt;/p&gt;
-
-&lt;p&gt;Parallel vs Concurrent vs Async FIGHT !!!!&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Parallel : Watch TV while eating Popcorn (You can do both of em at the simultaneously)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Concurrency: Watch Tv while texting on the phone (You can deal with them simultaneously but not do em at the same time.. stop kidding yourself )&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Async: Look at your phone when you get a notification cause your meme is poppin and then quickly back to the TV cause it’s game weekkk !!!! (It is more a style of writing code)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cN_DpYBzKso&quot;&gt;Amazing explanation by Rob Pike&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-async--and-asyncio-&quot;&gt;What is Async ? and Asyncio ?&lt;/h3&gt;
-
-&lt;p&gt;Asynchronous Programming is a style of concurrent programming where you do multiple things at once&lt;/p&gt;
-
-&lt;p&gt;There are several ways to achieve this… Asyncio is one of those ways and is quite popular&lt;/p&gt;
-
-&lt;h3 id=&quot;how-can-i-do-multiple-things-at-once-&quot;&gt;How can I do multiple things at once ?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use multiple processes. Let OS handle sharing of CPU resources&lt;/li&gt;
-  &lt;li&gt;Use multiple threads. Threads share access to common resources as you can have multiple threads in the context of one process and they need to share a common resource but in Cpython the GIL (Global interpreter lock) prevents multi core concurrency :(&lt;/li&gt;
-  &lt;li&gt;or run multiple processes on the same thread asynchronously&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When depending on the OS one needs to take care of race-conditions, dead-locks, live-locks, and resource-starvation since we have to take care of several spawned threads trying to do stuff and that is in itself is a whole other topic of discussion. AsyncIO avoids some of the potential speedbumps that you might otherwise encounter with a threaded design.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-async-doing--the-chess-analogy&quot;&gt;What is Async doing ? (The chess analogy)&lt;/h3&gt;
-
-&lt;p&gt;Async just optimizes the way things are done… it does not speed anything up.&lt;/p&gt;
-
-&lt;p&gt;Suppose a chess grandmaster has to play with 10 opponents, he can play the game two ways&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Complete the game with one and move to the next one (Sync)&lt;/li&gt;
-  &lt;li&gt;Complete a move with one and move on the next player allowing the former player to think about what to do next thus saving the time you waste on waiting for the player to make a move (Async)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Async tasks that are running release the CPU during waiting times so that other tasks can use it.. Simple&lt;/p&gt;
-
-&lt;h3 id=&quot;achieving-async-without-the-help-of-your-os&quot;&gt;Achieving Async without the help of your OS&lt;/h3&gt;
-
-&lt;p&gt;So to achieve async our tasks need to release the CPU and wait and then resume after sometime, We just need python functions that can be used to Suspend / Resume and also somewhere to keep track of all the tasks that are suspended so we can resume them later&lt;/p&gt;
-
-&lt;p&gt;A function enters waiting period when suspended and only resumes when the wait is over&lt;/p&gt;
-
-&lt;p&gt;Several ways to implement suspend/resume in python (some below)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Callback functions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Callbacks are often used in situations where an action is asynchronous. If you need to call a function, and immediately continue working, cause you can’t sit there wait for it to run and return a value ,so you provide a callback. When the function is done with it’s asynchronous work, it will then invoke your callback with some predetermined arguments (usually some you supply, and some about the status and result of the asynchronous action you requested).&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arithmetic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;125&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;Generator Functions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Generators are iterators, a kind of iterable you can only iterate over once. Generators do not store all the values in memory, they generate the values on the fly by calling yield&lt;/p&gt;
-
-&lt;p&gt;We should use yield when we want to iterate over a sequence but don’t want to store the entire sequence in memory.&lt;/p&gt;
-
-&lt;p&gt;The yield statement suspends the function’s execution and sends a value back to the caller, but retains enough state to enable the function to resume where it is left off. When resumed, the function continues the execution immediately after the last yield run. This allows its code to produce a series of values over time rather them computing them all at once and sending them back like a list&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;other thing&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__next__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__next__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUTPUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;something&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thing&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;something&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thing&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Hmmm, suspend execution ? sounds like something we have been looking for (async). So maybe with generators we can perform asynchronous iterations. Well yes !!!&lt;/p&gt;
-
-&lt;p&gt;PEP 525 introduced Asynchronous Generators &lt;a href=&quot;https://www.python.org/dev/peps/pep-0525/&quot;&gt;https://www.python.org/dev/peps/pep-0525/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Async generators require two special methods to be implemented:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;An &lt;strong&gt;aiter&lt;/strong&gt; method returning an asynchronous iterator.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;An &lt;strong&gt;anext&lt;/strong&gt; method returning an awaitable object, which uses StopIteration exception to “yield” values, and StopAsyncIteration exception to signal the end of the iteration.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Async/ Await&lt;/li&gt;
-  &lt;li&gt;Greenlets&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;How do we decide which function gets the CPU next ? We need some kind of scheduler that takes care of this. We call it an event loop. Loop keeps track of all running tasks&lt;/p&gt;
-
-&lt;p&gt;When a function is suspended it returns control to the loop which then finds another function to start or resume&lt;/p&gt;
-
-&lt;p&gt;This is cooperative multitasking&lt;/p&gt;
-
-&lt;p&gt;Asyncio implements asynchronous code with the help of&lt;/p&gt;
-
-&lt;p&gt;Couroutines: Basically these are functions whose executions can be paused, They are used for cooperative multitasking where a process voluntarily yields control and enables multiple processes to run. When we declare a function using the async keyword the function is not run, instead, a coroutine object is returned&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This returns a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;class 'coroutine'&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;There are two ways to read the output of an async function from a coroutine.&lt;/p&gt;
-
-&lt;p&gt;The first way is to use the await keyword, this is possible only inside async functions and will wait for the coroutine to terminate and return the result&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;asyncio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;OUTPUT: 12&lt;/p&gt;
-
-&lt;p&gt;The second way is to add it to an event loop&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;asyncio&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_event_loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;coroutine&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add_numbers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create_task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coroutine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run_until_complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;OUTPUT = 12&lt;/p&gt;
-
-&lt;h3 id=&quot;when-not-use-async&quot;&gt;When not use Async&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Long CPU intensive task must call sleep so that other functions get a chance too.. Release CPU to avoid starvation
-This can be done by sleeping periodically, once per iteration (Just sleep(0) once per loop)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Blocking library functions are incompatible with async frameworks (socket select subprocess threading time.sleep) 
-async provides non blocking replacements for these&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Evenlet and gevent can monkeypatch standard libraries to make it async compatible&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Eveentlet, gevent try to hide async under the rug (abstracts it away) while asyncio wants you to think asycnhronously&lt;/p&gt;
-
-&lt;h3 id=&quot;totally-ripped-off-these&quot;&gt;Totally ripped off these&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=iG6fr81xHKA&quot;&gt;https://www.youtube.com/watch?v=iG6fr81xHKA&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/&quot;&gt;https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl&quot;&gt;https://dev.to/welldone2094/async-programming-in-python-with-asyncio-12dl&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 05 Nov 2019 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2019/intro-async/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/intro-async/</guid>
         
         
       </item>

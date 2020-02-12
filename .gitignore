@@ -1,9 +1,10 @@
 ### Jekyll ###
-_site
+_site/
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
-
+vendor
+.bundle/
 
 ### Gulp ###
 package.json

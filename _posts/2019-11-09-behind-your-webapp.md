@@ -290,4 +290,3 @@ More web server code <https://github.com/rspivak/lsbaws>
 Cool WSGI talk   <https://www.youtube.com/watch?v=WqrCnVAkLIo>
 
 Sayōnara
->>>>>>> 07c4840d95626fb04b0c5669a30ad79961a2c76c

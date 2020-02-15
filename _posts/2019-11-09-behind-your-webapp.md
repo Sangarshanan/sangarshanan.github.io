@@ -276,8 +276,6 @@ def hello_world():
 
 app = flask_app.wsgi_app
 ```
-
-<<<<<<< HEAD
  
 Contains stolen content from  
  <https://github.com/rspivak/lsbaws>

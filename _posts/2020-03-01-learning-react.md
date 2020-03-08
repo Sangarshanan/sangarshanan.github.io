@@ -22,7 +22,7 @@ So I created by first react app with `npx create-react-app my-app` There was a p
 
 index.js 
 
-```javascript
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -33,7 +33,7 @@ To render a React element into a root DOM node, we can use ReactDOM.render():
 
 index.html
 
-```java
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,7 +57,7 @@ Moving onto **JSX**
 
 JSX is a syntax extension to JavaScript, it enables you to create variables like this 
 
-```
+```jsx
 const object = "World"
 const element = <h1>Hello, {object}</h1>;
 ReactDOM.render(
@@ -68,7 +68,7 @@ ReactDOM.render(
 
 You can also write custom functions
 
-```
+```jsx
 function getSquare(num) {
         return num**2
 }
@@ -91,7 +91,7 @@ We can update the UI by creating a new element and passing it to ReactDOM.render
 
 More on <https://reactjs.org/docs/rendering-elements.html> ✔️
 
-```
+```jsx
 function tick() {
   const element = (
     <div>
@@ -112,11 +112,52 @@ React DOM compares the element and its children to the previous one, and only ap
 
 ---
 
-**Components** 
+**Components and Props** 
 
 Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. They accept arbitrary inputs (called “props” or properties) and return React elements describing what should appear on the screen
 
 Seems like I can use define a simple function or an ES6 class to define a component
+
+Props can be passed to components like function arguments. They stands for properties and is being used for passing data from one component to another. props data is read-only, which means that data coming from the parent should not be changed by child components and also data can flow only from parent to child
+
+```jsx
+extends React.Component {
+  render() {
+    return <h2>Hi, I use {this.props.language} for development!</h2>
+  }
+}
+const mylanguage = <Language language="Rust" />;
+ReactDOM.render(mylanguage, document.getElementById('root'));
+```
+
+Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.
+
+For example, we can create an App component that renders language:
+
+
+```jsx
+function Language(props) {
+  return <h1>Hello, {props.language}</h1>;
+}
+function App() {
+  return(
+  <div>
+    <Language language="Python" />
+    <Language language="Rust" />
+    <Language language="Haskell" />
+  </div>
+  );
+}
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+#### Whether you declare a component as a function or a class, it must never modify its own props.
+
+#### All React components must act like pure functions with respect to their props.
+
+But application UIs are dynamic and change over time. That is where states come in. State allows React components to change their output over time in response to user actions, network responses, and anything else, without violating this rule.
+
+**State is similar to props, but it is private and fully controlled by the component**
 
 
 More on <https://reactjs.org/docs/react-component.html>

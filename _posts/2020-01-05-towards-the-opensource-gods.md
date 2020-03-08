@@ -40,7 +40,15 @@ Issue <https://github.com/geopandas/geopandas/issues/595#issuecomment-569616474>
 
 Also to_postgis has potential too, things that couldn't be done in pandas <https://github.com/geopandas/geopandas/issues/1174>
 
+Added Changelog to docs
+
+<https://github.com/geopandas/geopandas/pull/1306>
+
 ### Pandas 
 
 Moved to fstrings, This was a pretty low hanging fruit
 <https://github.com/pandas-dev/pandas/pull/30700>
+
+### Broadcaster
+
+Not really gonna count this but documenting it anyway, fixed a broken link <https://github.com/encode/broadcaster/pull/12>

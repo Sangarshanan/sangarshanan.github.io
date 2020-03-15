@@ -1,12 +1,17 @@
 ---
 layout: post
-title: "Writing Async with Python"
+title: "Learning Async programming using Python"
 comments: false
 description: Async 
 keywords: "Learn"
+tags:
+    - learning
 ---
 
-< Writing In Progress > 
+---
+** **Learning in progress**
+
+---
 
 Bit late to this topic so I'm glad there are tons of resources around :)
 

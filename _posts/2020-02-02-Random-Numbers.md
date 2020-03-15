@@ -4,6 +4,9 @@ title: "Machine Generated Random Numbers"
 comments: false
 description: random 
 keywords: "Learn"
+tags:
+    - cool stuff
+    - nerd
 ---
 
 So recently I came across this video <https://www.facebook.com/watch/?v=1016305638735073> so if you are too lazy to open the link it basically is a video from the old timey times about a machine called ERNIE or Electronic Random Number Indicator Equipment which is basically a computer that can generate random numbers. But why ? the usecase for ERNIE was to generate lottery ticket numbers but it was marketed as an investment premium bond. 

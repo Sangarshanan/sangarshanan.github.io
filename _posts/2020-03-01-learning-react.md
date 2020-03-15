@@ -4,10 +4,12 @@ title: "Memoir on React.js"
 comments: false
 description: Learning react
 keywords: "notes"
+tags:
+    - learning
 ---
 
 ---
-** **Not yet complete**
+** **Learning in progress**
 
 ---
 

@@ -3,7 +3,8 @@ layout: post
 title: "So I am going to write"
 comments: false
 description: Yay My very own online diary
-keywords: "meh"
+tags:
+    - life
 ---
 
 When staring into the void in my towel after a long bath, I recall really important life events and wonder what it felt like at that moment. That time I almost farted during an interview, That time I was on TV game show, that time I travelled alone to china, that time I got my first job offer. Some of these moments are really shaped me into the mess/non-mess that I am now. 

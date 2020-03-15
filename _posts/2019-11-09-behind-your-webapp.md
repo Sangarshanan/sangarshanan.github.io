@@ -4,6 +4,9 @@ title: "Behind your Web Application (WSGI + Web server)"
 comments: false
 description: Async 
 keywords: "Learn"
+tags:
+    - nerd
+    - cool stuff
 ---
 
 
@@ -92,7 +95,7 @@ Also there is a really cool article comparing these two web servers <https://ser
 
 And if you wanted to build your own framework then you don't have to know a whole lot of HTTP and instead build something that implements this simple function (The one below is Gunicorn)
 
-```
+```python
 def app(environ, start_response):
     data = b"Hello, World!\n"
     start_response("200 OK", [
@@ -130,14 +133,15 @@ Now to reaffirm the fact that i have learnt somethings let's write sum fresh cod
 
 Now let's run this code to start a simple web server on port 8000
 
-```
+```python
 import socket
 HOST = '' ## Symbolic name meaning all available interfaces
 PORT = 8000 ## Port 8000
 
 '''
 AF_INET is an address family that is used to designate the 
-type of addresses that your socket can communicate with (in this case, Internet Protocol v4 addresses). 
+type of addresses that your socket can communicate with 
+(in this case, Internet Protocol v4 addresses). 
 
 SOCK_STREAM is a constant indicating the type of socket (TCP),
 '''
@@ -146,12 +150,14 @@ listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 '''
 Set the value of the given socket option
 When retrieving a socket option, or setting it, 
-you specify the option name as well as the level. When level = SOL_SOCKET, 
+you specify the option name as well as the level. 
+When level = SOL_SOCKET, 
 the item will be searched for in the socket itself.
 
 For example, suppose we want to set the socket option 
 to reuse the address to 1 (on/true),
-we pass in the "level" SOL_SOCKET and the value we want it set to.
+we pass in the "level" SOL_SOCKET and
+the value we want it set to.
 
 This will set the SO_REUSEADDR in my socket to 1.
 '''
@@ -172,13 +178,14 @@ while True:
     with descriptor socket and stores it in a buffer. 
     """
     request_data = client_connection.recv(1024)
-    print(request_data.decode('utf-8')) ## Decode the data assuming UTF=8 Endoding
+     ## Decode the data assuming UTF=8 Endoding
+    print(request_data.decode('utf-8'))
 
     http_response = b"""\
-HTTP/1.1 200 OK
+                    HTTP/1.1 200 OK
 
-Sample Response to be parsed!
-"""
+                    Sample Response to be parsed!
+                    """
     ## Send a response and close the connection
     client_connection.sendall(http_response)
     client_connection.close()
@@ -187,14 +194,14 @@ Sample Response to be parsed!
 
 Run the file.. I've saved it as webserver.py 
 
-```
-$ python webserver.py                                                                                                                 
+```bash
+$ python webserver.py        
 Serving your very own HTTP on port 8888 ...
 ```
 
 Now let's ```curl -v http://localhost:8000/```
 
-```
+```bash
 
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
@@ -213,7 +220,7 @@ Sample Response to be parsed!
 
 Maybe also try ```telnet localhost 8000```
 
-```
+```bash
 Trying 127.0.0.1...
 Connected to localhost.
 Escape character is '^]'.
@@ -231,7 +238,7 @@ Now you can write your own web framework to interact with this web server and yo
 
 Essentially you get parsed responses for processing / storing or whatever it is you are into  
 
-```
+```python
 import requests
 r = requests.get('http://127.0.0.1:8000/') 
 print(r.content) 
@@ -241,7 +248,7 @@ Different web frameworks communicate with web servers in different ways
 
 In pyramid you have an application object that comes back from make
 
-```
+```python
 from pyramid.config import Configurator
 from pyramid.response import Response
 
@@ -261,7 +268,7 @@ app = config.make_wsgi_app()
 
 Flask is actually build around Werkzeug which is a WSGI web application library and Flask wraps Werkzeug, using it to handle the details of WSGI while providing more structure and patterns for defining powerful applications. In flask we actually define this as the app that we use as a decorator for our views and it's got routing and other functionalities built into it 
 
-```
+```python
 from flask import Flask
 from flask import Response
 flask_app = Flask('flaskapp')
@@ -281,7 +288,7 @@ Contains stolen content from
  <https://github.com/rspivak/lsbaws>
  <https://www.youtube.com/watch?v=WqrCnVAkLIo>
 
-You scrolled to the end :)
+Woah...You scrolled to the end ;)
 =======
 More web server code <https://github.com/rspivak/lsbaws>
 

@@ -1,16 +1,18 @@
----
-layout: compress
-published: true
----
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    <main class="wrapper">
-      {% include header.html %}
-      {{ content }}
-      {% include footer.html %}
-    </main>
-    {% include foot.html %}
-  </body>
+<html lang="en">
+
+{% include head.html %}
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+
+</body>
+
 </html>

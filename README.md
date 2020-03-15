@@ -1,7 +1,10 @@
-# Stuffonmymind
+StuffonMymind
+========
 
-I have a mind and I sometimes do and think about stuff
+Welcome Earthlings
 
 
+License
+-------
 
-Uses Thinkspace Jekyll minimalistic theme 
+Hux Blog by Xuan Huang https://github.com/Huxpro/huxpro.github.io 

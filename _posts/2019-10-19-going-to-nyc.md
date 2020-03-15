@@ -4,6 +4,8 @@ title: "Going to NYC for Pygotham 2019"
 comments: false
 description: My very first trip to NYC to attend Pygotham
 keywords: "life"
+tags:
+    - life
 ---
 
 

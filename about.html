@@ -1,0 +1,10 @@
+---
+layout: page
+title: "about"
+header-img: "img/dwight.png"
+---
+
+<div class="en post-container">
+    {% capture about_en %}{% include about/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>

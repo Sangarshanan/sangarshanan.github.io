@@ -4,6 +4,8 @@ title: "Towards the Open Source gods"
 comments: false
 description: FOSS 
 keywords: "FOSS"
+tags:
+    - open source
 ---
 
 

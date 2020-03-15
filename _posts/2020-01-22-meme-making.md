@@ -4,6 +4,8 @@ title: "The Three Memeketeers"
 comments: false
 description: Meme Making 
 keywords: "meme"
+tags:
+    - memes
 ---
 
 1) Dad jokes

@@ -4,6 +4,9 @@ title: "Say hello to dadjokes-cli"
 comments: false
 description: My first pypi package 
 keywords: "Project"
+tags:
+    - open source
+
 ---
 
 I got a Thinkpad at Grofers a while back and honestly it's my first time using Linux. I've been using either windows or mac and they normally aren't terminal dependent. Ubuntu is actually pretty cool and I am beginning to like it. I just discovered that my lockscreen has a css file and i can make it look anway I want. I guess we don't have that kinda freedom to snoop around in other OS. But actually that kinda helps when you are a noob since during my first week with ubuntu I broke my system like twice doind stupid shit while i was root :(

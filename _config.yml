@@ -1,45 +1,62 @@
 # Site settings
-title_left    : "Stuffonmymind"
-# title_right   : "Mind" # default: ""
-description   : "Yeet"
-keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, stuffonmymind"
-url           : https://sangarshanan.github.io/ # site url
-baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+title: ＳｔｕｆｆｏｎｍｙＭｉｎｄ
+SEOTitle: 𝓼𝓪𝓷𝓰𝓪𝓻𝓼𝓱𝓪𝓷𝓪𝓷
+header-img: img/home-bg.jpg
+email: sangarshanan@gmail.com
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-google_analytics  : UA-XXXXX-XX
-twitter_username  : ""
-comments_enabled  : false # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : ""
-postshare_enabled : false
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+github_username:    sangarshanan
+twitter_username:   sangarshanan
+linkedin_username:  sangarshanan
+medium_username: '@sangarshananveera'
+
 
 # Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : rouge
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-source      : ./
-destination : ./_site
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
 
-# Sass configuration
-sass:
-  sass_dir  : assets/scss
-  style     : compressed # expanded
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-# Author settings
-author:
-  name     : "Sangarshanan"
 
-plugins:
-  - jekyll-sitemap
-  - bourbon
-  - jekyll-paginate
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Selective Musings with Occasional doses of Cringe"
+sidebar-avatar: /img/avatar.jpeg
 
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script", "vendor"]
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false

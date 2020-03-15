@@ -38,11 +38,15 @@ I am actually still looking to contribute more to geopandas cause it's an amazin
 Documentation <https://github.com/geopandas/geopandas/pull/1228>
 Issue <https://github.com/geopandas/geopandas/issues/595#issuecomment-569616474>
 
-Also to_postgis has potential too, things that couldn't be done in pandas <https://github.com/geopandas/geopandas/issues/1174>
+Also to_postgis has potential to postgres flavored, this couldn't be done in pandas <https://github.com/geopandas/geopandas/issues/1174>
 
 Added Changelog to docs
 
 <https://github.com/geopandas/geopandas/pull/1306>
+
+Creating a geodataframe out of a datframe modified the original dataframe, so I created a copy of the dataframe before it was modified, this is actually my first actual code contribution to geopandas:)
+
+<https://github.com/geopandas/geopandas/pull/1324>
 
 ### Pandas 
 

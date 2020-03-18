@@ -125,7 +125,7 @@ Props can be passed to components like function arguments. They stands for prope
 ```jsx
 extends React.Component {
   render() {
-    return <h2>Hi, I use {this.props.language} for development!</h2>
+    return <h2>I like {this.props.language} cause I heard someone talking about it on twitter!</h2>
   }
 }
 const mylanguage = <Language language="Rust" />;
@@ -139,14 +139,14 @@ For example, we can create an App component that renders language:
 
 ```jsx
 function Language(props) {
-  return <h1>Hello, {props.language}</h1>;
+  return <h1>Man ! {props.language} sucks</h1>;
 }
 function App() {
   return(
   <div>
-    <Language language="Python" />
-    <Language language="Rust" />
-    <Language language="Haskell" />
+    <Language language="Javascript" />
+    <Language language="Javascript" />
+    <Language language="Still Javascript" />
   </div>
   );
 }
@@ -161,5 +161,54 @@ But application UIs are dynamic and change over time. That is where states come 
 
 **State is similar to props, but it is private and fully controlled by the component**
 
+We need to convert a function into a class, let's do it for Language
+
+- We replace this.props.language to this.state.language
+- Add a class constructor that assigns the initial this state
+- Pass props to the base constructor
+
+
+```jsx
+class Language extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {"language": "javascript"};
+  }
+  render() {
+    return (
+      <div>
+        <h1>I hate {this.state.language} </h1>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Language />,
+  document.getElementById('root')
+);
+``` 
+You can change the state by using `setState`
+
+```jsx
+  switchSides = () => {
+    this.setState({language: "myself"});
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>I hate {this.state.language}</h1>
+        <button
+          type="button"
+          onClick={this.switchSides}
+        >Change color</button>
+      </div>
+    );
+  }
+}
+```
+
+When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value.
 
 More on <https://reactjs.org/docs/react-component.html>

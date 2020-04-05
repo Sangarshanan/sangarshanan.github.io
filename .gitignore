@@ -6,6 +6,7 @@ Gemfile.lock
 vendor
 .bundle/
 _site/
+.jekyll-cache/
 
 ### Gulp ###
 package.json

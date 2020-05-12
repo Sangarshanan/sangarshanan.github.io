@@ -8,10 +8,6 @@ tags:
     - learning
 ---
 
----
-** **Learning in progress**
-
----
 
 Whenever I wanted to write an application, the best I would do was write vanilla javascript and would try to make it minimal as possible, I would handle all my user interactions by googling for js snippets and carefully attaching them in `<script>` so that
 everything works but I have been trying to work with kepler.gl for sometime now and since it is written in react it was hard for me to understand a lot of it, also I hear whispers of react's awesomeness a lot on the internet.
@@ -212,3 +208,184 @@ You can change the state by using `setState`
 When a value in the state object changes, the component will re-render, meaning that the output will change according to the new value.
 
 More on <https://reactjs.org/docs/react-component.html>
+
+- States should only be updated using setState() and not like this.state.language (this will not rerender)
+- Updates to state can be async so updates to setState() can be batched so don't rely on this.state or this.props 
+
+so instead of accepting an object we accept a function, like
+
+```jsx
+this.setState(function(state, props) {
+  return {
+    counter: state.counter + props.increment
+  };
+});
+```
+
+Another cool thing about states is its “top-down” or “unidirectional” data flow. Any state is always owned by some specific component, and any data or UI derived from that state can only affect components “below” them in the tree.
+
+
+**Events** 
+
+react events are in camelCase and look something like this
+
+```jsx
+function ActionLink() {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log('The link was clicked.');
+  }
+
+  return (
+    <a href="#" onClick={handleClick}>
+      Click me
+    </a>
+  );
+}
+```
+
+Here, e is a synthetic event and also you generally don’t need to call addEventListener to add listeners to a DOM element after it is created. Instead, just provide a listener when the element is initially rendered.
+
+More on <https://reactjs.org/docs/handling-events.html>
+
+Another cool thing I found on the docs was Containment, this is in cases when components don’t know their children ahead of time and since react elements like <Contacts /> and <Chat /> are just objects, so you can pass them as props like any other data.
+
+```jsx
+function Contacts() {
+  return <div className="Contacts" />;
+}
+
+function Chat() {
+  return <div className="Chat" />;
+}
+
+function SplitPane(props) {
+  return (
+    <div className="SplitPane">
+      <div className="SplitPane-left">
+        {props.left}
+      </div>
+      <div className="SplitPane-right">
+        {props.right}
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <SplitPane
+      left={
+        <Contacts />
+      }
+      right={
+        <Chat />
+      } />
+  );
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+```
+
+In React, this is also achieved by composition, where a more “specific” component renders a more “generic” one and configures it with props:
+
+```jsx
+function Dialog(props) {
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">
+        {props.title}
+      </h1>
+      <p className="Dialog-message">
+        {props.message}
+      </p>
+    </FancyBorder>
+  );
+}
+
+function WelcomeDialog() {
+  return (
+    <Dialog
+      title="Welcome"
+      message="Thank you for visiting our spacecraft!" />
+  );
+}
+```
+
+All this can also be done for components defined as classes
+
+```jsx
+function Dialog(props) {
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">
+        {props.title}
+      </h1>
+      <p className="Dialog-message">
+        {props.message}
+      </p>
+      {props.children}
+    </FancyBorder>
+  );
+}
+
+class SignUpDialog extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSignUp = this.handleSignUp.bind(this);
+    this.state = {login: ''};
+  }
+
+  render() {
+    return (
+      <Dialog title="Mars Exploration Program"
+              message="How should we refer to you?">
+        <input value={this.state.login}
+               onChange={this.handleChange} />
+        <button onClick={this.handleSignUp}>
+          Sign Me Up!
+        </button>
+      </Dialog>
+    );
+  }
+
+  handleChange(e) {
+    this.setState({login: e.target.value});
+  }
+
+  handleSignUp() {
+    alert(`Welcome aboard, ${this.state.login}!`);
+  }
+}
+```
+
+React docs are pretty neat, but the best part was <https://reactjs.org/docs/thinking-in-react.html> where we go through the process of building stuff out
+
+Some notes from it 
+
+
+- When designing components remember that a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents
+
+- Drawing out component can be intuitive in figuring out what are the child and parent components
+
+- Build a static version (cause interactivity needs more thinking and less writing). Build components that reuse other components and pass data using props but no states cause its static
+
+State vs Props 
+
+props (short for “properties”) and state are both plain JavaScript objects. While both hold information that influences the output of render, they are different in one important way: props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).
+
+- React is all about one-way data flow down the component hierarchy. It is important to understand which component should own what state
+
+- Use the common parent component to hold states or create a component to hold states and add it somewhere in the hierarchy above the common owner component 
+
+- Inverse data flow where we pass altered state due to user input is through callbacks which calls setState()
+
+Done with the doc and onward we go 
+
+PS: I actually like the concepts of react and how it is built but it has all been every overwhelming, I actually found vue easier to get started with but react is something I have wanted to learn and as the saying goes "gotta keep at it" and even if it doesn't work out we always have our trusty bootstrap to steal frontend from
+
+:wq ciao

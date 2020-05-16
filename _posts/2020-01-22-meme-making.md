@@ -30,7 +30,7 @@ Yoda has admitted to insurance fraud because of his crippling methamphatamine ad
 
 3) Semes 
 
-Living in the dank zone for too long makes to numb to shame and ridicule. You lose touch with the outside world and forget what comedy means. Normal jokes don't make you laugh, you have seen memes so offensive you think noone else other than you can handle it. That's when you start semes, these are memes that do not make any sense. A normal human cannot comprehend seems.. its like abstract art for virgins. When you reach seme there is no going back. You have the come to terms with the fact that you have crossed the boundaries of comedy fathomable by feeble human brains. You are god and noone understands you or the stuff that makes you laugh.
+Living in the dank zone for too long makes you numb to shame and ridicule. You lose touch with the outside world and forget what comedy means. Normal jokes don't make you laugh, you have seen memes so offensive you think noone else other than you can handle it. That's when you start semes, these are memes that do not make any sense. A normal human cannot comprehend semes cause for them it seems weird (Puns be like). It's like abstract art. When you reach semes there is no going back. You have the come to terms with the fact that you have crossed the boundaries of comedy fathomable by feeble human brains. You are the god of humor now, newtonian physics doesn't affect you anymore for you have crossed over into the quantum realm. You live in your own universe, the one that is smaller than a Planck length. 
 
 Find them on <https://www.reddit.com/r/okbuddyretard/>
 

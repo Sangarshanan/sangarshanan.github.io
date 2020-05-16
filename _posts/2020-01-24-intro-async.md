@@ -8,10 +8,6 @@ tags:
     - learning
 ---
 
----
-** **Learning in progress**
-
----
 
 Bit late to this topic so I'm glad there are tons of resources around :)
 

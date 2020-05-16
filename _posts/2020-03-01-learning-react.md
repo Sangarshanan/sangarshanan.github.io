@@ -386,6 +386,4 @@ props (short for “properties”) and state are both plain JavaScript objects. 
 
 Done with the doc and onward we go 
 
-PS: I actually like the concepts of react and how it is built but it has all been every overwhelming, I actually found vue easier to get started with but react is something I have wanted to learn and as the saying goes "gotta keep at it" and even if it doesn't work out we always have our trusty bootstrap to steal frontend from
-
 :wq ciao

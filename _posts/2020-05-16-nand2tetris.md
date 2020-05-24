@@ -4,6 +4,7 @@ title: "Notes on nand2tetris"
 comments: false
 description: MOOC 
 keywords: "Learn"
+header-style: text
 tags:
     - learning
 ---

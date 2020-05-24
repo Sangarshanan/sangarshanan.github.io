@@ -4,6 +4,7 @@ title: "Memoir on React.js"
 comments: false
 description: Learning react
 keywords: "notes"
+header-style: text
 tags:
     - learning
 ---

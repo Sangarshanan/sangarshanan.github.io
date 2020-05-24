@@ -13,17 +13,17 @@ If you spend your days clacking on your keyboard and staring and at a screen the
 I am gonna be noting down some of the AHA ! moments I had while doing this course which is second favorite moment after bruh moment of course 
 
 
-### Week 1: 
+### Logic gates 1 (Combinatorial): 
 
-The first week introduces us to logic gates, I mean I had already leant about em in school and college but never has to care for them outside academics, so it was a fun little refresher 
+The first week introduces us to logic gates, I mean I had already learnt about em in school and college but never had to care for them outside academics, so it was a fun little refresher 
 
 Logic gates are of course how you can arrange two binary signals on/off high/low 0/1  to perform simple actions like AND (a&b), OR (a^b), NOT (a^) and how you use a combination of them to perform much complex tasks. (Like NAND = NOT- AND) output is opposite of AND
 
 Using these combinations of gates to do cool stuff is combinatorial logic which is the basis of the ALU we design in the course. The Arithmetic and logic unit is of course a core part of our CPU and is nothing but a bunch of combinatorial logic gates
 
-We build simple gates to add, subtraction and multiplication. In the course division is delegated to software but it is actually possible with combinatorial logic <https://electronics.stackexchange.com/questions/256665/how-to-build-a-division-logic-circuit>
+We build simple gates to perform addition, subtraction and multiplication. In the course division is delegated to software but it is actually possible with combinatorial logic <https://electronics.stackexchange.com/questions/256665/how-to-build-a-division-logic-circuit>
 
-It was also really cool to revisit how integer mathematical operations are done with binary values, I was reminded of the first time my teacher blew my mind by converting 3 and 4 to binary and how 11 (2+1) + 100 (4+0+0) in binary gave 111 which actually 7 (4+2+1). The fact that this would hold true for the huge numbers except for the fact that we would need much more bits to represent them.
+It was also really cool to revisit how integer mathematical operations are done with binary values, I was reminded of the first time my teacher blew my mind by converting 3 and 4 to binary and how 11 (2+1) + 100 (4+0+0) in binary gave 111 which actually 7 (4+2+1). It's amazing that this would hold true for even huge numbers except for the fact that we would need much more bits to represent them. So the more bits you can store with your hardware, the more complex things you can do, which is incidentally the exact argument I used to get my dad to burn his money for a gaming laptop
 
 We also refreshed on multiplexers that uses control line to choose an input out of several inputs, its a special kinda switch, also overflow is used to differ the sign of output to be postitive or negative.
 
@@ -32,7 +32,7 @@ We built a basic ALU takes two 32 bit inputs A & B and 2 control lines. Dependin
 ![img](http://www.csc.villanova.edu/~mdamian/Past/csc2400fa13/assign/Figs/aluiface.gif)
 
 
-### Week 2:
+### Logic gates 1 (Sequential):
 
 Now the circuits we have seen do these operations instantaneously. There is no concept of state or time. But often in the real world time plays an important factor so we come to Sequential logic. Sequential logic circuits have some form of inherent Memory built in amd also have something called clock. In computers we consider time to be discrete. We're going to have what's called a clock, which is some kind of of oscillator going up and down at a certain fixed rate. And, each cycle of the clock we're going to treat as one digital integer time unit. So, once we have this clock, it will basically break up our physical continuous time into a sequence.
 
@@ -56,4 +56,11 @@ Another memory unit is the counters, In computers it can be used to keep track o
 - Next  count ++
 - Goto  count = n
 
-Talking about memory we also have ROM which persists its contents after shutdown but is readonly, there is also flash memory that takes the good parts of ram and rom, it is a kind of floating-gate memory that allowed entire sections of memory to be erased quickly and easily in a flash by applying a voltage to a single wire connected to a group of cells. GET IT, FLASH ? 
+Talking about memory we also have ROM which persists its contents after shutdown but is readonly, there is also flash memory that takes the good parts of ram and rom, it is a kind of floating-gate memory that allowed entire sections of memory to be erased quickly and easily "in a flash" by applying a voltage to a single wire connected to a group of cells 
+
+
+### Machine Language:
+
+One amazing thing about computers is how it can do everything, Where most machines are given a single functionality computers can do many many things. This idea was first formulated by Alan Turing with his Universal Turing Machine and was brought to life by Von Neumann who build a general computing machine wherein the `same Hardware can run different Software programs` and based on the program your operations change and results are formulated. 
+
+Software programs are just a bunch of instructions encoded in binary which tells the hardware what to do, each of these instructions tells what needs to be executed by the hardware. Any fancy program we write in a high level lang gets converted to such instructions. The process of converting the fancy program to machine language is done by the compiler. There are also low level assembly languages which is a just a  human friendly representation of machine language instructions. eg: `01001 101 001 => Add R1 R2` (Add outputs of register1 & 2 )

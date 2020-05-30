@@ -58,3 +58,9 @@ Moved to fstrings, This was a pretty low hanging fruit
 ### Broadcaster
 
 Not really gonna count this but documenting it anyway, fixed a broken link <https://github.com/encode/broadcaster/pull/12>
+
+### Apache Airflow 
+
+This was exciting, airflow is a workflow orchestrator that I have been using at work for quite some time now  and it was exciting to contribute a feature, the PR will enable filtering of dags by clicking on the tags
+
+<https://github.com/apache/airflow/pull/8897>

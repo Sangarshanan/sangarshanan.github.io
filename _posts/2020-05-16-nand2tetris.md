@@ -65,3 +65,38 @@ Talking about memory we also have ROM which persists its contents after shutdown
 One amazing thing about computers is how it can do everything, Where most machines are given a single functionality computers can do many many things. This idea was first formulated by Alan Turing with his Universal Turing Machine and was brought to life by Von Neumann who build a general computing machine wherein the `same Hardware can run different Software programs` and based on the program your operations change and results are formulated. 
 
 Software programs are just a bunch of instructions encoded in binary which tells the hardware what to do, each of these instructions tells what needs to be executed by the hardware. Any fancy program we write in a high level lang gets converted to such instructions. The process of converting the fancy program to machine language is done by the compiler. There are also low level assembly languages which is a just a  human friendly representation of machine language instructions. eg: `01001 101 001 => Add R1 R2` (Add outputs of register1 & 2 )
+
+Registers are the fastest units of memory in our computers and it will be used by our language to store values and in some cases even reference to the address of the main memory where the value is located
+
+So we are gonna build a language is gonna be a low level symbolic language that will be translated to binary with an assembler which we will build later. Lets look at some semantics of our instructions 
+
+<u> A-intruction: Set register A to a value </u> 
+
+eg: `@21 `sets A register to 21 
+
+In binary this is represented as `0value` where 0 is the opcode i.e represents the operation (here it's A) and value is 21 in binary. so its `000000000010101`
+
+
+<u> C-intruction: Computation that we can store in a certain destination along with a jump directive </u>
+
+here both destination and jump are optional, some examples below 
+
+1) Set D register to -1	
+
+`D=-1`  
+
+2) Set RAM[300] to the value of D register minus 1
+
+`@300` // A=300, Choose RAM[300] (register) to operate on 
+
+`M=D-1` // RAM[300]=D-1
+
+3) If (D-1==0) jump to ROM[56]
+
+`@56` // select A=56
+
+`D-1,JEQ` // JEQ -> jump if equal, so if (D-1==0) goto 56
+
+`dest=comp;jump` is represented in binary as `[1]opcode [11] not used [a c1 c2] comp bits [d1 d2 d3] dest bits [j1 j2 j3] jump directives `  destination can be M, D, M&D registers, NULL etc and jump directives can be JEQ, JGT, JGE, JLT etc.
+
+A Hack program, the symbolic language we write will be a sequence of hack instructions as ones we have defined above which get translated to bytes using the ways we discussed above following which the binary code is run on the computer.  

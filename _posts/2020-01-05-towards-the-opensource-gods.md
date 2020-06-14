@@ -64,3 +64,6 @@ Not really gonna count this but documenting it anyway, fixed a broken link <http
 This was exciting, airflow is a workflow orchestrator that I have been using at work for quite some time now  and it was exciting to contribute a feature, the PR will enable filtering of dags by clicking on the tags
 
 <https://github.com/apache/airflow/pull/8897>
+
+
+I feel like I should stop doing this, Documenting this is getting tiresome and I am getting lazy when anyway it's all on github. Sorry future me :(

@@ -100,3 +100,8 @@ here both destination and jump are optional, some examples below
 `dest=comp;jump` is represented in binary as `[1]opcode [11] not used [a c1 c2] comp bits [d1 d2 d3] dest bits [j1 j2 j3] jump directives `  destination can be M, D, M&D registers, NULL etc and jump directives can be JEQ, JGT, JGE, JLT etc.
 
 A Hack program, the symbolic language we write will be a sequence of hack instructions as ones we have defined above which get translated to bytes using the ways we discussed above following which the binary code is run on the computer.  
+
+
+**IO with Hack Language**
+
+RAM has an area dedicated to display unit called the Screen Memory Map. The physical display is continuosly refreshed from memory map, many times per second. So write code that alters this memory map and you alter the screen which is just pixels that go on/off based on the memory map. For keyboard, we have a 16bit register that is used as a the keyboard memory map where every press of the key is translated to an agreed upon code and sent to the register. We can probe the register to see what key is currently being pressed, its 0 by default.  

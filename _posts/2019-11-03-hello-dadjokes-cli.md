@@ -19,7 +19,10 @@ It's <https://github.com/Sangarshanan/dadjokes-cli>
 
 Just ```pip install dadjokes-cli``` and let the cringe fest begin
 
-![img](https://i.imgur.com/oBONe8y.png)
+![img](https://camo.githubusercontent.com/9913183fc5a252f0eb42205787f4406f2ef73ec3/68747470733a2f2f692e696d6775722e636f6d2f66794e594149662e706e67)
+
+
+![img](https://camo.githubusercontent.com/666725b479fc3cf30d5350dc81770848d2193d2a/68747470733a2f2f692e696d6775722e636f6d2f556b30417a67462e706e67)
 
 
 Now maybe I will use my terminal more often. Just to get my daily dose of cringe content

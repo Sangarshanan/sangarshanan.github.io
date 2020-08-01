@@ -151,6 +151,6 @@ altinstall to keep the default `/usr/bin/python` safe
 ---
 **Note to self:**
 
-Use your brain before running something sudo and don't break your environment again you idiot
+Use your brain before running something on sudo and don't break your environment again you idiot
 
 ---

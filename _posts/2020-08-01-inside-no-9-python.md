@@ -2,11 +2,11 @@
 layout: post
 title: "Looking inside Python 3.9"
 comments: false
-description: Europython 2020 
-keywords: "Project"
+description: Inside Python3.9 
+keywords: "Python3.9"
 header-style: text
 tags:
-    - life
+    - nerd
 
 ---
 

@@ -11,3 +11,15 @@ Both my parents have a degree in computer science and maybe we are bound to the 
 I like to imagine myself living / working in different places around the world, making friends and talking with people from different backgrounds. I wanna keep learning, keep making memes, keep trying stuff that scares me and wanna have fun doing them.
 
 I currently work at Grofers on data problems, mainly with geospatial data !
+
+
+<h3>
+    <a href="#howtopronounce">How to pronounce my name ?</a>
+</h3>
+<p>
+    TL;DR You don't have to, I have always been ok with people using nicknames to save time, even my parents don't call me sangarshanan so its totally fine, but if you insist (Phonetically)
+</p>
+<h4> SUN - GHAR - SHUN - NUN </h4>
+
+I have not been given a second name, I use my dad's name (Veera) as my surname. There is a very interesting reason for this, if you are curious check out <https://medium.com/lessons-from-history/why-dont-tamil-people-have-last-names-e68327e9444c>
+

@@ -51,16 +51,15 @@ Lets define the steps before actually building it
 - For every human that request to use our service we first receive the request start to determine the server that needs to serve the request, we do some `magic()` to get the server that needs to serve the traffic (We discussed some of those magics in the introduction)
 - We then serve the traffic through that server, Hooman is happy now !!
 
-Lets actually name our loadbalancer, I hereby decalre thee `bulb` well its BULoadBalancer or bulb depending on whether you are fun at parties.
+Lets actually name our loadbalancer, I hereby declare thee `anubis`, cause the god nicely balances souls and their worth
 
-Now that the naming ceremony is over to be able to do this "magic" we discussed earlier we need metadata on all the servers that are actually serving requests like if its alive, the computing capacity, number of connections to the client and maybe even more.
+Now that the naming ceremony is over, To be able to do this "magic" we discussed earlier we need metadata on all the servers that are actually serving requests like if its alive, the computing capacity, number of connections to the client and maybe even more.
 
 ```python
 # Servers have the same computing capacity
 class Server:
     url: str # localhost:8080
-    alive: bool # Death
-    connections: int # A counter
+    alive: bool # Dead or Alive
 ```
 
 In the end we will have a list of servers that can serve the client.
@@ -81,34 +80,38 @@ So the last step is to route use the client to the server returned by the output
 
 <https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/>
 
-This is an reverse proxy using `twisted`
+We can write a simple reverse proxy with `requests`
 
 ```python
 """Reverse Proxy."""
-from twisted.internet import reactor
-from twisted.web import proxy, server
-
-def reverse_proxy(listen_port, proxy_domain, proxy_port, proxy_path=''):
-    proxy_path = str.encode(proxy_path)
-    site = server.Site(
-           proxy.ReverseProxyResource(
-               proxy_domain, 
-               proxy_port, 
-               proxy_path)
-            )
-    reactor.listenTCP(listen_port, site)
-    reactor.run()
-
-reverse_proxy(8080, 'www.google.com', 80)
+import http.server  
+import socketserver
+from requests import Session
+class Handler(http.server.BaseHTTPRequestHandler):
+  session = Session()
+  def do_GET(self):
+    resp = session.get("www.google.com", allow_redirects=True)
+    self.send_response(resp.status_code)
+    self.send_header('Content-Length', len(resp.content))
+    self.end_headers()
+    self.wfile.write(resp.content)
+# Fetches content from localhost:8000
+httpd = socketserver.TCPServer(('', 9000), Handler)
+httpd.serve_forever()
 ```
-Run this and when you goto localhost:8080 you get redirected to google, Finally !! google running on my localhost. Screw the Internet. 
+Run this and when you goto localhost:8080 you get redirected to google, Finally !! google running on my localhost. Screw the Internet. But this is a very stupid reverse proxy that only works on GET request and in pages with no dynamic elements
 
+But then I had a question, why don't we just do a redirect how is it different from a reverse proxy. I looked online and found an explanation on stackoverflow (obviously). So with a redirect the server tells the client to look elsewhere for the resource. The client will be aware of this new location. The new location must be reachable from the client. A reverse proxy instead forwards the request of the client to some other location itself and sends the response from this location back to the client. This means that the client is not aware of the new location and that the new location does not need to be directly reachable by the client
+
+Code is up on <https://github.com/Sangarshanan/anubis>
+
+What I noticed immediately was that Python's http.serve is hella slow and when I tried opening multiple tabs it straight up died on me, which is kinda bad this is when I found out about `ThreadedHTTPServer` and `ForkingMixIn`. So we can either spawn multiple threads or processes to handle requests <https://pymotw.com/2/BaseHTTPServer/index.html#module-BaseHTTPServer>
+
+Well its kinda better now but not awesome, we need something like <https://github.com/http-party/http-server> to take full advantage of asynchronous IO for concurrent handling of requests. We can only scale so much serialising requests and with python we will always be blocked by GIL so not the perfect candidate to do this but a fun exercise nonetheless. 
 
 ### Swiper
 
 - <https://www.nginx.com/resources/glossary/load-balancing/>
 
 - <https://kasvith.me/posts/lets-create-a-simple-lb-go/>
-
-
 

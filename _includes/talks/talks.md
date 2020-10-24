@@ -8,4 +8,7 @@ I have a mouth and sometimes words come out of it, I sometimes stammer when nerv
 
 ### Interactive Mapmaking with Python
 
-* Europython Online (July-2020)
+* Europython (July-2020) <a href="https://www.youtube.com/watch?v=cWVKGz4gvwE">Video</a> 
+* Pycon Australia (September-2020) <a href="https://www.youtube.com/watch?v=kmvLn4Iagwo">Video</a> 
+* Python ML and GeoPython (September-2020)
+* Pygotham (October-2020)

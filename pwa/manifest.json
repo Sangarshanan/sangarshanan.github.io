@@ -1,0 +1,10 @@
+{
+  "name": "Stuff on my Mind",
+  "short_name": "stuffonmymind",
+  "description": "Journeys of a Bubblewrap enthusiast and Cringe as a Service Provider",
+  "background_color": "#666699",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

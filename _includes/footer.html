@@ -7,14 +7,9 @@
                 {% include sns-links.html center=true %}
 
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
-                    </iframe>
+                    Powered by <a href="http://huangxuan.me">Hux Blog</a>
                 </p>
             </div>
         </div>
@@ -30,6 +25,9 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- script pointing to jekyll-search.js -->
+<script src="/js/simple-jekyll-search.min.js"></script>
 
 <!-- Service Worker -->
 {% if site.service-worker %}
@@ -69,6 +67,25 @@
 -->
 
 
+{% if page.plchart %}
+<!-- jquery.tagcloud.js -->
+<script>
+    // https://stackoverflow.com/questions/9975810/make-iframe-automatically-adjust-height-according-to-the-contents-without-using
+    function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+
+    $(document).ready(function () {
+        var $chart = document.querySelector("#chart");
+        $chart.onload = function () {
+            resizeIframe($chart)
+        }
+        window.addEventListener("resize", () => {
+            resizeIframe($chart)
+        });
+    })
+</script>
+{% endif %}
 
 {% if page.title == 'blog' %}
 <!-- jquery.tagcloud.js -->
@@ -246,3 +263,15 @@
     _render();
 </script>
 {% endif %}
+
+<!-- Search Settings -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: 'No results found',
+        fuzzy: true
+    });
+</script>

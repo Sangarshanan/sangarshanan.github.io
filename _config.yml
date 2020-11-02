@@ -45,7 +45,6 @@ kramdown:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Selective Musings with Occasional doses of Cringe"
-sidebar-avatar: /img/avatar.jpeg
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hamming codes are cool"
+title: "Wait ! so hamming codes are cool ?"
 description: "Elegant Algorithms"
 keywords: "algorithms"
 tags:

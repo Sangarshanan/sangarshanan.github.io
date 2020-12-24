@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Curb your data- Morse codes"
+title: "Curb your data #1 Morse codes"
 description: "A brief history of compression algorithms"
 keywords: "algorithms"
 tags:
@@ -16,9 +16,15 @@ Humans are also expansionists we like to explore into the unknown whether it is 
 
 We also started developing infrastructure of long term communication, animals like pigoens and even human messengers were trained to deliver messages across long distances. This was obviously was slow but kinda worked out for a while
 
+
+
 > **Enter Electricity**
 
-We are a curious bunch and once we discovered about free flowing of electrons across opposing charges and its resulting magnetic field there was no turning back. It was kinda like a checkpoint for humanity.
+Around 600 BC the Greek mathematician Thales of Miletus observed something interesting, certain stones like amber when rubbed against fur would showcase a strange force that could attract small fibers. Not only this it was also observed that when you try to touch this invisible force it would give you a shock and then immediately disappear. Also not every objects would allow the flow of this force, today we know these objects as conductors.
+
+In 1752 Benjamin Franklin would discover that the tiny shocks we get from force of friction between certain objects as discussed above was also the same force observed in lightnings as it gave him the same shock, Not only this he was also able to store this so called energy in a glass jar filled with water a protruding wire and discharge it all will by connecting wires or touching the jar. This was the very first Capacitor. 
+
+Once we discovered about free flowing of electrons across opposing charges, its resulting magnetic field and an effective way to store and transmit this electrical power over a conductor there was no turning back. Electricity kinda like fire was a quicksave in the species game.
 
 The Eletric Telegraph was a result of two developments in the field of electricity. First, in 1800, the Italian physicist Alessandro Volta invented the battery, which reliably stored electric current and allowed it to be used in a controlled environment. Second, in 1820, the Danish physicist Hans Christian Oersted demonstrated the connection between electricity and magnetism by deflecting a magnetic needle with an electric current.
 
@@ -104,3 +110,4 @@ More on this on the next part !!
 
 - <https://www.history.com/topics/inventions/telegraph>
 - <https://www.youtube.com/watch?v=HY_OIwideLg> of course it's a Vsauce video
+- <https://www.khanacademy.org/computing/computer-science/informationtheory/>

@@ -17,7 +17,7 @@ The government pays interest into the bond fund from which a monthly lottery dis
 
 _________
 
-Generating random results from a machine sounda really cool to me cause generally we despise it, we mostly know exactly what we want from a machine. Noone goes to a ticket dispenser and say OOh boy I wonder what I'm gonna get today. But when your usecase is for your machine to be random then you need to introduce randomness
+Generating random results from a deterministic machine sounds really cool to me cause generally we despise it, we mostly know exactly what we want from a machine. Noone goes to a ticket dispenser and say OOh boy I wonder what I'm gonna get today. But when your usecase is for your machine to be random then you need to introduce randomness
 
 > Ernie introduces randomness into the machine using Neon tubes with High Potential difference on either sides which caused the current to flow, So now these electrons passing through the tube collided with neon atoms and the path was very chaotic, so now that the current is random it wad amplified and converted into pulses and then they calculated the number of pulses per second, maybe around x but this x revolved around a mean so it introduces more randomness they introduced ring counters (A cascaded connection of flip flops, in which the output of last flip flop is connected to input of first flip flop) that counted mod 6, mod 10 or mod 24. 
 
@@ -32,7 +32,7 @@ _________
 
 So ERNIE is pretty cool but we also have a random number generator in python, how does that work ?
 
-Ok so I went to Python's codebase and looked at random.py <https://github.com/python/cpython/blob/master/Lib/random.py> it seems to be using something called the Mersenne Twister core generator, which sounds like a name for an amusement park ride, also I am not entirely able to understand the code, so I though of going through the history and see how random was written in the very beggining and maybe I might undertstand the code now better, So through github and it's magic I time travelled to random.py written in 1994 <https://github.com/python/cpython/blob/ff03b1ae5bba4d6712563efb7c77ace57dbe6788/Lib/random.py> the good times, when I did not exist. Ooh and this code is really easy to understand. 
+Ok so I went to Python's codebase and looked at random.py <https://github.com/python/cpython/blob/master/Lib/random.py> it seems to be using something called the Mersenne Twister core generator, which sounds like a name for an amusement park ride, also I am not entirely able to understand the code, so I though of going through the history and see how random was written in the very beginning and maybe I might understand the code now better, So through github and it's magic I time travelled to random.py written in 1994 <https://github.com/python/cpython/blob/ff03b1ae5bba4d6712563efb7c77ace57dbe6788/Lib/random.py> the good times, when I did not exist. Ooh and this code is really easy to understand. 
 
 So random.py imports whrandom so let's look at <https://github.com/python/cpython/blob/ff03b1ae5b/Lib/whrandom.py>. Ok so this has a random class that implements something called the wichmann hill random number generator
 

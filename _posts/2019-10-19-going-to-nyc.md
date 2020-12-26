@@ -39,19 +39,19 @@ After the first day of Pygotham I went to my room and immediately took out my la
 
 ### Day 2 (Imagining 10000 scenarios of how my first talk would turn out to be a disaster)
 
-It is 6AM in the morning October 5th 2019. The day everything was gonna unfold. Okay so I feel like I am unncessarily making a big deal out of this. I remember nervously walking upto to grab breakfast and then hastily opening my laptop to brush through my presentation one last time. After a few minutes I was joined by a bunch of engineers from bloomberg. I talk to them about Bloomberg's project terminal and some other interesting stuff they were working on. I also got a bunch of touristy advice from a them cause most of em were from New York or Jersey. 
+It is 6AM in the morning October 5th 2019. The day everything was gonna unfold. Okay so I feel like I am unncessarily making a big deal out of this. I remember nervously walking onto to grab breakfast and then hastily opening my laptop to brush through my presentation one last time. After a few minutes I was joined by a bunch of engineers from bloomberg. I talk to them about Bloomberg's project terminal and some other interesting stuff they were working on. I also got a bunch of touristy advice from a them cause most of em were from New York or Jersey. 
 
-After breakfast I left to attend the Keynote of the day by [Pyper Thunstrom](https://twitter.com/pathunstrom). It was very moving and a story that everyone should hear. A lot such stories go untold cause of Social stigma but her keynote stressed on how the python community listens and even helps people who just need someone at the time. She got a well deserved standing ovation in the end and btw she writes video games. My first exprience with computers was playing video games and I always wanted to make one even though I played around with Unity and unreal I have never gotten around to actually making one
+After breakfast I left to attend the Keynote of the day by [Pyper Thunstrom](https://twitter.com/pathunstrom). It was very moving and a story that everyone should hear. A lot such stories go untold cause of Social stigma but her keynote stressed on how the python community listens and even helps people who just need someone at the time. She got a well deserved standing ovation in the end and btw she writes video games. My first experience with computers was playing video games and I always wanted to make one even though I played around with Unity and unreal I have never gotten around to actually making one
 
-So my talk was at 11:15 after James Powell who talked about metaprogramming (Really cool) and William Woodruff who talked about Pypi and it's 2FA (Very helpful cause it was new stuff for me)
+So my talk was at 11:15 after James Powell who talked about Metaprogramming (Really cool) and William Woodruff who talked about Pypi and it's 2FA (Very helpful cause it was new stuff for me)
 
-After these talks it was me. I was nervous in the beginning but as I went on it got a whole lot easier. I started to notice a bunch of familiar faces in the crowd which made it a whole comfortable for me. I felt like the talk went pretty cool and I did not bomb. I had actually finished my slides ahead of time and in the end I was asked some questions on the presentation. After the talk I caught up with a bunch of really cool people who were also working on geospatial data and exchanged a bunch of ideas with them. I met this guy who was working with spatiotemporal drone data and two people from a startup working with cellular network and real estate data using tools like Kepler.gl. I also met a woman working as a part of NGO in developing countries and uses spatial data for really good causes. 
+After these talks it was me. I was nervous in the beginning but as I went on it got a whole lot easier. I started to notice a bunch of familiar faces in the crowd which made it a whole comfortable for me. I felt like the talk went pretty cool and I did not bomb. I had actually finished my slides ahead of time and in the end I was asked some questions on the presentation. After the talk I caught up with a bunch of really cool people who were also working on Geospatial data and exchanged a bunch of ideas with them. I met this guy who was working with spatiotemporal drone data and two people from a startup working with cellular network and real estate data using tools like Kepler.gl. I also met a woman working as a part of NGO in developing countries and uses spatial data for really good causes. 
 
 #### 3 people laughed at my Geometry joke 
 <a href='https://photos.google.com/share/AF1QipNszj_v1pmhGO8nwUYpDKxEQnVVAzvItdCzBlHtJAU-ItvkJftBoNemGvUrm-y-Zw?key=dFVQZVlyZno3Y3FLUUh2UElEck9UX01DaXNHU3ZB&source=ctrlq.org'><img src='https://lh3.googleusercontent.com/N9fKE6lZ8mb4hyIXzIJeV5JT5D0FZMF1fRQfPsjPdwjMWCDpCISB0_aZejxww06VFMTmme2U2bm_16BxZffKiy8Xwf4SL2DFIECGtJEchEkDgxoKm4w6ixYhjGYqNWfKptMYREM0_Q=w2400' /></a>
 
 
-I then went to this really amazing talk on Poetry Samuel Roeca. It was honestly one of the best talks of Pygotham and personally the best talk of pygotham. He explained how poetry handles dependency management and packaging in a way that kept us hooked from the first slide to the last. 
+I then went to this really amazing talk on Poetry Samuel Roeca. It was honestly one of the best talks of Pygotham and personally the best talk of Pygotham. He explained how poetry handles dependency management and packaging in a way that kept us hooked from the first slide to the last. 
 
 In the end we had the closing Keynote from Meg ray who talked about educating children about Python. 
 
@@ -59,16 +59,16 @@ After this I caught up with [Stanley Zheng](https://www.linkedin.com/in/stanley-
 
 The next day I checked out of the hotel and went to meet stanley at a cafe in brooklyn. There I met a bunch of really interesting programmers from the Recurse center [RC](https://www.recurse.com/). Maybe I'll apply too :P
 
-I then said my goodbyes to the recursers and left to my friends place in Bayridge Brooklyn. I stayed with him for 5 more days to explore the city. 
+I then said my goodbyes to the Recursers and left to my friends place in Bayridge Brooklyn. I stayed with him for 5 more days to explore the city. 
 
 I think I visited almost every famous place in NYC but I missed the oppurtunity to make the holy pilgrimage to the [joker stairs](https://edition.cnn.com/2019/10/19/us/joker-stairs-bronx-trnd/index.html) and I will regret it forever :(
 
 END: 
 
-- Special thanks to whoever pulled out their pygotham talk and the Pygotham organizing team for choosing me to fill the gap and give my first conference talk cause it was an experience of a lifetime :) 
+- Special thanks to whoever pulled out their Pygotham talk and the Pygotham organizing team for choosing me to fill the gap and give my first conference talk cause it was an experience of a lifetime :) 
 - Thank you Marcus for helping me out throughout the conference and for being super awesome and supportive 
 - To all the amazing conversations we had and all the advice before my talk, thanks for being a big brother throughout the journey Anuj menta :) 
-- A big thank you and a virtual hug to Stanley Zheng for showing me around the city, introducing me to the Recurse group and for being an amazing human being. 
+- A big thank you and a virtual hug to Stanley Zheng for showing me around the city, introducing me to the Recurse group and for being an amazing human being.
 
 NYC Highlights : 
 

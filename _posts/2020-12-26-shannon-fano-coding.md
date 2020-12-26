@@ -169,7 +169,9 @@ Now that we know how to quantify the minimum number of questions or bits needed 
 
 ### Shannon-Fano Coding
 
-The Shannon-Fano technique has as an advantage its simplicity. The code is constructed as follows: the source messages a(i) and their probabilities p( a(i) ) are listed in order of nonincreasing probability. This list is then divided in such a way as to form two groups of as nearly equal total probabilities as possible. Each message in the first group receives 0 as the first digit of its codeword; the messages in the second half have codewords beginning with 1. Each of these groups is then divided according to the same criterion and additional code digits are appended. The process is continued until each subset contains only one message. Clearly the Shannon-Fano algorithm yields a minimal prefix code.
+Shannon posited that if entropy increases then our ability to compress decreases and vice versa and if we wanna compress beyond out entropy then it needs to be lossy. In his paper he presented his technique for compression which draws from Fanos method
+
+> Around 1948, both Claude E. Shannon (1948) and Robert M. Fano (1949) independently proposed two different source coding algorithms for an efficient description of a discrete memoryless source. Unfortunately, in spite of being different, both schemes became known under the same name Shannon–Fano coding.
 
 Lets consider the alphabets `A,B,C,D,E` with the given occurrences and probabilities based on it
 
@@ -180,6 +182,26 @@ Lets consider the alphabets `A,B,C,D,E` with the given occurrences and probabili
 | C       | 6 | 6 / 39         |
 | D    | 6 | 6 / 39     |
 | E     | 5  | 5 / 39         |
+
+With Shannon code we calculate the word lengths of each of these letter based on entropy
+
+```math
+word length = - log(p(x))
+```
+We can pick codewords in order, choosing the lexicographically first word of the correct length that maintains the prefix-free property. Clearly A gets the codeword 00. To maintain the prefix-free property, B's codeword may not start 00, so the lexicographically first available word of length 3 is 010. Continuing like this, we get the following code:
+
+
+| Symbol                  | A     | B     | C     | D     | E     |
+|-------------------------|-------|-------|-------|-------|-------|
+| Probabilities p(i)      | 0.385 | 0.179 | 0.154 | 0.154 | 0.128 |
+| Word length -log2(p(i)) | 2     | 3     | 3     | 3     | 3     |
+| Codewords               | 00    | 010   | 011   | 100   | 101   |
+
+```math
+Avg Length =  2 Bits * (15) + 3 bits * (7 + 6 + 6 + 5) / 39 = 2.62 Bits per symbol
+```
+
+The Fano code is constructed as follows: the source messages a(i) and their probabilities p( a(i) ) are listed in order of nonincreasing probability. This list is then divided in such a way as to form two groups of as nearly equal total probabilities as possible. Each message in the first group receives 0 as the first digit of its codeword; the messages in the second half have codewords beginning with 1. Each of these groups is then divided according to the same criterion and additional code digits are appended. The process is continued until each subset contains only one message.
 
 To minimize the difference we start by dividing this list into `A` and `BCDE` with this division, A and B will each have a code that starts with a 0 bit, and the C, D, and E codes will all start with a 1. Subsequently, the left half of the tree gets a new division between A and B, which puts A on a leaf with code 00 and B on a leaf with code 01.
 
@@ -196,6 +218,9 @@ After four division procedures, a tree of codes results. In the final tree, the 
 ```math
 Avg Length =  2 Bits * (15 + 7 + 6) + 3 bits * (6 + 5) / 39 = 2.28 Bits per symbol
 ```
+
+We see that Fano's method, with an average length of 2.28, has outperformed Shannon's method, with an average length of 2.62.
+
 
 ![Message Space](/img/in-post/shannon-tree.png)
 

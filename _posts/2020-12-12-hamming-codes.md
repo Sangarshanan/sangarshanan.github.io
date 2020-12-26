@@ -5,6 +5,8 @@ description: "Elegant Algorithms"
 keywords: "algorithms"
 tags:
     - algorithms that make me cry
+    - series
+    - information theory
 ---
 
 ## Algorithms that make me cry: Hamming Codes

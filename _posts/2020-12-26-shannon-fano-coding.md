@@ -113,6 +113,8 @@ So P(X) is the probability of the event x. We use the `-` just to be sure the va
 
 Low probability events are more surprising and carry more information, and the complement of high probability events carry less information.
 
+These were the old timey days so transmitting bits across long distances was not really cheap so we wanted to answer a fundamental question **What is the Least number of bits I encode a given information ?** and this was the measure of information and what a person who wants to transmit a message will be charged based on.
+
 This Information can be also presented as `The minimum number of questions we can ask`
 
 With the Coin toss the Information is 1 since we only need to ask 1 question, `Heads or Tails` Now if we consider a dice roll then what would be the minimum number of these questions

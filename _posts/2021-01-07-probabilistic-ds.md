@@ -22,7 +22,7 @@ You only take approximate answers only when precision is costly or not possible,
 
 So how do you not care about the size? So you need to represent something really big with something small that you can work, maybe a fixed size? I dunno sounds like hash to me 
 
-I gonna take the scenic route to the data structure cause it's a really good feeling when you solve a problem with what you think is a good solution and that turns out to be really close to a nifty data structure that was designed to solve the problem.
+I am gonna take the scenic route to these data structures cause it's a really good feeling when you solve a problem with what you think is a good solution and that turns out to be really close to a nifty data structure that was designed to solve it.
 
 ### Bloom Filters
 
@@ -34,7 +34,7 @@ So here is how we can solve the problem
 
 Maybe when a new user signs up you iterate through every name in the platform and check if it already exists and when you are done feel free to grab your walking stick on the way out cause it will be 2077 
 
-Or another way could be with hashing, so for example we have [ a, b, c ] and a wizardly hash of it gives you 101010 and now when a new value come in `d` we calculate this hash again so now since d is new the hash changes but if b is inserted again then it would remain the same since its a duplicate so we can safely say that this alphabet already exists, well not exactly since when we scale this up to a gazillion hash collisions become so common that we cannot be mucho confidence with our result, hence it is probabilistic.
+Or another way could be with hashing, so for example we have [ a, b, c ] and a wizardly hash of it gives you 101010 and now when a new value come in `d` we calculate this hash again so now since `d` is new the hash of it will be 111011 but if `b` is inserted again then it would bring back the same hash that was inserted once already so we can safely say that this new value already exists, Easy peasy ? well not exactly cause when we scale this up to a gazillion alphabets hash collisions become so common that we cannot be so mucho confidence with our result, we need a tradeoff and hence it is probabilistic.
 
 This is kinda what bloom filters do
 

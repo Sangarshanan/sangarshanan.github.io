@@ -16,6 +16,6 @@ I have a mouth and sometimes words come out of it, I sometimes stammer when nerv
 
 * Pycon India (October-2020) <a href="https://www.youtube.com/watch?v=CSjfxXaFJ4w">Video</a>
 
-### Two is Better than One: A segment on ensembling models (Jokes ?)
+### Two is Better than One: A segment on ensembling models
 
 * Pygotham (October-2020)  <a href="http://2020.pygotham.tv/talks/two-is-better-than-one-a-segment-on-ensembling-models/">Proposal</a>

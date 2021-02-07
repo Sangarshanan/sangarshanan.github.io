@@ -1,15 +1,10 @@
 Will be subject to judgement and ridicule by my future self
 
-### Link
+### Song
 
-<https://meltingasphalt.com/crony-beliefs/>
+STOP ! I will not hesitate to break down crying 😭
 
-
-### Playlist
-
-Indie rock ? or is it ?
-
-<p align="center"> <iframe src="https://open.spotify.com/embed/playlist/4V6WRqRwqkspi9t0MxuA1s" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </p>
+<p align="center"> <iframe src="https://open.spotify.com/embed/track/5HKOg0RnOWjKZtfoHuoKmM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </p>
 
 
 ### Book
@@ -31,4 +26,4 @@ I might be exaggerating a little but I will die for Nathan
 ![alt misfits](https://i.pinimg.com/originals/f6/df/8a/f6df8a921d0647069f4cf96c80ae0014.jpg)
 
 
-Last Updated: 31-01-2021
+Last Updated: 07-02-2021

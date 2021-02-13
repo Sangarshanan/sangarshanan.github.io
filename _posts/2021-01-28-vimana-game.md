@@ -16,6 +16,6 @@ It is just a generic space shooter and I named it vimana in accordance to my eff
 
 TLDR; I made a game where you can basically just move around with arrow keys and use space to shoot shit and get points. 
 
-I have also added builds for Windows and Linux (Mac users can either install pygame or piss off)
+I have also added builds for Windows and Linux (Mac users need to install pygame :( sorry rich people)
 
 <https://github.com/Sangarshanan/vimana/releases/tag/0.1.0>

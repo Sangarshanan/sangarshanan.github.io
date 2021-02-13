@@ -82,7 +82,7 @@ End note: Just tried to keep it real with the application
 
 ### The First Round 😳
 
-Since my written application was oozing of awesomeness I was invited to a conversational interview
+Since my written application was oozing of "awesomeness" I was invited to a conversational interview
 
 I thought it was time for me to use my ability to mask anxiety but I did not get to use it cause this was just a really fun get-to-know-you kinda interview, Questions were mostly around why I wanted to join ? and what I expected to gain from
 recurse and how I could contribute back to the community I kinda just reiterated what I mentioned in application and sprinkling a few details for effect and in the end I asked my interviewer what is the one thing about Recurse that you wish to change. My interviewer wished Recurse had more to offer to the senior folks in the community, most of the activities are geared towards beginners and they tend to have the most fun :) which is AWESOME but hey! maybe even seniors sometimes need something to often remind themselves why they do what they do ! The next round was a pair programming round.

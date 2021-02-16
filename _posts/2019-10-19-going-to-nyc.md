@@ -6,6 +6,7 @@ description: My very first trip to NYC to attend Pygotham
 keywords: "life"
 tags:
     - life
+    - conference
 ---
 
 

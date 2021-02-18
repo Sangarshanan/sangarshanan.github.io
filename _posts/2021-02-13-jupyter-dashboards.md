@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jupyter and its 79 Dashboards"
+title: "Jupyter and it's 79 Dashboards"
 comments: false
 keywords: "oss"
 tags:

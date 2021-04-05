@@ -11,7 +11,14 @@ Python is mostly awesome but sometimes it gives me splitting migraines and one o
 
 The first time it happened was with `pandas` where a not so directly used sub-dependency `numpy` is not pinned https://github.com/pandas-dev/pandas/blob/00a622401e06bd7afaaa508707a46f3dcc494fe4/setup.cfg#L34 and so installing pandas upgrades numpy and broke a bunch of stuff in staging servers while working perfectly fine locally cause `numpy` was already installed in my environment. I had to test with `docker-compose` after wiping every single cache in existence
 
-Now this happened again today but thankfully I caught it in like 5 mins cause I have started expecting this from Python every time I am hit with the old **But it works on my machine and not on the server !**
+The second time around an API that writes a dataframe to postgres started failing with the error log
+
+```ValueError: unsupported format character: '('
+```
+
+This was because `SQLAlchemy==1.4.4` was updated/installed by a sub dependency 😞 so just downgrading SQLAlchemy to `SQLAlchemy==1.3.20` solved the whole thing, I initially started going around stripping brackets `(` before wondering how it worked for me locally and checking out the versions
+
+Now this happened the third time today but thankfully I caught it in like 5 mins cause I have started expecting this from Python every time I am hit with the old **But it works on my machine and not on the server !**
 
 I have a utility function that calculates the area of a polygon populating several data sinks in the system and people use it for analysis and also data science stuff
 

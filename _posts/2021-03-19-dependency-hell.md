@@ -9,12 +9,11 @@ tags:
 
 Python is mostly awesome but sometimes it gives me splitting migraines and one of those scenarios is when I get sucked into a rabbit hole of debugging and utter confusion only to discover that a dependency of another dependency has changed it's API a wee bit
 
-The first time it happened was with `pandas` where a not so directly used sub-dependency `numpy` is not pinned https://github.com/pandas-dev/pandas/blob/00a622401e06bd7afaaa508707a46f3dcc494fe4/setup.cfg#L34 and so installing pandas upgrades numpy and broke a bunch of stuff in staging servers while working perfectly fine locally cause `numpy` was already installed in my environment. I had to test with `docker-compose` after wiping every single cache in existence
+The first time it happened was with `pandas` where a not so directly used sub-dependency `numpy` is not pinned <https://github.com/pandas-dev/pandas/blob/00a622401e06bd7afaaa508707a46f3dcc494fe4/setup.cfg#L34> and so installing pandas upgrades numpy and broke a bunch of stuff in staging servers while working perfectly fine locally cause `numpy` was already installed in my environment. I had to test with `docker-compose` after wiping every single cache in existence
 
 The second time around an API that writes a dataframe to postgres started failing with the error log
 
-```ValueError: unsupported format character: '('
-```
+`ImportError: cannot import name 'RowProxy' from 'sqlalchemy.engine'`
 
 This was because `SQLAlchemy==1.4.4` was updated/installed by a sub dependency 😞 so just downgrading SQLAlchemy to `SQLAlchemy==1.3.20` solved the whole thing, I initially started going around stripping brackets `(` before wondering how it worked for me locally and checking out the versions
 
@@ -31,7 +30,9 @@ import geopandas as gpd
 from functools import partial
 from shapely.geometry import Polygon
 
-world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+world = gpd.read_file(
+    gpd.datasets.get_path('naturalearth_lowres')
+)
 polygon = world['geometry'][1]
 
 def polygon_area(geom):
@@ -40,7 +41,11 @@ def polygon_area(geom):
         partial(
             pyproj.transform,
             pyproj.Proj("EPSG:4326"),
-            pyproj.Proj(proj="aea", lat_1=geom.bounds[1], lat_2=geom.bounds[3]),
+            pyproj.Proj(
+                proj="aea", 
+                lat_1=geom.bounds[1], 
+                lat_2=geom.bounds[3]
+            ),
         ),
         geom,
     )

@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Musings"
+header-img: "img/musing.jpg"
+---
+
+<div class="en post-container">
+    {% capture about_en %}{% include stuff/musings.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>

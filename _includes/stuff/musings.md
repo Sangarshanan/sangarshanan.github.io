@@ -1,5 +1,7 @@
 # Flute Notes
 
+Indian <-> Western
+
 ```
 Sa- C
 
@@ -16,90 +18,7 @@ Da- A
 Ne- B
 ```
 
-
-# All of Me
-
-```math
-
-Da Ne Ne   Ne  Ne - Ne   Da   Pa Pa
-What would I do without your smart mouth?
-
-Da - Ne Ne Ne Re  Ne Da Pa Pa
-Drawing me in, and you kicking me out
-
-^Re Ne  Sa  ^Ne - Pa
-You've got my head spinning,
-
-Pa sa  ^Ne-Pa     Pa   Da   Ne  Da  Ma
-No kidding, I can't pin you down
-
-Ne Ne-Ne    Ne   Da     Ne   Ne-Da-Pa    Pa
-What's going on in that beautiful mind
-
-B      B     B   ^D-^C-B   B-A-G    G-E
-I'm on your magical mystery ride
-
-
-B     B     ^C   B-G
-And I'm so dizzy,
-
-G            ^C      ^C     B     G
-Don't know what hit me,
-
-G      A   B   A-^C
-But I'll be alright
-
-A      ^E     ^D-^D  ^C-B-A-G
-My head's under water  ~
-
-G     F#  F#-E-D-D   D
-But I'm breathing fine
-
-^E    ^E-^D-^D   ^C    B     B    A   G     A
-You're crazy   ~  and I'm out of my mind
-
- 
-
-B           ^D  B  ^E
-'Cause all of me
-
-B           A   G    B
-Loves all of you
-
-B            B          A         A     A     G     A-E
-Love your curves and all your edges
-
-B       B       A - A       A - G - A - A
-All your perfect imperfections
-
-B           B    ^D  B  ^E
-Give your all to me
-
-B     ^E    B    A  G   B
-I'll give my all to you
-
- 
-
-B             B      A      A     A     G - A - E
-You're my end and my beginning
-
-B - B      A     A   A    G      A - A
-Even when I lose I'm winning
-
-B           B  ^C   ^D ^G-^F#-^E-^D    B  B
-'Cause I give you all        ~        ~         of me
-
-B       B       ^C  ^D  ^G-^F#-^E-^D    B   B
-And you give me all        ~        ~          of you,
-
-BA BA
-Oh oh...
-
-```
-
-
-
-# Jashne Bahara
+## Jashne Bahara
 
 - Song: <https://www.youtube.com/watch?v=4h1WFyOQv0Y>
 - Backing Track: <https://www.youtube.com/watch?v=3KNU66u0GEQ>
@@ -155,7 +74,7 @@ DDD N`N`N` RRR RG GRND
 Seeshe ki ek diware hai Jaise darmiya
 ```
 
-# Saathiya theme song
+## Saathiya theme song
 
 <https://www.youtube.com/watch?v=fJTHGdqyHr8>
 
@@ -177,7 +96,7 @@ S R S D S D
 P M P P P
 ```
 
-# Vaseegara
+## Vaseegara
 
 ```math
 GGG  MGR  RN.  N.SR  SN.D
@@ -224,7 +143,7 @@ GDDGG  GPPRR
 RMM   GR   SN.   SN.
 ```
 
-# Mission Impossible 
+## Mission Impossible 
 
 ```math
 
@@ -262,7 +181,7 @@ ndr ndr1 nds ns
 
 ```
 
-# Raravenu
+## Raravenu
 
 - Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
 
@@ -339,5 +258,45 @@ cho             ma  ri  ma  ri    ni  nu  cha ra  na  ne  da  ra
 ```
 
 
+# Stuff
 
+Be Bored\
+Please be bored\
+Take some time to be bored\
+Please Do Nothing\
+Empty your mind\
+Absolute Nothingness\
+Stay with me\
+He tells me\
+Everytime I look in the mirror
 
+----
+
+Sat on the ground with a heavy head\
+Closed my eyes\
+I see dread\
+Guts spilt into the abyss\
+love all around me\
+what did I do to deserve this\
+Moving shapes and intricate Patterns\
+extending to infinity\
+Am I just a projection\
+Living off stolen personalities
+
+----
+I died\
+I came back\
+I didn't recognise myself\
+never had that knack\
+A long way to go\
+I tell myself\
+flickering lights in a shady bar\
+eyes wide open and mind in musing\
+when will I understand ?\
+I am not losing\
+flickering lights in a shady bar\
+your journey is yet to start\
+Rejoice\
+For you've come this far
+
+----

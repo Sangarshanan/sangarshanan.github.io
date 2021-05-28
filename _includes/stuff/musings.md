@@ -99,30 +99,35 @@ P M P P P
 ## Vaseegara
 
 ```math
-GGG  MGR  RN.  N.SR  SN.D
+Tune
+GGG  RSN  N.SR  SN.D
 
-DSR  GGG  MGR  SN.   N.SR  SN.D
+DSR  GGG  RSN  N.SR  N.SD
 
-D SSSS   RRRR   GPDN   D   PMG   MG  RGM   RSN
+D SSSS   RRRR   GPDN   D   PMG   MG  RGRGM   RSN
 
-
+Song
 NS’   NS’   S’NS’R’NS’   S’NS’R’NS’
 
-NNN G’R’S’N   S’   NS’
+NN G’R’G’S’NS’ NS’
 
-S’NS’R’NS’
+S’NS’R’NS’ S’NS’R’NS’
 
-S’NS’R’NS’   D’SN  DNDP
+DD SNS N DPD
 
-D   DS’NP  PNDM   
+D DSNP
 
-MPMG   NS’ND
+P NDM
 
-DS’NP   PNDM
+M PMG
 
-MPMGG   ND
+N NSN D
 
+GGG  RSN  N.SR  SN.D
 
+DSR  GGG  RSN  N.SR  N.SD
+
+D SSSS   RRRR   GPDN   D   PMG   MG  RGRGM   RSN
 
 DS’   R’G’   R’G’   R’G’  R’G’S’N
 
@@ -136,11 +141,25 @@ R’R’R’R’   NR’G’M’   R’G’
 
 GDDGG   GNNGG
 
-GS’S’S’N  DD  PPD  PD
+GG S’S’R ND DPD
 
 GDDGG  GPPRR
 
 RMM   GR   SN.   SN.
+
+Tune
+GMPD 
+PDN SRSND
+PDN SRSND
+PDN PDPMG
+
+SS NN DD PP MM GG RS SRG
+
+SD ND PGR
+MM GG RR SRG
+
+SD NS NR PMG
+SS NN DD P D
 ```
 
 ## Mission Impossible 
@@ -261,11 +280,10 @@ cho             ma  ri  ma  ri    ni  nu  cha ra  na  ne  da  ra
 # Stuff
 
 Be Bored\
-Please be bored\
-Take some time to be bored\
-Please Do Nothing\
+Please Be Bored\
+Do Nothing\
 Empty your mind\
-Absolute Nothingness\
+Extend into the infinite expanse\
 Stay with me\
 He tells me\
 Everytime I look in the mirror
@@ -276,12 +294,11 @@ Sat on the ground with a heavy head\
 Closed my eyes\
 I see dread\
 Guts spilt into the abyss\
-love all around me\
-what did I do to deserve this\
 Moving shapes and intricate Patterns\
 extending to infinity\
 Am I just a projection\
-Living off stolen personalities
+A ripoff\
+Living off stolen personality
 
 ----
 I died\
@@ -293,10 +310,9 @@ I tell myself\
 flickering lights in a shady bar\
 eyes wide open and mind in musing\
 when will I understand ?\
-I am not losing\
+I don't always find the right phrasing\
 flickering lights in a shady bar\
 your journey is yet to start\
 Rejoice\
 For you've come this far
-
 ----

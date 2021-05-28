@@ -96,7 +96,7 @@ S R S D S D
 P M P P P
 ```
 
-## Vaseegara
+## Zara Zara/ Vaseegara
 
 ```math
 Tune
@@ -160,6 +160,19 @@ MM GG RR SRG
 
 SD NS NR PMG
 SS NN DD P D
+```
+
+## Theme song of RHTDM
+
+Video: https://www.youtube.com/watch?v=Y41si4gaOXg
+
+```math
+SR G R S’N’D’P DR
+
+S R GDGR S’N’D’P DND
+
+RG RG S RG S’N’D x2
+P M GMG R G x2
 ```
 
 ## Mission Impossible 

@@ -217,78 +217,6 @@ ndr ndr1 nds ns
 
 - Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
 
-```math 
-Pallavi
-
-s   -   -   r   g   -   p   -     d   -   S   -   n   -   d   -  |
-ra          ra  ve      nu        go      pa      ba      la
-
-p   -   d   p   m   g   r   s   | r   s   n   d   s   -   -   -  ||
-             .   .
-ra      ji  tha sa  th  gu  na    ja  ya  shee    la
-
-s   -   -   r   g   -   p   -     m   -   -   g   p   -   d   -   |
-sa          ra  sa      ksha      ne          ra  me      mi
-
-R   -   -   S   n   -   d   -   | p   -   -   m   g   -   r   -   ||
-ma          ru  ba      da        ko          rva le      ra
-
-Charanam 1
-
-s   -   -   r   g   -   g   -     g   -   -   -   -   -   r   g   |
-nan         da  go      pa        la        ne
-
-p   -   -   p   p   -   p   -   | p   -   -   -   -   -   d   p   ||
-nen         du  poo     ja        la        ne
-
-S   -   -   S   S   -   S   -     G   R   S   n   n   d   p   -   |
-vin         du  ra      ra        sa  tha ma  la  ma  di  lo
-
-p   d   p   m   g   g   r   -   | g   p   m   g   r   s   r   g   ||
-mu  du  ma  la  ra  ka  na        ke  thu ru  ga  ga  thi ya  ra
-
-Charanam 2
-
-p   p   p   -   r   r   r   -     g   p   m   g   g   -   -   -   |
-pa  lu  ma      ru  nu  ga        ra  va  mu  na  nin
-
-g   p   m   g   m   g   r   s   | r   g   r   s   s   -   -   -   ||
-pi  la  chi na  pa  lu  ka  vu    na  lu  ka  gu  ra
-
-r   s   n   d   s   -   -   -     m   g   r   g   p   -   -   -   |
-        .   .
-ka  ri  va  ra  da  ma  ri  ma  ri  na
-
-d   p   d   R   S   -   -   -   | R   S   n   d   p   m   g   r   ||
-ya  da  ra  mu  kro la  ra  ka  ni  ka  ra  mu  ga
-
-Charanam 3
-
-p   -   -   -   m   g   r   g     d   -   -   -   m   g   r   g   |
-ra              na  ga  dha ra    ra              mu  ra  ha  ra
-
-p   -   -   -   m   g   r   g   | p   -   p   -   p   -   -   -   ||
-ra              bha va  ha  ra    ra      ve      ra
-
-G   -   -   -   R   S   n   d     R   -   -   -   R   S   n   d   |
-ee              ma  gu  va  nu    ee              la  la  la  nu
-
-S   -   -   -   R   S   n   d   | S   -   S   -   S   -   -   -   ||
-ee              so  ga  si  ni    che     ko      ra
-
-G   -   R   S   R   -   R   -     R   -   -   -   R   -   S   n   |
-ko      re  ka  lim     bon       da              den     da  mu
-
-d   -   d   -   d   -   -   -   | p   -   m   g   g   -   g   -   ||
-nee     ya      na  je      ra  nu  nin     jen
-
-g   -   -   -   s   r   g   d     p   -   -   -   R   S   R   G   |
-tha             ma  ru  va  gu    ra              ka  ra  mu  la
-
-S   -   -   -   G   R   S   n   | d   p   m   g   r   s   r   g   ||
-cho             ma  ri  ma  ri    ni  nu  cha ra  na  ne  da  ra
-```
-
 
 # Stuff
 
@@ -311,7 +239,7 @@ Moving shapes and intricate Patterns\
 extending to infinity\
 Am I just a projection\
 A ripoff\
-Living off stolen personality
+Live off stolen personalities
 
 ----
 I died\
@@ -328,4 +256,39 @@ flickering lights in a shady bar\
 your journey is yet to start\
 Rejoice\
 For you've come this far
+
+----
+Fairy lights and wine glasses
+Faces so lively
+Surrounded by people
+Im so lonely
+I wanna go
+No i'll stay
+What if I miss
+The stories, oh what a day
+
+----
+Moon wearing her crescent
+Stars in all their glory
+Just me alone, a present soul
+Living out my story
+I have everything I want
+Nothing more nothing less
+Boundless joy and Entropy
+What a beautiful mess
+
+----
+Its just me
+Its just me
+There's noone else
+
+----
+You look up to me
+Eyes Red
+Filled with dread
+Kill me
+You said
+But baby
+You're already dead
+
 ----

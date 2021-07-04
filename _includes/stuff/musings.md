@@ -1,8 +1,9 @@
+
 # Flute Notes
 
 Indian <-> Western
 
-```
+```math
 Sa- C
 
 Re- D
@@ -215,7 +216,7 @@ ndr ndr1 nds ns
 
 ## Raravenu
 
-- Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
+Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
 
 
 # Stuff
@@ -258,37 +259,90 @@ Rejoice\
 For you've come this far
 
 ----
-Fairy lights and wine glasses
-Faces so lively
-Surrounded by people
-Im so lonely
-I wanna go
-No i'll stay
-What if I miss
-The stories, oh what a day
+Fairy lights and wine glasses\
+Faces so lively\
+Surrounded by people\
+Im so lonely\
+I wanna go\
+No i'll stay\
+What if I miss\
+The stories, oh what a days
 
 ----
-Moon wearing her crescent
-Stars in all their glory
-Just me alone, a present soul
-Living out my story
-I have everything I want
-Nothing more nothing less
-Boundless joy and Entropy
+Moon wearing her crescent\
+Stars in all their glory\
+Just me alone, a present soul\
+Living out my story\
+I have everything I want\
+Nothing more nothing less\
+Boundless joy and Entropy\
 What a beautiful mess
 
 ----
-Its just me
-Its just me
+Its just me\
+Its just me\
 There's noone else
 
 ----
-You look up to me
-Eyes Red
-Filled with dread
-Kill me
-You said
-But baby
+You look up to me\
+Eyes Red\
+Filled with dread\
+Kill me\
+You said\
+But baby\
 You're already dead
 
 ----
+
+Being Stoic\
+Is your soul at Zero Entropy ?
+
+---
+
+Random acts of kindness\
+Make strangers smile and so will you\
+Unconditional love in abundance\
+Makes Heaven a place on Earth
+
+---
+
+And in the blink of an eye\
+My whole world changes
+
+---
+
+They are taking pictures\
+You don't take pictures do you\
+You don't give a shit\
+You sit on my balcony\
+Look around judging people\
+You can stay still\
+You can't stop moving\
+For hours\
+You lick you growl\
+You stay silently still\
+What are you thinking
+
+---
+
+That's a star\
+Hidden between the clouds\
+Its a million miles away\
+Its moving away from you\
+Light years ahead\
+It gets dimmer and dimmer\
+One day its no more\
+It's not just this star with this fate\
+Every star observable to us\
+Will disappear forever\
+Die out of sight\
+Until one day\
+The beautiful night sky we relish\
+Will become a myth\
+A Fairytale for the innocent\
+Oh how the stars would shine\
+They shine now\
+They shine for you\
+Just look up
+
+---

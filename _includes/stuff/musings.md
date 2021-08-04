@@ -214,6 +214,39 @@ ndr ndr1 nds ns
 
 ```
 
+## Sarvam
+
+```
+s s s s s   p n s r g
+s s s s s   p n s r g
+
+p   m~p m g r s
+p   m~p m g r s
+p   m~p m g r s
+p   m~p m g r s
+
+r r r g    s s s r   n s r s    n p m p
+
+s s s s s  p n s r g
+s s s s s   p n s r g
+
+s r g m      m~p m g r
+r~g r   srs n     s n p 
+
+p~n s      p n s
+p~n s      p n s
+
+g         r srs   n sr 
+g         r srs   n sr
+
+s r g m      m~p m g r
+r~g r   srs n     s n p 
+
+p~n s      p n s
+
+p~n s      p n s
+```
+
 ## Raravenu
 
 Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
@@ -344,5 +377,10 @@ Oh how the stars would shine\
 They shine now\
 They shine for you\
 Just look up
+
+---
+
+I am not living\
+I am just keeping myself occupied
 
 ---

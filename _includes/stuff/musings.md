@@ -72,7 +72,6 @@ You're already dead
 
 ----
 
-Being Stoic\
 Is your soul at Zero Entropy ?
 
 ---
@@ -136,3 +135,5 @@ I swing my leg left and right\
 restless\
 Just shut your eyes\
 Breathe
+
+---

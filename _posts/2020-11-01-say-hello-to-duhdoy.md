@@ -9,7 +9,7 @@ tags:
     - open source
 ---
 
-Duh Doy: <https://github.com/Sangarshanan/duhdoy>
+Duh Doy: <https://github.com/sangarshanan/duhdoy>
 
 There are several ways to spend a weekend, I don't understand why I choose to do stupid shit like this.
 

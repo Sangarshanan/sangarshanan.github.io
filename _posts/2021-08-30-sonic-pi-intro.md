@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Yoo Sonic Pi slaps !!"
+title: "Yoo! Sonic Pi slaps"
 description:  
 keywords: "music"
 header-style: text

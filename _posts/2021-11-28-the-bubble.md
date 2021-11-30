@@ -11,18 +11,16 @@ tags:
 
 ![Peter](/img/in-post/ship.jpg)
 
-I am writing this to you from the my chambers, The storm that we are in the middle of  
+I am writing this to you from the my chambers. The storm that we are in the middle of
 is one of the biggest I have seen and I doubt we will make it to the Island tonight. The waves send shivers
 down my spine but entering my chamber filled me with a strange calm, maybe it is my only solace
 in this sinking ship.
 
-I lived my life in small safe bubbles and I knew how be move between them. All of my bubbles were
-carefully crafted, initially by my adults who cared not for me but for order in society and then by myself
+I lived my life in small safe bubbles and knew how to move between them. All of my bubbles were
+carefully crafted, initially by adults who cared not for me but for order in society and then by myself
 
 Existentialism did not bother me much cause I had everything figured out, I had a plan and it was
-already in motion. I looked at down on everyone: The religious ones who lay all their burdens on an abstract
-entity that could come crumbling down on them any second, The intellectuals were growing old in 
-a job that made bald white men richer held by a thin elastic harness made of gold, There are the
+already in motion. It made me superior and I looked at down on everyone: The religious ones who lay all their burdens on an abstract entity that could come crumbling down on them any second, The intellectuals that grew old in a job held by a thin elastic harness made of gold making bald white men richer, There are the
 free spirited folk whose living in the moment mantra was overshadowed by the thick cloud of ganja smoke that they used to hide away their sober soul crushed by the heaviness of existence. 
 
 Self awareness is scary prospect because it means confronting who you are and climbing down 

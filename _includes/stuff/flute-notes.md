@@ -216,36 +216,29 @@ ndr ndr1 nds ns
 ## Sarvam
 
 ```
-s s s s s   p n s r g
-s s s s s   p n s r g
+s s s s s   pn s rg
+s s s s s   pn s rg
 
-p   m~p m g r s
-p   m~p m g r s
-p   m~p m g r s
-p   m~p m g r s
+s p mg rs
+s p mg rs
 
-r r r g    s s s r   n s r s    n p m p
+r r r g    s s s r   n s r s    n d p d
 
-s s s s s  p n s r g
-s s s s s   p n s r g
-
-s r g m      m~p m g r
-r~g r   srs n     s n p 
-
-p~n s      p n s
-p~n s      p n s
-
-g         r srs   n sr 
-g         r srs   n sr
-
-s r g m      m~p m g r
-r~g r   srs n     s n p 
-
-p~n s      p n s
-
-p~n s      p n s
+s r g m
+p m g r
+g r s n
+s n p
+n s p
+n n s
 ```
 
 ## Raravenu
 
 Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
+
+
+## Bombay Theme
+
+```
+
+```

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Neither hypocrite nor whore"
+title: "Rambling #42069 "
 description:  
 keywords: "life"
 header-style: text
@@ -25,7 +25,6 @@ Whenever I feel my mind wanders in a difficult situation I can either pretend to
 
 Self control is hard but a soul that has fought the fight with boredom should be more capable of it
 
-I earn to be that soul\
-Neither Hypocrite nor whore
+I earn to be that soul
 
 ...

@@ -1,15 +1,3 @@
-<!-- ---
-layout: post
-title: "2021: I can't believe you've done this"
-description:  
-keywords: "new-year"
-header-style: text
-tags:
-    - new-year
-    - life
----
-
- -->
 'Tis 2022
 
 2021 forced me to get older, the quarter life crisis which hits everyone a bit later, hit us early

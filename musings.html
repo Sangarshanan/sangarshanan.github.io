@@ -4,6 +4,14 @@ title: "Musings"
 header-img: "img/musing.jpg"
 ---
 
+{% list_files images img/good-ones/*.jpeg %}
+
+{% for image in images %}
+    <img src="{{ image.url }}"> </img>
+    <br>
+{% endfor %}
+
+
 <div class="en post-container">
     {% capture about_en %}{% include stuff/musings.md %}{% endcapture %}
     {{ about_en | markdownify }}

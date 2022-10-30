@@ -1,7 +1,5 @@
 module Jekyll
     class ListFiles < Liquid::Tag
-      safe true
-      priority :high  
   
       def initialize(tag_name, text, tokens)
         super

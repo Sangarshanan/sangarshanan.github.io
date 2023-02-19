@@ -23,3 +23,4 @@ I have a mouth and sometimes words come out of it, I sometimes stammer when nerv
 ### Build-A-Database with Python
 
 * Pycon US (April-2022)  <a href="https://www.youtube.com/watch?v=Ay9MNXXURBc">Video</a>
+* EuroPython (July-2022)  <a href="https://www.youtube.com/watch?v=-5Emnn5W3mo">Video</a>

@@ -236,9 +236,3 @@ n n s
 
 Notes: <http://www.keylessonline.com/song/carnatic/karn/Raravenu_Swarajathi_Bilahari.html>
 
-
-## Bombay Theme
-
-```
-
-```

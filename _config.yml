@@ -62,6 +62,3 @@ page-mathjax: false
 
 whitelist:
   - jekyll-redirect-from
-
-gems:
-  - jekyll-redirect-from

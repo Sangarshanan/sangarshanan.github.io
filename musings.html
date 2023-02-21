@@ -4,12 +4,12 @@ title: "Musings"
 header-img: "img/musing.jpg"
 ---
 <div class="en post-container">
-{% list_files images img/good-ones/*.jpeg %}
 
-{% for image in images %}
-    <img src="{{ image.url }}"> </img>
-    <br>
+{% assign image_files = site.static_files | where: "image", true %}
+{% for myimage in image_files %}
+  <img src="{{ myimage.path }}"> </img>
 {% endfor %}
+
 </div>
 
 

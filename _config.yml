@@ -60,5 +60,11 @@ service-worker: true
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: false
 
+defaults:
+  - scope:
+      path: "img/good-ones"
+    values:
+      image: true
+
 whitelist:
   - jekyll-redirect-from

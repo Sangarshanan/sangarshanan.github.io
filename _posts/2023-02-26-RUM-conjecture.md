@@ -75,15 +75,19 @@ the **curse of dimensionality**
 
 ### Time-Series Access Methods
 
-Time series data can be represented through segments means which allowed for space-efficient representation at the expense of accuracy. The updates in time-series workloads are significantly different than in relational systems. Typically, the aforementioned approaches treat updates that are in effect new time-series in a large collection of time series leaving old data unaffected and requiring append-only style of updates. So we optimize for read performance at the
-expense of both index size and update overhead.
+Time series data can be represented through segments means which allowed for space-efficient representation at the expense of accuracy. The updates in time-series workloads are significantly different than in relational systems. Typically, the aforementioned approaches treat updates that are in effect new time-series in a large collection of time series leaving old data unaffected and requiring append-only style of updates. 
+
+In most indexes used, we add indexing metadata in order to facilitate read queries making the update more expensive; in essense we optimize for read performance at the expense of both index size and update overhead.
 
 ### Graph Access Methods
 
 Here the graph representation plays a big role in performance and each representation may require
 a very different way to access the data; also, there has been a much smaller effort in standardization when compared with relational systems
 
-A space efficient graph representation is the compressed spared row (CSR) representation which typically offers immutable data, a key difference from relational data
+A space efficient graph representation is the compressed spared row (CSR) representation which typically offers immutable data, a key difference from relational data. There is also LLAMA a method that allows operating on multiversion CSR data, in essence allowing operating on graphs
+in the presence of incremental data ingest and mutation
+
+So, LLAMA exchanges additional storage needs by having multiple versions for efficient support of updates balancing off the RUM tradeoff
 
 
 ### End of the line

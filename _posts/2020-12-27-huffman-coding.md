@@ -4,9 +4,7 @@ title: "Curb your data with Huffman coding"
 description: "Elegant Algorithms"
 keywords: "algorithms"
 tags:
-    - algorithms that make me cry
-    - series
-    - information theory
+    - nerd
 ---
 
 

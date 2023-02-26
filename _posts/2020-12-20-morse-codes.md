@@ -4,8 +4,7 @@ title: "Morse Code & The Beginning of an era"
 description: "The Era of Communication"
 keywords: "algorithms"
 tags:
-    - series
-    - information theory
+    - nerd
 ---
 
 

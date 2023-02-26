@@ -4,9 +4,7 @@ title: "Wait ! so hamming codes are cool ?"
 description: "Elegant Algorithms"
 keywords: "algorithms"
 tags:
-    - algorithms that make me cry
-    - series
-    - information theory
+    - nerd
 ---
 
 ## Algorithms that make me cry: Hamming Codes

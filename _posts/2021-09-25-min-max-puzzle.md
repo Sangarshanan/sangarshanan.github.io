@@ -4,7 +4,7 @@ title: "A MinMax problem without terms and conditions"
 description: "Elegant Algorithms"
 keywords: "algorithms"
 tags:
-    - algorithms that make me cry
+    - nerd
 ---
 
 Found a really [interesting problem](https://www.codewars.com/kata/61211f9d27e72200567dfd3d/train/java) on Codewars today ! Gonna discuss the solution

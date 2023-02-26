@@ -4,8 +4,7 @@ title: "The Mathematical theory of communication"
 description: "The Dawn of Information theory"
 keywords: "algorithms"
 tags:
-    - series
-    - information theory
+    - nerd
 ---
 
 Humans are not always awesome. we sometimes suck a lot, like during the world wars. While soldiers all around the world were fighting on the ground, the scientists were trying to figure out more effective means of getting information to them through popular communication signals like radio, telegraph and telephones (Propaganda was much more effective than the 3 combined)

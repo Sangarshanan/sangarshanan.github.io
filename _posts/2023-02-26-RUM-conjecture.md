@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The RUM Conjecture"
+title: "The RUM conjecture"
 comments: false
 keywords: "Learn"
 tags:
@@ -48,7 +48,7 @@ This approach is taken by query-driven adaptive indexing and by differential upd
 
 https://db.in.tum.de/teaching/ws1718/seminarHauptspeicherdbs/paper/werner.pdf?lang=de#:~:text=Database%20cracking%20is%20an%20approach,in%20a%20self%2Dorganized%20way.
 
-**Updates** Differential files stores only differential updates instead of in-place updates. The fundamental idea is to consolidate updates and apply them in bulk.
+**Updates** Differential files stores only differential updates instead of in-place updates. The fundamental idea is to consolidate updates and apply them in bulk. These include Stepped-Merge and Materialized Sort-Merge algorithms
 
 ### Space-Efficient Designs
 
@@ -88,7 +88,6 @@ A space efficient graph representation is the compressed spared row (CSR) repres
 in the presence of incremental data ingest and mutation
 
 So, LLAMA exchanges additional storage needs by having multiple versions for efficient support of updates balancing off the RUM tradeoff
-
 
 ### End of the line
 

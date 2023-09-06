@@ -133,6 +133,31 @@ live_loop :closedHiHat do
 end
 ```
 
+Case conditions are another way to codify pattern and define loops
+
+```rb
+live_loop :drum do
+  #stop
+  a = [1, 1, 1, 1, 2].choose
+  case a
+  when 0
+    sample :drum_heavy_kick
+    sleep 1
+    sample :drum_cymbal_pedal
+  when 1
+    sample :bd_ada
+    sleep 1
+    sample :drum_cymbal_pedal
+    
+  when 2
+    sample :bd_haus
+    sleep 1
+    sample :drum_cymbal_soft
+  end
+end
+```
+
+
 Might add more content here as i discover it.
 
 

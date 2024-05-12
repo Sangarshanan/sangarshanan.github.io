@@ -64,5 +64,4 @@ so maybe along these lines and there is an Upper Bay
 Take me to New York, I'd love to see Upper Bay
 It is owned by Private Equity Firms
 They are a bunch of filthy worms
-I'm likin' this American boy, American boy
 ```

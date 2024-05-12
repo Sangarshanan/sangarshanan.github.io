@@ -34,7 +34,7 @@ torus(0.7, 0.9 + 0.1*noise(s*2.0));
 ```
 
 <p align="left">
-<iframe class="" rel="nofollow" style="height: 800px; width:1000px;" 
+<iframe class="" rel="nofollow" style="height: 500px; width:600px;" 
       src="https://shaderpark.com/embed/-NlYYf0va-e5JONN7Vub"></iframe>
 </p>
 

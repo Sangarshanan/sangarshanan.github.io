@@ -93,5 +93,3 @@ Some ideas that are worth nothing
 - Sonification of temperature data/ precipitation over the years (Global warming type beat)
 
 and probably a lot more stuff...
-
-

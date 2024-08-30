@@ -8,9 +8,9 @@ tags:
 ---
 
 
-Everyone listens to music, its fun soothing and honestly makes me wanna not kill myself when travelling. its always fun to share the music you love with other people, I've always found that it's an excellent icebreaker and a way to bond. But there is always this mental barrier.. What if my music is not cool enough ? or worse it what if the other person likes nickelback. 
+Everyone listens to music, its fun soothing and honestly makes me wanna not kms when travelling. its always fun to share the music you love with other people, I've always found that it's an excellent icebreaker and a way to bond. But there is always this mental barrier.. What if my music is not cool enough ? or worse it what if the other person likes Nickelback. 
 
-Back in college manliness was measured by the number of experimental prog metal bands you can name and you can only listen to clairo alone with noice cancelling headphones cause you dont want the guys to discover that you could be a pretty girl. Maybe your whole personality revolves around the fact that you love death grips and you literally cannot and will not let anything else define you as a person cause being different is the only thing that will fill the void your unhappy childhood left in your soul. I apologize for the above statements, Now I am trying to fill in words so that this paragraph looks symmetric on the website.
+Back in college manliness was measured by the number of experimental prog metal bands you can name and you can only listen to Clairo alone with noise cancelling headphones cause you don't want the guys to discover that you could be a pretty girl. Maybe your whole personality revolves around the fact that you love death grips and you literally cannot and will not let anything else define you as a person cause being different is the only thing that will fill the void your unhappy childhood left in your soul. I apologize for the above statements, Now I am trying to fill in words so that this paragraph looks symmetric on the website.
 
 ## God bless the return of 80s Nostalgia 
 
@@ -59,7 +59,7 @@ Well I was recovering from the abundance of queens producing angelic sounds when
 
 This was just piling on the existing list of amazing 80s nostalgic tracks that came out in the recent past. Sythwave finally making its way mainstream and actually doing well is actually freaking amazing. I remember listening to Home- Resonance and MACINTOSH PLUS, it quickly was made super popular in the online community, with memes, dubs, even vines and tiktoks.
 
-Well this was me fanboying over synthwave but I mean we all diversify, but there are specific artists that get me hooked to a genrem they open up that world for me. To pimp a butterfly introduced me to kendrick and opened the whole world of hiphop for me. Eminem introduced me to rap and Fall out boys introduced me to the world of high school white boy trash. Recently I am falling in love with the voice of Daniel Caesar and Frank Ocean. I also sometimes go old school with Pink Floyd, Iron Maiden, Aerosmith, Nirvana and David Bowie. 
+Well this was me fanboying over synthwave but I mean we all diversify, but there are specific artists that get me hooked to a genre they open up that world for me. To pimp a butterfly introduced me to kendrick and opened the whole world of hiphop for me. Eminem introduced me to rap and Fall out boys introduced me to the world of high school white boy trash. Recently I am falling in love with the voice of Daniel Caesar and Frank Ocean. I also sometimes go old school with Pink Floyd, Iron Maiden, Aerosmith, Nirvana and David Bowie. 
 
 Also one of the best genres I have heard recently is Jazz Rap, especially freeform jazz by Uyama Hiroto. Much love 🖤🖤 to these tunes...
 

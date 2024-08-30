@@ -35,7 +35,7 @@ There are several ways to achieve this... Asyncio is one of those ways and is qu
 - Use multiple threads. Threads share access to common resources as you can have multiple threads in the context of one process and they need to share a common resource but in Cpython the GIL (Global interpreter lock) prevents multi core concurrency :(
 - or run multiple processes on the same thread asynchronously 
 
-When depending on the OS one needs to take care of race-conditions, dead-locks, live-locks, and resource-starvation since we have to take care of several spawned threads trying to do stuff and that is in itself is a whole other topic of discussion. AsyncIO avoids some of the potential speedbumps that you might otherwise encounter with a threaded design.
+When depending on the OS one needs to take care of race-conditions, dead-locks, live-locks, and resource-starvation since we have to take care of several spawned threads trying to do stuff and that is in itself is a whole other topic of discussion. AsyncIO avoids some of the potential speed bumps that you might otherwise encounter with a threaded design.
 
 ### What is Async doing ? (The chess analogy)
 
@@ -123,9 +123,6 @@ Async generators require two special methods to be implemented:
 - Greenlets 
 
 
-
-
-
 How do we decide which function gets the CPU next ? We need some kind of scheduler that takes care of this. We call it an event loop. Loop keeps track of all running tasks
 
 When a function is suspended it returns control to the loop which then finds another function to start or resume
@@ -176,8 +173,6 @@ loop.close()
 ```
 
 OUTPUT = 12
-
-
 
 ### When not use Async
 

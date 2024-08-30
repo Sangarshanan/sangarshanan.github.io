@@ -35,7 +35,7 @@ Examples here include B-Trees, Tries and so on
 
 **Reads** Most log structures offer fast read access but increase space overhead. especially tries which is why Adaptive Radix Tree tries to offer space-efficient trie indexing by adapting each node size based on the density of the domain for the corresponding values https://db.in.tum.de/~leis/papers/ART.pdf
 
-**Updates** For updates log access methods typically follow a hierarchical log-structured approach. When the top level receives enough updates it is merged with lower levels and these updates gradually propagate in the tree. sequential writes to disk is factor and we can run compaction in intervals but there is a read overhead here when someone queries a key that was updated a long time ago and is not in the index, we can use bloon filters to avoid lookups of keys not present in the table but end of the day for present key read is still expensive
+**Updates** For updates log access methods typically follow a hierarchical log-structured approach. When the top level receives enough updates it is merged with lower levels and these updates gradually propagate in the tree. sequential writes to disk is factor and we can run compaction in intervals but there is a read overhead here when someone queries a key that was updated a long time ago and is not in the index, we can use bloom filters to avoid lookups of keys not present in the table but end of the day for present key read is still expensive
 
 **Memory** most of the approaches here just leverage knowledge about the memory hierarchy, we want to reduce the number of cache misses and avoid random disk access
 
@@ -58,7 +58,7 @@ https://db.in.tum.de/teaching/ws1718/seminarHauptspeicherdbs/paper/werner.pdf?la
 **Memory** there are two strategies here: data skipping and approximate indexing.
 data skipping is a form of scan enhancement where we store metadata for zones of a column, such as min/max information, and a scan uses that metadata to decide whether to scan a zone or not. Such approaches work quite well when data is clustered or fully sorted. Approximate indexing includes the likes of probabilistic data structures like bloom filters
 
-So we took a look at design elements and tradeoffs of access methods in one-dimensional, keyvalue or relational data. However, there is a wealth of use cases that face similar tradeoffs and design decisions and require different typically specialized solutions.
+So we took a look at design elements and tradeoffs of access methods in one-dimensional, key value or relational data. However, there is a wealth of use cases that face similar tradeoffs and design decisions and require different typically specialized solutions.
 
 ### High-Dimensional Access Methods
 
@@ -77,7 +77,7 @@ the **curse of dimensionality**
 
 Time series data can be represented through segments means which allowed for space-efficient representation at the expense of accuracy. The updates in time-series workloads are significantly different than in relational systems. Typically, the aforementioned approaches treat updates that are in effect new time-series in a large collection of time series leaving old data unaffected and requiring append-only style of updates. 
 
-In most indexes used, we add indexing metadata in order to facilitate read queries making the update more expensive; in essense we optimize for read performance at the expense of both index size and update overhead.
+In most indexes used, we add indexing metadata in order to facilitate read queries making the update more expensive; in essence we optimize for read performance at the expense of both index size and update overhead.
 
 ### Graph Access Methods
 

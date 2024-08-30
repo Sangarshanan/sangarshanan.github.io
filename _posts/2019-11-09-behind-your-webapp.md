@@ -25,7 +25,7 @@ It's almost similar even when you look at other frameworks like Django
 
 Django provides tons of stuff out of the box for you like routing, views, templates, authentication, middleware and a whole lot more with a very rich documentation so that you are always in your comfort zone. And with a huge community any issue I faced with Django was one stackoverflow answer away
 
-These frameworks wrap everthing up so you just write in your logic and you are able to send requests and handle responses 
+These frameworks wrap everything up so you just write in your logic and you are able to send requests and handle responses 
 
 By running your application and sending HTTP requests, you realise 3 things happening in the HTTP flow  
 
@@ -59,7 +59,7 @@ But then how the hell do these python framework handle HTTP requests ? Cause it 
 
 Well maybe your site is static and you have all your files saved  
 
-Then for every request you already have corresponding static file as a reponse... awesome this is really fast, you could do tons of caching techniques and it's all really easy and straightforward but I mean it's static which means that you have to manually go and edit the html files every time 
+Then for every request you already have corresponding static file as a response... awesome this is really fast, you could do tons of caching techniques and it's all really easy and straightforward but I mean it's static which means that you have to manually go and edit the html files every time 
 
 To solve this issue arose the Common gateway interface which invokes a script that dynamically generates the web page
 
@@ -69,17 +69,17 @@ To solve this issue arose the Common gateway interface which invokes a script th
 
 ---
 
-The HTTP request that comes in breaks down into ENV variables which act as input and invokes a script which acts as a function and you get your output as an STDOUT... So if you just print hello world, it would be yout http response 
+The HTTP request that comes in breaks down into ENV variables which act as input and invokes a script which acts as a function and you get your output as an STDOUT... So if you just print hello world, it would be your http response 
 
 As cool and simple as all this sounds, you can't afford to run the script every time you get a request 
 
-So we need a seperate out the web server and the python application 
+So we need a separate out the web server and the python application 
 
 Enter WSGI 
 
 Or as the cool people call it Web server gateway interface 
 
-WSGI can be implemented with a simple function and every time there is a request we just call the function instaead of running an entire script 
+WSGI can be implemented with a simple function and every time there is a request we just call the function instead of running an entire script 
 
 ---
 
@@ -128,7 +128,7 @@ Well with Gunicorn Ngnix acts as a reverse proxy server which can be used to pro
 
 Actually python comes with it's own built-in web server that provides standard GET and HEAD request handlers. You can use this to turn any directory in your system into your web server directory. I have actually used this to share code and stuff with my peers and it's pretty handy <3
 
-Now to reaffirm the fact that i have learnt somethings let's write sum fresh code with Sockets... ughh...Now I'm glad I don't have to do this everytime I write a webapp
+Now to reaffirm the fact that i have learnt somethings let's write sum fresh code with Sockets... ughh...Now I'm glad I don't have to do this every time I write a webapp
 
 
 Now let's run this code to start a simple web server on port 8000

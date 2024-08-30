@@ -2,7 +2,7 @@
 layout: post
 title: "Everything bagel on shader park"
 comments: false
-keywords: "Learn"
+keywords: "musing"
 tags:
     - nerd
 ---

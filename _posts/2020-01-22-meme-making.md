@@ -34,4 +34,4 @@ Living in the dank zone for too long makes you numb to shame and ridicule. You l
 
 Find them on <https://www.reddit.com/r/okbuddyretard/>
 
-I hope this was a colossal waste of everyones time... That was the goal
+I hope this was a colossal waste of time... That was the goal

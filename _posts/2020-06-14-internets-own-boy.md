@@ -30,7 +30,7 @@ There is hardly any incentive to stray outside the line and most of the times yo
 
 The worst part is that the system is being fixed by the very ones who rigged it in the first place.
 
-In college we used to get extra credit for publishing research papers in popular journals, they used to give us marks based on the impact factor of the journal. I observed that most of the journals had all their articles behind a giant paywall or charged a fee to publish your paper. But what hurt students the most was these huge reputed journals behind a paywall so we had to resort to free blogs for content rather than research papers and that's something no student should be forced to do. In the end we all fell in love with arxiv and published our papers there but our faculty didn't give us the extra credit cause it is not a "real publication". So I guess you need to scam students and make money of their backs to be a "real publication".
+In college we used to get extra credit for publishing research papers in popular journals, they used to give us marks based on the impact factor of the journal. I observed that most of the journals had all their articles behind a giant paywall or charged a fee to publish your paper. But what hurt students the most was these huge reputed journals behind a paywall so we had to resort to free blogs for content rather than research papers and that's something no student should be forced to do. In the end we all fell in love with Arxiv and published our papers there but our faculty didn't give us the extra credit cause it is not a "real publication". So I guess you need to scam students and make money of their backs to be a "real publication".
 
 > #### A piece of knowledge, unlike a piece of physical property, can be shared by large groups of people without making anybody poorer
 
@@ -49,7 +49,7 @@ This is super relevant now since the laws are clearly not evolving at the speed 
 
 > #### Information is power. But like all power, there are those who want to keep it for themselves
 
-We have all seen the memes, Zuck getting questioned by a bunch of old people who do not know how to change their lockscreen. Sure GDPR happened and we have regulations on data and companies promising that they would take consent out a checkbox before selling our souls to the overlords but we also know what we are commodity, and noone is gonna give us up.
+We have all seen the memes, Zuck getting questioned by a bunch of old people who do not know how to change their lockscreen. Sure GDPR happened and we have regulations on data and companies promising that they would take consent out a checkbox before selling our souls to the overlords but we also know what we are commodity, and no one is gonna give us up.
 
 We all love to say "I hate politics" and I mean I say it too, I don't wanna get involved in it cause I know nothing about it. but I do know that there are somethings that are fundamentally wrong and how the whole system needs a factory reset for the modern age. Surely a 10 year old downloading Honey singh off SongPK.com is not an offense punishable by [3 years in prison](https://www.indiatoday.in/technology/news/story/are-you-a-criminal-now-users-may-get-3-yr-in-jail-for-viewing-torrent-site-blocked-url-in-india-336353-2016-08-21)   
 

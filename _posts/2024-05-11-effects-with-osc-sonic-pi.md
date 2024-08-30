@@ -23,7 +23,7 @@ end
 
 But what i can do with MIDI is actually quite limited, for example if i wanna add some interactive components where i can involve the audience in music generation by having ways to respond to things like sensor information and even add some AI aspects to livecoding using sequence generators for drums and melodies then i would have to go to OSC!
 
-OSC is typically transmitted over ethernet and can be used for sensor/gesture-based electronic musical instruments, mapping nonmusical data to sound, the web interface to sound synthesis and so on, This opens up so much possibilities to build lot of other cool interfaces for Sonic Pi
+OSC is typically transmitted over ethernet and can be used for sensor/gesture-based electronic musical instruments, mapping non musical data to sound, the web interface to sound synthesis and so on, This opens up so much possibilities to build lot of other cool interfaces for Sonic Pi
 
 I am starting off with a basic web service that can tune the fx of the playing loop on the go by sending osc messages to an open socket through [p5js-osc](https://github.com/genekogan/p5js-osc) a project that simply bridge between your Web page and an OSC app or device, in our case Sonic Pi
 

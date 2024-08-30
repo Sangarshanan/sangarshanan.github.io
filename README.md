@@ -7,4 +7,4 @@ Welcome Sentient being !
 
 This is a certainly a blog and is made up of words which are interestingly made of alphabets
 
-Thanks for visiting, remember to drink enough water and always wear a mask
+Thanks for visiting, remember to hydrate & moisturize

@@ -9,7 +9,7 @@ tags:
 ![img](http://www.batesville.k12.in.us/physics/phynet/mechanics/newton2/Images/Elevator1.GIF)
 
 Like the start of every problem let us assume two totally absurd things
-- You want to build elevators that can talk throught a central server?!
+- You want to build elevators that can talk through a central server?!
 - There are weighing machines inside the elevators?!
 
 Now these elevators work and are designed like a normal ones (i promise). People request it to their floor along with the direction they want to go in and use the buttons inside to take it to the floor that they want to go, we can also assume that if the lift is going in a direction it will finish all the stops in that direction before heading in the other direction.

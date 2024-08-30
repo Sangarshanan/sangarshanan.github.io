@@ -10,7 +10,7 @@ tags:
 
 4th Feb 2023
 
-When I was at the summit of Chandrashila someone told me that our trek photographer had broke down crying cause this was the first time in two years of trekking here he was able to get a clear view of Nanda Devi peak, we summited on a perfect day with crisp views and it just happened to be my first time! I was secretly praying for snow on the first day but it was the second day of the trek that it snowed the whole way through, Turns out the we go through meadows and forests then, so we saw magic unfold as oak trees became gandalf with a long white robe and meadows turned into huge blankets extending to the horizon! It just happened to be the perfect day for snow.
+When I was at the summit of Chandrashila someone told me that our trek photographer had broke down crying cause this was the first time in two years of trekking here he was able to get a clear view of Nanda Devi peak, we summited on a perfect day with crisp views and it just happened to be my first time! I was secretly praying for snow on the first day but it was the second day of the trek that it snowed the whole way through, Turns out the we go through meadows and forests then, so we saw magic unfold as oak trees became Gandalf with a long white robe and meadows turned into huge blankets extending to the horizon! It just happened to be the perfect day for snow.
 
 Sometimes things just works out
 

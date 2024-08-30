@@ -15,7 +15,7 @@ everything works but I have been trying to work with kepler.gl for sometime now 
 
 I am gonna start learning react and am gonna try my best to document it here so that it is easy to come back here for reference 
 
-After spending sometime installing node and all the modules, I came across something called the Virtual DOM. There is an awesome video on youtube explaning all about it <https://www.youtube.com/watch?v=d7pyEDqBDeE> So basically react has a virtual DOM stored in memory which is synced with the actual DOM with a libray called ReactDOM. This syncing is called reconciliation which runs a diff algorithm between the real and vitual DOM, More explanation <https://reactjs.org/docs/reconciliation.html>
+After spending sometime installing node and all the modules, I came across something called the Virtual DOM. There is an awesome video on youtube explaining all about it <https://www.youtube.com/watch?v=d7pyEDqBDeE> So basically react has a virtual DOM stored in memory which is synced with the actual DOM with a library called ReactDOM. This syncing is called reconciliation which runs a diff algorithm between the real and virtual DOM, More explanation <https://reactjs.org/docs/reconciliation.html>
 
 So I created by first react app with `npx create-react-app my-app` There was a public folder with all the html and static files, I changed the src and added two files 
 

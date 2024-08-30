@@ -116,7 +116,7 @@ live_loop :disco do
 end
 ```
 
-I find this more intutive than 0s and 1s in an array cause after using foxdot for sometime i just somehow associate `x` with a `kick` and its also reducing the code written for simple beats, Tho this functions does not emulate the complexity of Foxdot cause you cant change your samples, control speed and other bracket magic! its not too that hard to add all those as well onto your primary pattern function. i like to tune this with my own logic depending on the kinda beat i am looking to cook up.
+I find this more intuitive than 0s and 1s in an array cause after using foxdot for sometime i just somehow associate `x` with a `kick` and its also reducing the code written for simple beats, Tho this functions does not emulate the complexity of Foxdot cause you cant change your samples, control speed and other bracket magic! its not too that hard to add all those as well onto your primary pattern function. i like to tune this with my own logic depending on the kinda beat i am looking to cook up.
 
 A way to extend this to control amplitude is demonstrated over on the [sonic-pi server](https://in-thread.sonic-pi.net/t/rhythm-notation-for-tuplets-with-amplitude/5368) where you use integers rather than characters which in-turn control the amplitude
 

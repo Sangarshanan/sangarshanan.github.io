@@ -1,4 +1,4 @@
-# Stuff
+## shit i wrote in a small notebook
 
 Be Bored\
 Please Be Bored\
@@ -57,22 +57,26 @@ Boundless joy and Entropy\
 What a beautiful mess
 
 ----
+
+
+Zero Entropy ?
+
+----
+
+
 It's just me\
 It's just me\
 There's noone else
 
 ----
+
 You look up to me\
 Eyes Red\
 Filled with dread\
 Kill me\
 You said\
-But baby\
+But bb\
 You're already dead
-
-----
-
-Is your soul at Zero Entropy ?
 
 ---
 

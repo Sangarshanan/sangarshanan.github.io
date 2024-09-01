@@ -4,9 +4,16 @@ title: "Musings"
 header-img: "img/musing.jpg"
 ---
 
-<h3> Music Art Dance </h3>
+<h3> I attempt to make music as roguentropy </h3>
+
+<p>Sprinkling content on <a href="https://www.youtube.com/@sangarshanan">YouTube</a> &
+<a href="https://www.instagram.com/roguentropy/"> Instagram </a> also below are some
+ attempts at making music on Soundcloud and Bandcamp.
+</p>
 
 <div class="en post-container">
+
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3103878209/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://roguentropy.bandcamp.com/track/swaras-are-liquid">swaras are liquid by roguentropy</a></iframe>
 
   <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2519633258/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://roguentropy.bandcamp.com/track/tabla-synth">tabla &amp; synth by roguentropy</a></iframe>
 
@@ -23,14 +30,9 @@ header-img: "img/musing.jpg"
 
   <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1409878663&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rogue-entropy" title="roguentropy" target="_blank" style="color: #cccccc; text-decoration: none;">roguentropy</a> · <a href="https://soundcloud.com/rogue-entropy/sarson-ka-khet" title="sarson ka khet" target="_blank" style="color: #cccccc; text-decoration: none;">sarson ka khet</a></div>
 
+<h3> I love hiking! </h3>
+
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
   <img src="{{ myimage.path }}"> </img>
 {% endfor %}
-
-</div>
-
-
-    {% capture about_en %}{% include stuff/musings.md %}{% endcapture %}
-    {{ about_en | markdownify }}
-</div>

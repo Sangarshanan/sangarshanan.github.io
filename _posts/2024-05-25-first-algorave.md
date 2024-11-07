@@ -2,7 +2,6 @@
 layout: post
 title: "Performing at an algorave!"
 comments: false
-keywords: "Learn"
 tags:
     - life
     - music

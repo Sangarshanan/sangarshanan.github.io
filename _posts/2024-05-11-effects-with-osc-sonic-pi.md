@@ -5,7 +5,7 @@ comments: false
 keywords: "Learn"
 tags:
     - nerd
-    - music
+    - music-tech
 ---
 
 Tweaking and changing parameters during Livecoding performance can always be made more intuitive by having ways to change those parameters externally without having to write and edit code everytime something minor has to be altered.

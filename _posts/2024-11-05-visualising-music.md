@@ -4,8 +4,7 @@ title: "Making Audio Reactive Visuals with FFT"
 comments: false
 keywords: "Learn"
 tags:
-    - nerd
-    - music
+    - music-tech
 ---
 
 Ever since I started coding music I have been exploring tools to help visualize it! So right now for all the visuals in my live coding content, I primarily depend on [hydra](https://hydra.ojack.xyz/)! It's a live code-able video synth and coding environment running directly in the browser so super easy and straightforward to plug in & overlay to record with OBS! 

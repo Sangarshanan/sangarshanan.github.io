@@ -4,7 +4,7 @@ title: "Performing at an algorave!"
 comments: false
 tags:
     - life
-    - music
+    - music-tech
 ---
 
 ![algorave](/img/in-post/algorave1.jpeg)

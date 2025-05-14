@@ -1,4 +1,4 @@
-I have a mouth and sometimes words come out of it, I sometimes stammer when nervous but love to have the stage for myself. Ironic. But here are the some of the times I embarassed myself in public with consent of course, and will continue to do
+I have a mouth and sometimes words come out of it, I stammer when nervous but I love being on stage. Here are the some of the times I embarrassed myself in public, with consent of course, and will continue to do.
 
 
 ### Spatial Thinking with Python
@@ -28,3 +28,7 @@ I have a mouth and sometimes words come out of it, I sometimes stammer when nerv
 ### Beatmaking with Python and FoxDot
 
 * Pycon Australia (August-2023) <a href="https://www.youtube.com/watch?v=v29kfE1wdH8">Video</a>
+
+### Build a Synthesizer with Python
+
+* Pycon US (May-2025)  <a href="https://www.youtube.com/watch?v=vw4djhArb1Y&list=PL2Uw4_HvXqvb98mQjN0-rYQjdDxJ_hcrs&index=5"> Tutorial Sneak Peek </a>

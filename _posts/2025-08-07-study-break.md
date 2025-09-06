@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Study Break"
+title: "I am doing a masters in Music Technology"
 comments: false
 tags:
     - life

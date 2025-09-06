@@ -101,12 +101,12 @@ We just added multiple “layers” of noise together, each with a different amp
 
 The example we saw was just for a single dimension, if you extend Perlin Noise into an additional dimension and consider the extra dimension as time, you can animate it! For example, 2D Perlin Noise can be interpreted as Terrain, but 3D noise can similarly be interpreted as undulating waves in an ocean scene.
 
-Let's now explore this concept with a 2-dimensional vector. Perlin noise isn't just random values—it's about directional influence. To calculate that, we can use the very handy **dot product**, and the other important idea here is **interpolation**, which becomes much more straightforward between 4 corners. So we start by
+Let's now explore this concept with a 2-dimensional vector. Perlin noise isn't just random values, it's about directional influence. To calculate that, we can use the very handy **dot product**, and the other important idea here is **interpolation**, which becomes much more straightforward between 4 corners. So we start by
 
 
 ### Setting up 2D Grid
 
-We start by setting up a grid with a certain number of floating points—2 for 2 dimensions (x,y). Now, x and y can be anything, but they are generally a position. To generate a texture, x and y would be the coordinates of the pixels in the texture (multiplied by the frequency).
+We start by setting up a grid with a certain number of floating points, 2 for 2 dimensions (x,y). Now, x and y can be anything, but they are generally a position. To generate a texture, x and y would be the coordinates of the pixels in the texture (multiplied by the frequency).
 
 
 ```python

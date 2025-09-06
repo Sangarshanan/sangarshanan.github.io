@@ -270,7 +270,8 @@
         resultsContainer: document.getElementById('results-container'),
         json: '/search.json',
         searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-        noResultsText: 'No results found',
-        fuzzy: true
+        noResultsText: '<li style="text-align: center; color: #ccc; padding: 20px;">No results found</li>',
+        fuzzy: true,
+        limit: 10
     });
 </script>

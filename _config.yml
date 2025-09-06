@@ -37,12 +37,12 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
-      line_numbers: true
+      line_numbers: false
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Selective Musings with Occasional doses of Cringe"
+sidebar-about-description: "With this blog I offer Selective Musings with Occasional doses of Cringe"
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags

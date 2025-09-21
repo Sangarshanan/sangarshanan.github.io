@@ -6,7 +6,6 @@ keywords: "musing"
 header-style: text
 tags:
     - rambling
-    - tale
 ---
 
 ![Peter](/img/in-post/ship.jpg)

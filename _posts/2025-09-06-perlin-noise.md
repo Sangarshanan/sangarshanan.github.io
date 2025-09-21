@@ -697,7 +697,7 @@ def fractal_brownian_motion(
 
 I have used this to create an Interactive Perlin Noise Explorer where you can control Frequency and octave sliders to see how noise is rendered on the grid!
 
-This was super fascinating for me to explore that I made this game with the concepts from Perlin noise <https://github.com/Sangarshanan/keep-walking> Keep Walking is a browser-based 3D exploration game built with Procedural Terrain Generation using multiple layers of perlin noise
+This was super fascinating for me to explore that I made this game with the concepts from Perlin noise <https://github.com/Sangarshanan/keep-walking> Keep Walking is a browser-based 3D exploration game built with Procedural Terrain Generation using multiple layers of perlin noise (Made with claude code which super sped up my workflow)
 
 ```js
 // Base terrain with multiple octaves

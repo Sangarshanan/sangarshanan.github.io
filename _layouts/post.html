@@ -47,6 +47,145 @@ layout: default
                 {% if site.netease_comment %}
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 {% endif %}
+
+                <!-- Anonymous Comments Section -->
+                <div id="anonymous-comments-section">
+                    <hr style="margin: 40px 0;">
+                    <h3 style="margin-bottom: 30px; color: #333;">Comments</h3>
+                    
+                    <!-- Comments Display -->
+                    <div id="comments-list"></div>
+                    
+                    <!-- Comment Form -->
+                    <div id="comment-form-container">
+                        <div id="comment-form" style="border: 1px solid #ddd; padding: 20px; border-radius: 5px; background: #f9f9f9;">
+                            <h4 style="margin-top: 0;">Leave a Comment</h4>
+                            <div style="margin-bottom: 15px;">
+                                <label for="commenter-name" style="display: block; margin-bottom: 5px; font-weight: bold;">Your Name *</label>
+                                <input type="text" id="commenter-name" placeholder="Enter your name" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px; font-size: 14px;" maxlength="50" required>
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <label for="comment-text" style="display: block; margin-bottom: 5px; font-weight: bold;">Comment *</label>
+                                <textarea id="comment-text" placeholder="Write your comment here..." rows="4" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px; font-size: 14px; resize: vertical;" maxlength="500" required></textarea>
+                            </div>
+                            <button onclick="submitComment()" style="background: #337ab7; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer; font-size: 14px;">Post Comment</button>
+                            <div id="comment-status" style="margin-top: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                // Get unique key for this post
+                function getPostKey() {
+                    return 'comments_' + window.location.pathname.replace(/\//g, '_');
+                }
+
+                // Load and display comments
+                function loadComments() {
+                    const postKey = getPostKey();
+                    const comments = JSON.parse(localStorage.getItem(postKey) || '[]');
+                    const commentsList = document.getElementById('comments-list');
+                    
+                    if (comments.length === 0) {
+                        commentsList.innerHTML = '<p style="color: #666; font-style: italic;">No comments yet. Be the first to comment!</p>';
+                        return;
+                    }
+                    
+                    let html = '';
+                    comments.forEach((comment, index) => {
+                        const date = new Date(comment.timestamp);
+                        html += `
+                            <div style="border-left: 4px solid #337ab7; padding: 15px; margin-bottom: 20px; background: white; border-radius: 0 5px 5px 0;">
+                                <div style="margin-bottom: 10px;">
+                                    <strong style="color: #337ab7;">${escapeHtml(comment.name)}</strong>
+                                    <span style="color: #666; font-size: 12px; margin-left: 10px;">${date.toLocaleDateString()} at ${date.toLocaleTimeString()}</span>
+                                </div>
+                                <div style="line-height: 1.5;">${escapeHtml(comment.text).replace(/\n/g, '<br>')}</div>
+                            </div>
+                        `;
+                    });
+                    
+                    commentsList.innerHTML = html;
+                    
+                    // Hide form if limit reached
+                    if (comments.length >= 2) {
+                        document.getElementById('comment-form').style.display = 'none';
+                        document.getElementById('comment-limit-reached').style.display = 'block';
+                    }
+                }
+
+                // Submit comment
+                function submitComment() {
+                    const name = document.getElementById('commenter-name').value.trim();
+                    const text = document.getElementById('comment-text').value.trim();
+                    const statusDiv = document.getElementById('comment-status');
+                    
+                    // Validation
+                    if (!name) {
+                        statusDiv.innerHTML = '<div style="color: #d9534f; margin-top: 10px;">Please enter your name.</div>';
+                        document.getElementById('commenter-name').focus();
+                        return;
+                    }
+                    
+                    if (!text) {
+                        statusDiv.innerHTML = '<div style="color: #d9534f; margin-top: 10px;">Please enter a comment.</div>';
+                        document.getElementById('comment-text').focus();
+                        return;
+                    }
+                    
+                    const postKey = getPostKey();
+                    const comments = JSON.parse(localStorage.getItem(postKey) || '[]');
+                    
+                    // Check limit
+                    if (comments.length >= 2) {
+                        statusDiv.innerHTML = '<div style="color: #d9534f; margin-top: 10px;">Sorry, only 2 comments are allowed per post.</div>';
+                        return;
+                    }
+                    
+                    // Add comment
+                    const newComment = {
+                        name: name,
+                        text: text,
+                        timestamp: new Date().toISOString()
+                    };
+                    
+                    comments.push(newComment);
+                    localStorage.setItem(postKey, JSON.stringify(comments));
+                    
+                    // Clear form
+                    document.getElementById('commenter-name').value = '';
+                    document.getElementById('comment-text').value = '';
+                    statusDiv.innerHTML = '<div style="color: #5cb85c; margin-top: 10px;">Comment posted successfully!</div>';
+                    
+                    // Reload comments
+                    setTimeout(() => {
+                        statusDiv.innerHTML = '';
+                        loadComments();
+                    }, 1500);
+                }
+
+                // Escape HTML to prevent XSS
+                function escapeHtml(unsafe) {
+                    return unsafe
+                         .replace(/&/g, "&amp;")
+                         .replace(/</g, "&lt;")
+                         .replace(/>/g, "&gt;")
+                         .replace(/"/g, "&quot;")
+                         .replace(/'/g, "&#039;");
+                }
+
+                // Allow Enter to submit (with Shift+Enter for new lines)
+                document.addEventListener('DOMContentLoaded', function() {
+                    loadComments();
+                    
+                    document.getElementById('comment-text').addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' && !e.shiftKey) {
+                            e.preventDefault();
+                            submitComment();
+                        }
+                    });
+                });
+                </script>
             </div>  
 
     <!-- Side Catalog Container -->

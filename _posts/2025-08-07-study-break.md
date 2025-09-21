@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I am doing a masters in Music Technology"
+title: "I am going to study"
 comments: false
 tags:
     - life

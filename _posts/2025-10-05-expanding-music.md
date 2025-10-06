@@ -6,7 +6,7 @@ tags:
     - life
 ---
 
-We were having a discussion about music recommendation systems in class recently and there is a popular opinion that all these algorithms create echo chambers and don't help us broaden our knowledge and interests in new ideas, arts, genres.
+We were having a discussion about music recommendation systems in class recently and there is a popular opinion that all these algorithms create echo chambers and don't help us broaden our knowledge and interests in new ideas, arts, genres. I am documenting some of my thoughts/ rants on the topic here.
 
 The things we get through the internet, not just music, even clothes & opinions that are a result of an "algorithm" without putting in work to go out, talk, research have inherently less value to us. 
 
@@ -23,4 +23,4 @@ I have discovered great artists through algorithms, they don't suck. But without
 
 <https://www.youtube.com/watch?v=tCvbX_i-jG8> In this video my man crush Drew Gooden talks about how legendary shows like The Office and Parks & Rec struggled finding their footing in the first few seasons, they sucked but now with reduced attention spans, god forbid the first season sucks people are gonna rally to cancel it.
 
-Art needs space to breathe, to fail, to experiment, to augment! We need to be OK with it and encourage it to truly create something of value! Leave the regurgitated formulaic shit to AI and pop artists.
+Art needs space to breathe, to fail, to experiment, to evolve! We need to be OK with it and encourage it to truly create something of value! Leave the regurgitated formulaic shit to AI and pop artists.

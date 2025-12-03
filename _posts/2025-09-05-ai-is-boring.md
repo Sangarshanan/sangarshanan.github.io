@@ -13,13 +13,13 @@ Fast forward to last week when I stumbled across a video on procedural game gene
 
 So I went ahead and built this little game: <https://keep-walking-seven.vercel.app/>. It took me just a couple of hours (thanks, Claude Code!), and it was genuinely fun to make. But here's the thing—I'm pretty sure I'll forget most of the implementation details within a few weeks. Worse yet, this idea that sparked so much joy and motivated me to actually build something... it doesn't really feel *mine* at all.
 
-I used to spend hours, let's be honest, entire nights, diving deep into different methods, techniques, and algorithms. I'd go down these incredible rabbit holes, get frustrated when I couldn't figure something out, pull my hair out over bugs, and sometimes end up building something completely different from what I started with. But that magical chaos just... doesn't happen anymore.
+I used to spend hours, and sometimes entire nights, diving deep into different methods, techniques, and algorithms. I'd go down these rabbit holes, get very easily frustrated when I couldn't figure something out, pull my hair out over bugs, and sometimes end up doing something completely different from what I started with. But that magical chaos just... doesn't happen anymore.
 
-Now I don't need to frantically scour the internet for inspiration or get lost in those beautiful tangents that used to define my personal projects. Everything feels so... efficient.
+Now I don't need to frantically scour the internet for inspiration or get lost in weirdass tangents that defined my personal projects. Everything feels so... efficient.
 
 Maybe that's a good thing? But honestly, I've always found my greatest joy in wandering into unexpected corners of the internet and stumbling across something completely random and amazing. 
 
-I think this is what e-commerce has done to the whole concept of **owning** things. Remember being in school and getting ridiculously attached to your Pokémon cards or that one perfect Uniball gel pen? It was hard to get, required actual work and effort, and there was always a story behind how you got it. The anticipation of visiting different shops that never had quite what you wanted, until finally *finally* you'd spot that one thing you knew you needed but could never quite explain why.
+I think this is what e-commerce has done to the whole concept of **owning** things. Remember being in school and getting ridiculously attached to your Pokémon cards or that one perfect Uniball gel pen? It was hard to get, required actual work and effort, and there was always a story of how you got it. The anticipation of visiting different shops that never had quite what you wanted, until finally *finally* you'd spot that one thing you knew you needed but could never quite explain why.
 
 Building projects used to feel like that for me. That same sense of ownership, that same emotional attachment.
 

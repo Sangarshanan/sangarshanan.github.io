@@ -248,6 +248,6 @@ Distributed locking opens up an entirely new rabbit hole—there's far too much 
 and i have barely touched the intricacies.
 
 I am gonna read up more and maybe write another post! hopefully it won't end up in the
-drafts with the gazillion other cool shit i plan to write a blog about.
+drafts with the gazillion other shit i want to write a blog about.
 
 ta ta until then 👋

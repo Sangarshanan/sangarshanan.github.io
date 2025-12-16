@@ -15,6 +15,8 @@ This is me performing at the 15th anniversary of FromScratch in Barcelona. <http
 </video>
 
 
+<https://archive.org/details/toplap-fromscratch-dec2025-toplap-barcelona>
+
 The concept is simple, Live coders perform for exactly 9 minutes, starting from a completely blank screen. Whatever they create in those 9 minutes regardless of the outcome earns them applause from the entire audience! This was my second FromScratch event, and I think it's become my favorite format for livecoding gatherings for a lot of reasons.
 
 You can prepare, but you'll always end up improvising. In my first session, I planned my performance and rehearsed it a few times. However, when I stepped on stage, made a syntax error that prevented one of my loops from running. From that moment on, I started to improvise the rest of my set, experimenting with existing loops and making new sounds I had never rehearsed before.

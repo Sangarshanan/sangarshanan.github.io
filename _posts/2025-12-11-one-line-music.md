@@ -7,7 +7,7 @@ tags:
     - music-tech
 ---
 
-As a livecoder making music involves me writing a lot of code, this gets tedious really soon and becomes hard to play live or start from a blank state, so lately I have been exploring ways to make music with less code and I ended up finding something that takes this to the extreme and it kinda blew my mind!
+ Livecoding music involves writing a lot of code, this gets tedious real soon and becomes a challenge to play live or start from a blank state, so lately I have been exploring ways to make music with less code and I ended up finding something that takes this to the extreme and it kinda blew my mind!
 
 **Bytebeat: Experimental music from very short C programs**
 
@@ -107,10 +107,10 @@ Try running it below and feel free to play around with the different patterns, m
 </html>
 
 
-Perhaps the most interesting aspect of Bytebeat is how unscientific it is. Many contributors admitted they had no idea why their expressions worked and they just stumbled upon them and they sounded good. The **Forty-Two Melody** `t*(42&t>>10)` was independently discovered by at least three people, generates a musical sequence just by masking bits with the number 42. How cool is that?!
+Bytebeat is esoteric and weird, Many contributors admitted they had no idea why their expressions worked and they just stumbled upon them. The **Forty-Two Melody** `t*(42&t>>10)` was independently discovered by at least three people, itgenerates a musical sequence just by masking bits with the number 42. How cool is that?!
 
 Other discoveries used integer overflow, normally considered a bug to avoid as a deliberate musical effect. Subtracting 1 in the right place could suddenly add percussion. Division by zero, which would crash most programs, created interesting textures in this chaotic space.
 
-Bytebeat happened on the same year i.e 2011 the term **algorave** was coined by Alex McLean and Nick Collins during a car ride on the M1 motorway in the UK while heading to a gig! This spawned tools that let anyone experiment in real time, adjusting expressions and immediately hearing the results. It influenced artistic communities like demoscene, glitch art, live coding, and led to new software projects exploring even more constrained programming environments.
+Bytebeat happened on the same year i.e 2011 the term **Algorave** was coined by Alex McLean and Nick Collins during a car ride on the M1 motorway in the UK while heading to a gig! This spawned tools that let anyone experiment in real time, adjusting expressions and immediately hearing the results. It influenced artistic communities like demoscene, glitch art, live coding, and led to new software projects exploring even more constrained programming environments.
 
-Try it yourself and see where the rabbit hole takes you :)
+I found this really cool resource to get started with this tool <https://github.com/TuesdayNightMachines/Bytebeats/blob/master/Bytebeats_Beginners_Guide_TTNM_v1-5.pdf> It explains what the mathematical and bitwise operators do, slowly building up to a step sequencer! It's also too much to just fuck around with the examples and make cool beats.

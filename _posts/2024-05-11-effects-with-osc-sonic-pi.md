@@ -81,8 +81,8 @@ end
 
 Now that a pipeline is setup with this silly little goof project, literally too many possibilities open up 🚀
 
-- <https://in-thread.sonic-pi.net/t/twin-sensor-theremin-for-sonic-pi/1136>
-- <https://in-thread.sonic-pi.net/t/sonification-stock-market-music/7662>
+- [Twin Sensor Theremin for Sonic Pi](https://in-thread.sonic-pi.net/t/twin-sensor-theremin-for-sonic-pi/1136)
+- [Sonification Stock Market Music](https://in-thread.sonic-pi.net/t/sonification-stock-market-music/7662)
 - <https://github.com/mrbombmusic/sonic-pi-drum-rnn-gui>
 
 

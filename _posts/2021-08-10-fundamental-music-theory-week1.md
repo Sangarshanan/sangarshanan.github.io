@@ -24,7 +24,7 @@ Now we can actually plot this pitch against time using something called a Stave 
 
 This G is on the line where this symbol circles itself around is called a G-Clef or more commonly a Treble-Clef. We also see that notes start to reappear and they do so at an interval and this interval between one musical pitch and another with **double it's frequency is called an octave**
 
-This representation of notes on a sheet helped us compose and replicate music easily, More information on reading sheet notes on <https://www.musicnotes.com/now/tips/how-to-read-sheet-music/>
+This representation of notes on a sheet helped us compose and replicate music easily. More information on [How to Read Sheet Music](https://www.musicnotes.com/now/tips/how-to-read-sheet-music/)
 
 ### Octaves
 
@@ -65,7 +65,7 @@ This is the **Natural minor scale / Aeolian mode** which is still a diatonic sca
 
 The Seven Diatonic Modes
 
-<https://www.masterclass.com/articles/diatonic-scales-explained#the-7-modes-of-the-diatonic-scale>
+[Learn more about Diatonic Scales](https://www.masterclass.com/articles/diatonic-scales-explained#the-7-modes-of-the-diatonic-scale)
 
 
 |C-major/ Ionian	| I	| W–W–H–W–W–W–H	| C–D–E–F–G–A–B–C |

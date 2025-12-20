@@ -710,7 +710,7 @@ const finalHeight = applyLandscapeFeatures(x, z, baseHeight);
 
 Check out the github repo with the link to the game and a lot more info about the game! If you are still here, congrats : ) you have a superior attention span.
 
-Code is in this notebook along with an Interactive Perlin Noise Explorer: <https://gist.github.com/Sangarshanan/549ef00d4ef39633966d3daa9766930b>
+Code is in this [notebook](https://gist.github.com/Sangarshanan/549ef00d4ef39633966d3daa9766930b) along with an Interactive Perlin Noise Explorer
 
 
 ### Links

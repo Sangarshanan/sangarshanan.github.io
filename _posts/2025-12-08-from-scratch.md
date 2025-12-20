@@ -8,14 +8,14 @@ tags:
     - life
 ---
 
-This is me performing at the 15th anniversary of FromScratch in Barcelona. <https://toplap.cat/posts/from-scratch-15-years/> 
+This is me performing at the 15th anniversary of FromScratch in Barcelona. [Read more about the event](https://toplap.cat/posts/from-scratch-15-years/) 
 
 <video width="600" height="500" controls>
   <source src="/img/in-post/from-scratch.mp4" type="video/mp4">
 </video>
 
 
-<https://archive.org/details/toplap-fromscratch-dec2025-toplap-barcelona>
+[Watch the full performance archive](https://archive.org/details/toplap-fromscratch-dec2025-toplap-barcelona)
 
 The concept is simple, Live coders perform for exactly 9 minutes, starting from a completely blank screen. Whatever they create in those 9 minutes regardless of the outcome earns them applause from the entire audience! This was my second FromScratch event, and I think it's become my favorite format for livecoding gatherings for a lot of reasons.
 
@@ -31,5 +31,5 @@ The Barcelona scene is incredibly supportive. It was inspiring to see livecoding
 
 This makes me reflect on the scene back home. We don't have regular livecoding meetups in India due to challenges around finding spaces and recovering the costs. We've had semi regular gatherings and a few full-fledged algoraves, but nothing consistent like this. I feel like India really needs FromScratch! I hope to bring this practice back with me somehow.
 
-There is this research paper that beautifully explores the possibilities and consequences of FromScratch, drawing from the experiences of livecoding communities in Mexico City and Barcelona: <https://zenodo.org/records/3939206>
+There is this research paper that beautifully explores the possibilities and consequences of FromScratch, drawing from the experiences of livecoding communities in Mexico City and Barcelona: [FromScratch Research Paper](https://zenodo.org/records/3939206)
 

@@ -11,7 +11,7 @@ tags:
 
 <http://daslab.seas.harvard.edu/rum-conjecture/>
 
-Paper: <https://scholar.harvard.edu/files/stratos/files/rum-tutorial.pdf?m=1461167186#:~:text=2.,time%2C%20for%20all%20three%20goals.>
+Paper: [RUM Conjecture Tutorial (PDF)](https://scholar.harvard.edu/files/stratos/files/rum-tutorial.pdf?m=1461167186#:~:text=2.,time%2C%20for%20all%20three%20goals.)
 
 
 An access method is a collection of algorithms and data structures for organizing and accessing data. The way we physically organize data on storage devices defines and restricts the possible ways that we can read and update it.

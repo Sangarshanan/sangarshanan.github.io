@@ -237,15 +237,15 @@ Huffman coding turned the existing shannon coding upside down and used a **Botto
 
 cOoL tHinGs 
 
-> Information theory got soo huge in the scientific community after this paper with people from different fields and interests jumping in and getting their hands dirty that Claude Shannon wrote a follow up paper called `The Bandwagon` <https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774>
+> Information theory got soo huge in the scientific community after this paper with people from different fields and interests jumping in and getting their hands dirty that Claude Shannon wrote a follow up paper called [The Bandwagon paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1056774)
  
 > Claude Shannon was born in Gaylord :) Yes I am seven
 
 
  **Stolen from**
 
-- <http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf>
-- <https://www.khanacademy.org/computing/computer-science/informationtheory#moderninfotheory>
-- <https://www.ics.uci.edu/~dan/pubs/DC-Sec3.html>
-- <https://en.wikipedia.org/wiki/Shannon%E2%80%93Fano_coding>
-- <http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf>
+- [Information Theory paper](http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
+- [Information Theory Tutorial](https://www.khanacademy.org/computing/computer-science/informationtheory#moderninfotheory)
+- [Data Compression Guide](https://www.ics.uci.edu/~dan/pubs/DC-Sec3.html)
+- [Shannon-Fano Coding Guide](https://en.wikipedia.org/wiki/Shannon%E2%80%93Fano_coding)
+- [Huffman Coding paper](http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf)

@@ -6,11 +6,9 @@ tags:
     - music-tech
 ---
 
-Okay, so if you've ever seen me rocking a T-shirt, there's like a 90% chance I snagged it at a Pycon. So yeah, I'm kinda obsessed with using Python for *everything* lol. I've been messing around with Ableton lately, trying to add "DAW guru" to my list of skills. And the first thing I wondered was: **Can I control this thing with Python?**
+I've been messing around with Ableton lately and the first thing I wondered was: **Can I control this thing with Python?**
 
 Turns out, there are two ways to do this. The first (and easiest) is sending MIDI signals to Ableton. The second, which takes a bit more setup, is actually talking to Ableton directly – querying and controlling the interface. This is where OSC comes in, and Live has an API for it.
-
-Let's dive into sending MIDI first!
 
 ## Sending MIDI data to Ableton Live
 
@@ -77,7 +75,7 @@ Tweak the training data and Markov chain settings, and you can churn out all sor
 
 ## OSC Interface with Ableton Live
 
-To send OSC to Ableton, you'll need to install and enable third-party remote scripts. Check out the details here: <https://help.ableton.com/hc/en-us/articles/209072009-Installing-third-party-remote-scripts>. An absolute legend has already built a remote script that provides an Open Sound Control (OSC) interface to control Ableton Live called [AbletonOSC](https://github.com/ideoforms/AbletonOSC). Once you've done that, select "AbletonOSC" under the Control Surface dropdown in `Preferences > Link / Tempo / MIDI`.
+To send OSC to Ableton, you'll need to install and enable third-party remote scripts. Check out the details here: [Installing Third-Party Remote Scripts](https://help.ableton.com/hc/en-us/articles/209072009-Installing-third-party-remote-scripts). An absolute legend has already built a remote script that provides an Open Sound Control (OSC) interface to control Ableton Live called [AbletonOSC](https://github.com/ideoforms/AbletonOSC). Once you've done that, select "AbletonOSC" under the Control Surface dropdown in `Preferences > Link / Tempo / MIDI`.
 
 AbletonOSC listens for OSC messages on port 11000 and sends replies on port 11001. Replies go back to the same IP address that sent the message. When you're asking for properties, you can use OSC wildcard patterns. For example, `/live/clip/get/* 0 0` will grab all the properties of track 0, clip 0.
 

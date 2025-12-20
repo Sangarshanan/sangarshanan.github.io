@@ -30,9 +30,9 @@ Here is a condensed form of my answers to some of these questions, I am not putt
 I got super interested in the history of communication and information theory in particular, This got me 
 to implement huffman trees which is THE most efficient way for assigning 0s and 1s to a single character
 
-<https://gist.github.com/Sangarshanan/c8ed58be40dace29a5ff0ea23307d66c>
+[Huffman Trees Implementation](https://gist.github.com/Sangarshanan/c8ed58be40dace29a5ff0ea23307d66c)
 
-Visualizing huffman coding: <https://github.com/sangarshanan/huffman-coding/blob/master/notebook.ipynb>
+Visualizing huffman coding: [Interactive Jupyter Notebook](https://github.com/sangarshanan/huffman-coding/blob/master/notebook.ipynb)
 
 
 **What is the most fascinating thing you've learned in the past month?**
@@ -49,7 +49,7 @@ Once such equation is the Logistic Map
 ```math
 Xn+1 = rate*Xn (1-Xn) # The value of X at time n+1 as a factor of its rate of growth 
 ```
-I tried to visualize it myself on <https://gist.github.com/Sangarshanan/5f58efba150656cec5e7c248822e65d1>
+I tried to [visualize it myself](https://gist.github.com/Sangarshanan/5f58efba150656cec5e7c248822e65d1)
 
 The video pointed me to **Chaos: Making of a new science** by James Gleick, which I am currently reading and getting my mind absolutely 
 blown at every single chapter

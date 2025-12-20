@@ -32,9 +32,9 @@ _________
 
 So ERNIE is pretty cool but we also have a random number generator in python, how does that work ?
 
-Ok so I went to Python's codebase and looked at random.py <https://github.com/python/cpython/blob/master/Lib/random.py> it seems to be using something called the Mersenne Twister core generator, which sounds like a name for an amusement park ride, also I am not entirely able to understand the code, so I though of going through the history and see how random was written in the very beginning and maybe I might understand the code now better, So through github and it's magic I time travelled to random.py written in 1994 <https://github.com/python/cpython/blob/ff03b1ae5bba4d6712563efb7c77ace57dbe6788/Lib/random.py> the good times, when I did not exist. Ooh and this code is really easy to understand. 
+Ok so I went to Python's codebase and looked at [random.py](https://github.com/python/cpython/blob/master/Lib/random.py) it seems to be using something called the Mersenne Twister core generator, which sounds like a name for an amusement park ride, also I am not entirely able to understand the code, so I though of going through the history and see how random was written in the very beginning and maybe I might understand the code now better, So through github and it's magic I time travelled to [random.py written in 1994](https://github.com/python/cpython/blob/ff03b1ae5bba4d6712563efb7c77ace57dbe6788/Lib/random.py) the good times, when I did not exist. Ooh and this code is really easy to understand. 
 
-So random.py imports whrandom so let's look at <https://github.com/python/cpython/blob/ff03b1ae5b/Lib/whrandom.py>. Ok so this has a random class that implements something called the wichmann hill random number generator
+So random.py imports whrandom so let's look at [whrandom.py](https://github.com/python/cpython/blob/ff03b1ae5b/Lib/whrandom.py). Ok so this has a random class that implements something called the wichmann hill random number generator
 
 A quick googling tells me that the wichmann hill random number generator consists of three linear congruential generators with different prime moduli, each of which is used to produce a uniformly distributed number between 0 and 1. These are summed, modulo 1, to produce the result. Ok I barely understand, maybe I should look at what the code is doing
 
@@ -180,8 +180,8 @@ SO actually if we know the exact time the user ran the random number generator w
 Below are the links I stole from 
 
 
-[1] <https://www.i-programmer.info/history/machines/6317-ernie-a-random-number-generator.html>
+[1] [ERNIE Random Number Generator](https://www.i-programmer.info/history/machines/6317-ernie-a-random-number-generator.html)
 
-[2] <https://github.com/python/cpython/blob/master/Lib/random.py>
+[2] [Code](https://github.com/python/cpython/blob/master/Lib/random.py)
 
 :wq

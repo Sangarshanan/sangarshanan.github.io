@@ -21,9 +21,9 @@ I was so down to install and play around with it before I read the [dreadful wor
 
 ![](https://i.kym-cdn.com/entries/icons/facebook/000/024/196/sign.jpg)
 
-I was able to clone and build it cleanly but when I tried to boot it up it crashed and hit me with bunch of logs, I looked around the interweb forums <https://discourse.ardour.org/t/cannot-start-jack-as-regular-user/83468/8> & <https://github.com/sonic-pi-net/sonic-pi/issues/1873> but nothing worked
+I was able to clone and build it cleanly but when I tried to boot it up it crashed and hit me with bunch of logs, I looked around the interweb forums [JACK Audio Guide](https://discourse.ardour.org/t/cannot-start-jack-as-regular-user/83468/8) & [Code](https://github.com/sonic-pi-net/sonic-pi/issues/1873) but nothing worked
 
-Then I found <https://in-thread.sonic-pi.net/t/install-sonic-pi-3-3-beta-on-ubuntu-20-04-very-easy/4406>
+Then I found [Installation Guide](https://in-thread.sonic-pi.net/t/install-sonic-pi-3-3-beta-on-ubuntu-20-04-very-easy/4406)
 
 Rather than building the latest version from source I decided to try the old fashion `apt-get` and installed the version 2.2 of Sonic pi using `sudo apt-get install sonic-pi`
 
@@ -33,8 +33,8 @@ But a disclaimer, once I booted up Sonic pi I noticed that it took over my audio
 
 The language is so simple that it is easy for anyone to get started but powerful enough to support sophisticated sound manipulation and generative music cause its all code. Ruby code to be more precise.
 
-The Tutorial itself is super extensive <https://sonic-pi.net/tutorial.html#section-1> and you can also find amazing resources online like this one <https://sonic-pi.mehackit.org/exercises/en/01-introduction/01-introduction.html> from a creative programming workshop
+The [Tutorial](https://sonic-pi.net/tutorial.html#section-1) itself is super extensive and you can also find amazing resources online like this [Creative Programming Guide](https://sonic-pi.mehackit.org/exercises/en/01-introduction/01-introduction.html) from a creative programming workshop
 
 These resources helped me get started and I made some stupid beats that were a lott of fun to do, it always feels good to see something you write come to life
 
-I put it up on <https://github.com/sangarshanan/sonic-pi-beats>
+I put it up on [Code](https://github.com/sangarshanan/sonic-pi-beats)

@@ -1848,3 +1848,19 @@ img::-moz-selection {
 .no-scroll {
   overflow-y: hidden;
 }
+
+/* Fix link overflow in post content */
+.post-container a {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Ensure long URLs don't overflow their containers */
+.post-container p a,
+.post-container li a {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}

@@ -44,11 +44,12 @@ midi_out.open_port(0) # Open the first available MIDI port
 def send_notes(pitch=60, repeat=1, sleep_time=0.5):
     """Sends MIDI notes to the specified track."""
     for _ in range(repeat):
-        note_on = [0x90, pitch, 112] # note on (channel, pitch, velocity)
-        note_off = [0x80, pitch, 0] # note off (channel, pitch, velocity)
-        midi_out.send_message(note_on) # Send the note on message
-        time.sleep(sleep_time) # Wait for the specified duration
-        midi_out.send_message(note_off) # Send the note off message
+        # Note: (channel, pitch, velocity)
+        note_on = [0x90, pitch, 112]
+        note_off = [0x80, pitch, 0]
+        midi_out.send_message(note_on) # Send note on message
+        time.sleep(sleep_time) # Wait for duration
+        midi_out.send_message(note_off) # Note off
 
 # Send MIDI i.e Play notes
 send_notes(60, 3, 0.75)

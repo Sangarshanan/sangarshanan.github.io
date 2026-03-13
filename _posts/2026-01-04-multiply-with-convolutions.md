@@ -158,7 +158,7 @@ def fft_multiply(a, b):
     return int(''.join(map(str, final_digits[::-1])))
 ```
 
-Here, the total complexity is that of the FFT operation, which is $O(n \log n)$. This means for 1,000 digits, there will be about 10,000 operations—significantly fewer than traditional addition.
+Here, the total complexity is that of the FFT operation, which is `$O(n log n)`. This means for 1,000 digits, there will be about 10,000 operations—significantly fewer than traditional addition.
 
 Benchmarking shows us the real speedup!
 
@@ -199,4 +199,4 @@ for digits in [100, 500, 1000, 2000]:
     speedup = normal_t / fft_t if fft_t > 0 else float('inf')
 ```
 
-PS: I stumbled upon this by watching this [3Blue1Brown video](https://www.youtube.com/watch?v=KuXjwB4LzSA).
+This was my homework from this [3Blue1Brown video](https://www.youtube.com/watch?v=KuXjwB4LzSA).

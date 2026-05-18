@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tales & Projects from the Second Trimester"
+title: "Tales & Projects from the Second Trimester 📚"
 comments: false
 keywords: "Learn"
 tags:

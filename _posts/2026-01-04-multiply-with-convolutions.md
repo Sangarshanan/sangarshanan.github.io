@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multiplications with Convolution & FFT"
+title: "Multiplications with Convolution & FFT ♾️"
 comments: false
 keywords: "Learn"
 tags:

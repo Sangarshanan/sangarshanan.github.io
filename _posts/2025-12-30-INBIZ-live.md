@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One line audiovisuals on the Browser with IBNIZ"
+title: "One line audiovisuals on the Browser with IBNIZ ✨"
 comments: false
 keywords: "Learn"
 tags:

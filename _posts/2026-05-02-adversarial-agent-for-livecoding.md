@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Livecoding with an Adversarial AI Agent"
+title: "Livecoding with an Adversarial AI Agent 🤖"
 comments: false
 keywords: "Learn"
 tags:

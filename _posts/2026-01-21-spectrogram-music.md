@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Esoteric performance tool with Spectrogram Art"
+title: "Esoteric performance tool with Spectrogram Art 🖼️"
 comments: false
 keywords: "Learn"
 tags:

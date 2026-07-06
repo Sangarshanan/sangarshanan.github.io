@@ -42,7 +42,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "With this blog I offer Selective Musings with Occasional doses of Cringe"
+sidebar-about-description: "With this blog, I offer Selective Musings with Occasional doses of Cringe"
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags

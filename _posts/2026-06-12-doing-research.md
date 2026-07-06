@@ -20,5 +20,4 @@ When you are doing Research, there are no sprints, tasks and results, Forget res
 
 But is this how life is supposed to make you feel. Are feelings research questions? Have you ever thought about why something make you mad? or do we all just jump into chaos and start useless wars. We are becoming a new flavor of society that struggles to complete it's thoughts and keeps jumping between infinite un-thought opinions. But I don't really care about all that. What I am really looking forward to is being uncomfortable again, maybe this time around I won't completely forget who I am.
 
-> No part of this was written/ polished/ touched by an LLM.
-
+> Written by a human.

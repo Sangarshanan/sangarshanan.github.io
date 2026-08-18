@@ -14,14 +14,14 @@ I am writing this to you from the my chambers. The storm that we are in the midd
 is one of the biggest I have seen and I doubt we will make it to the Island tonight. The waves rise so high and send shivers down my spine so I scurried back to my chamber and coming here filled me with a strange calm that allowed me to write without shaking, maybe it is my only solace in this sinking ship.
 
 I lived my life in small safe bubbles and knew how to move between them. All of my bubbles were
-carefully crafted, initially by adults who cared not for me but for order in society and then by myself
+carefully crafted, initially by adults who car  ed not for me but for order in society and then by myself
 
 Existentialism did not bother me much cause I had everything figured out, I had a plan and it was
 already in motion. It made me superior and I looked at down on everyone: The religious ones who lay all their burdens on an abstract entity that could come crumbling down on them any second, The intellectuals that grew old in a job held by a thin elastic harness made of gold making fat men fatter, There are the
 free spirited folk whose living in the moment mantra was overshadowed by the thick cloud of ganja smoke that they used to hide away their sober soul crushed by the heaviness of existence. 
 
 Self awareness is scary prospect because it means confronting who you are and climbing down 
-the throne that your miniscule achievements created for yourself. The laurels that will be forgotten by time, attached to a name, A mere sound that will vibrate into the air for the last time before being consumed by silence for eternity.
+the throne that your minuscule achievements created for yourself. The laurels that will be forgotten by time, attached to a name, A mere sound that will vibrate into the air for the last time before being consumed by silence for eternity.
 
 When you are forced out of your bubble and into the void you are forced to confront the most dangerous thing in existence: Yourself.
 

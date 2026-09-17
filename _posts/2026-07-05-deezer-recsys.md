@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On Recommendation systems 💿"
+title: "On Recommendation systems"
 comments: false
 keywords: "Learn"
 tags:

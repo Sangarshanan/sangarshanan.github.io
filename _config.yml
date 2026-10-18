@@ -66,3 +66,23 @@ defaults:
 
 whitelist:
   - jekyll-redirect-from
+
+image_captions:
+  - filename: "alps1.jpg"
+    caption: ""
+  - filename: "alps2.jpg"
+    caption: ""
+  - filename: "AniceRiver.jpeg"
+    caption: "When the music starts playing, the island of memories fades away into the past: the happy and sad ones, oh, the shameful ones too. The striving stops and purpose ends under the strength of the overwhelming present. Only the present and I exist, as long as I breathe, I hope the music keeps playing."
+  - filename: "cracks.jpeg"
+    caption: ""
+  - filename: "Flower.jpeg"
+    caption: ""
+  - filename: "heaven.jpeg"
+    caption: ""
+  - filename: "Hill.jpeg"
+    caption: ""
+  - filename: "Stars.jpeg"
+    caption: ""
+  - filename: "SunsetCafe.jpeg"
+    caption: ""

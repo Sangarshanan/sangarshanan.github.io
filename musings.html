@@ -74,11 +74,16 @@ header-img: "img/musing.jpg"
     <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1585200381/size=small/bgcol=ffffff/linkcol=0687f5/track=325289462/transparent=true/" seamless><a href="https://antarikshrecords.bandcamp.com/album/algorave-india-compilation-one">Algorave India Compilation One by Antariksh Records</a></iframe>
 </div>
 
-<h3> I love hiking </h3>
-
-and I take pictures :) Here are some of them.
+<h3> For the fragment of me in musing. </h3>
 
 {% assign image_files = site.static_files | where: "image", true %}
 {% for myimage in image_files %}
-  <img src="{{ myimage.path }}" style="text-align: left; display: block;"> </img>
+  {% assign image_filename = myimage.basename | append: myimage.extname %}
+  {% assign caption = site.image_captions | where: "filename", image_filename | first %}
+  <figure style="margin: 30px 0;">
+    <img src="{{ myimage.path }}" style="text-align: left; display: block; max-width: 100%;" alt="{{ caption.caption }}">
+    {% if caption %}
+      <figcaption style="font-style: italic; color: #666; margin-top: 10px; font-size: 18px;">{{ caption.caption }}</figcaption>
+    {% endif %}
+  </figure>
 {% endfor %}
